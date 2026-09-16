@@ -1,0 +1,2 @@
+# fetch_market_pulse.py 与 sync_data.py 均为纯 Python 标准库实现,无第三方依赖。
+# 本文件按 CI 惯例保留(setup-python 缓存与依赖检查所需)。

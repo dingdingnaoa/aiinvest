@@ -1,0 +1,527 @@
+{
+ "updated_at": "2026-09-16T09:47:31+08:00",
+ "indices": {
+  "sh000001": {
+   "name": "上证指数",
+   "market": "cn",
+   "price": 3855.87,
+   "chg_pct": -0.22,
+   "chg": -8.41,
+   "high52": 4258.86,
+   "low52": 3741.11,
+   "time": "20260916094727",
+   "chg5d": null,
+   "vol20": null
+  },
+  "sz399001": {
+   "name": "深证成指",
+   "market": "cn",
+   "price": 13244.95,
+   "chg_pct": -0.32,
+   "chg": -43.02,
+   "high52": 16374.02,
+   "low52": 12448.32,
+   "time": "20260916094727",
+   "chg5d": null,
+   "vol20": null
+  },
+  "sz399006": {
+   "name": "创业板指",
+   "market": "cn",
+   "price": 3238.44,
+   "chg_pct": -0.29,
+   "chg": -9.48,
+   "high52": 4380.41,
+   "low52": 2892.27,
+   "time": "20260916094727",
+   "chg5d": null,
+   "vol20": null
+  },
+  "sh000300": {
+   "name": "沪深300",
+   "market": "cn",
+   "price": 4431.09,
+   "chg_pct": -0.43,
+   "chg": -18.95,
+   "high52": 5064.27,
+   "low52": 4394.29,
+   "time": "20260916094727",
+   "chg5d": null,
+   "vol20": null
+  },
+  "sh000688": {
+   "name": "科创50",
+   "market": "cn",
+   "price": 1565.88,
+   "chg_pct": 0.9,
+   "chg": 13.92,
+   "high52": 2255.25,
+   "low52": 1249.01,
+   "time": "20260916094727",
+   "chg5d": null,
+   "vol20": null
+  },
+  "hkHSI": {
+   "name": "恒生指数",
+   "market": "hk",
+   "price": 24683.05,
+   "chg_pct": 0.06,
+   "chg": 15.81,
+   "high52": 28056.1,
+   "low52": 22518.0,
+   "time": "2026/09/16 09:32:24",
+   "chg5d": null,
+   "vol20": null
+  },
+  "hkHSTECH": {
+   "name": "恒生科技",
+   "market": "hk",
+   "price": 4286.04,
+   "chg_pct": -0.12,
+   "chg": -5.3,
+   "high52": 6715.46,
+   "low52": 4229.94,
+   "time": "2026/09/16 09:32:24",
+   "chg5d": null,
+   "vol20": null
+  },
+  "hkHSCEI": {
+   "name": "恒生国企",
+   "market": "hk",
+   "price": 8203.46,
+   "chg_pct": -0.02,
+   "chg": -1.45,
+   "high52": 9770.21,
+   "low52": 7404.47,
+   "time": "2026/09/16 09:32:24",
+   "chg5d": null,
+   "vol20": null
+  },
+  "usDJI": {
+   "name": "道琼斯",
+   "market": "us",
+   "price": 52093.11,
+   "chg_pct": -0.63,
+   "chg": -328.09,
+   "high52": 54744.33,
+   "low52": 45057.28,
+   "time": "2026-09-15 16:53:37",
+   "chg5d": null,
+   "vol20": null
+  },
+  "usIXIC": {
+   "name": "纳斯达克",
+   "market": "us",
+   "price": 25981.57,
+   "chg_pct": -0.78,
+   "chg": -204.84,
+   "high52": 27190.21,
+   "low52": 20690.25,
+   "time": "2026-09-15 17:15:59",
+   "chg5d": null,
+   "vol20": null
+  },
+  "usINX": {
+   "name": "标普500",
+   "market": "us",
+   "price": 7585.73,
+   "chg_pct": -0.45,
+   "chg": -34.25,
+   "high52": 7816.7,
+   "low52": 6316.91,
+   "time": "2026-09-15 16:53:28",
+   "chg5d": null,
+   "vol20": null
+  }
+ },
+ "sectors": {
+  "sz399986": {
+   "name": "中证银行",
+   "market": "cn",
+   "price": 7499.73,
+   "chg_pct": -0.89,
+   "pe": 7.28,
+   "time": "20260916094727"
+  },
+  "sz399975": {
+   "name": "证券公司",
+   "market": "cn",
+   "price": 724.73,
+   "chg_pct": -0.55,
+   "pe": 12.03,
+   "time": "20260916094727"
+  },
+  "sz399808": {
+   "name": "中证新能",
+   "market": "cn",
+   "price": 2208.85,
+   "chg_pct": -1.11,
+   "pe": 29.58,
+   "time": "20260916094727"
+  },
+  "sz399811": {
+   "name": "CSSW电子",
+   "market": "cn",
+   "price": 7262.13,
+   "chg_pct": 0.78,
+   "pe": 49.71,
+   "time": "20260916094727"
+  },
+  "sz399989": {
+   "name": "中证医疗",
+   "market": "cn",
+   "price": 6632.48,
+   "chg_pct": 0.92,
+   "pe": 29.92,
+   "time": "20260916094727"
+  },
+  "sz399997": {
+   "name": "中证白酒",
+   "market": "cn",
+   "price": 6146.24,
+   "chg_pct": -0.95,
+   "pe": 19.51,
+   "time": "20260916094727"
+  },
+  "sz399967": {
+   "name": "中证军工",
+   "market": "cn",
+   "price": 11589.29,
+   "chg_pct": 0.47,
+   "pe": 61.29,
+   "time": "20260916094727"
+  },
+  "sz399998": {
+   "name": "中证煤炭",
+   "market": "cn",
+   "price": 2385.75,
+   "chg_pct": -0.78,
+   "pe": 19.4,
+   "time": "20260916094727"
+  },
+  "sz399971": {
+   "name": "中证传媒",
+   "market": "cn",
+   "price": 1182.78,
+   "chg_pct": -0.41,
+   "pe": 30.66,
+   "time": "20260916094727"
+  },
+  "sz399976": {
+   "name": "CS新能车",
+   "market": "cn",
+   "price": 3440.95,
+   "chg_pct": -1.53,
+   "pe": 20.65,
+   "time": "20260916094727"
+  },
+  "sz399933": {
+   "name": "中证医药",
+   "market": "cn",
+   "price": 7678.82,
+   "chg_pct": 0.42,
+   "pe": 29.86,
+   "time": "20260916094727"
+  },
+  "sz399970": {
+   "name": "移动互联",
+   "market": "cn",
+   "price": 4800.73,
+   "chg_pct": 0.02,
+   "pe": 40.73,
+   "time": "20260916094727"
+  },
+  "hkHSI": {
+   "name": "恒生指数",
+   "market": "hk",
+   "price": 24683.05,
+   "chg_pct": 0.06,
+   "pe": 0.0,
+   "time": "2026/09/16 09:32:24"
+  },
+  "hkHSTECH": {
+   "name": "恒生科技",
+   "market": "hk",
+   "price": 4286.04,
+   "chg_pct": -0.12,
+   "pe": 0.0,
+   "time": "2026/09/16 09:32:24"
+  },
+  "hkHSCEI": {
+   "name": "恒生国企",
+   "market": "hk",
+   "price": 8203.46,
+   "chg_pct": -0.02,
+   "pe": 0.0,
+   "time": "2026/09/16 09:32:24"
+  },
+  "hkHSCCI": {
+   "name": "红筹指数",
+   "market": "hk",
+   "price": 4071.18,
+   "chg_pct": 0.06,
+   "pe": 0.0,
+   "time": "2026/09/16 09:32:24"
+  }
+ },
+ "commodities": {
+  "GC": {
+   "name": "COMEX黄金",
+   "price": 4324.63,
+   "chg_pct": -0.19,
+   "high": 4339.5,
+   "low": 4315.2,
+   "time": "2026-09-16 09:47:04"
+  },
+  "CL": {
+   "name": "WTI原油",
+   "price": 100.26,
+   "chg_pct": -0.48,
+   "high": 100.61,
+   "low": 99.75,
+   "time": "2026-09-16 09:47:04"
+  },
+  "SI": {
+   "name": "COMEX白银",
+   "price": 64.13,
+   "chg_pct": 0.43,
+   "high": 64.48,
+   "low": 63.94,
+   "time": "2026-09-16 09:47:03"
+  },
+  "HG": {
+   "name": "COMEX铜",
+   "price": 6.45,
+   "chg_pct": 0.1,
+   "high": null,
+   "low": null,
+   "time": "2026-09-15T21:38:04.000-0400"
+  }
+ },
+ "forex": {
+  "USDCNY": null,
+  "DXY": {
+   "name": "美元指数(期货)",
+   "price": 99.455,
+   "chg_pct": 0.11,
+   "time": "2026-09-15T21:38:29.000-0400"
+  }
+ },
+ "rates": {
+  "us10y": {
+   "value": 4.998,
+   "time": "2026-09-15T21:46:56.000-0400"
+  },
+  "cn10y": {
+   "value": 1.6865,
+   "date": "2026-09-15"
+  },
+  "cn30y": {
+   "value": 2.14,
+   "date": "2026-09-15"
+  },
+  "cn1y": {
+   "value": 1.2439,
+   "date": "2026-09-15"
+  },
+  "spread_bp": 331.2,
+  "us10y_5d_bp": null
+ },
+ "vix": {
+  "value": 17.2,
+  "chg_pct": 0.58,
+  "time": "2026-09-15T16:15:01.000-0400"
+ },
+ "valuation": {
+  "csi300_pe": 13.28,
+  "spx_ey": 3.86,
+  "spx_ey_mean": 7.19,
+  "spx_ey_median": 6.63,
+  "spx_ey_asof": "Sep 15"
+ },
+ "risk": {
+  "temp": 37.8,
+  "components": {
+   "volatility": 22.6,
+   "momentum": 62.0
+  },
+  "level": "温和",
+  "desc": "风险指标整体平稳"
+ },
+ "erp": {
+  "cn": {
+   "index": "沪深300",
+   "pe": 13.28,
+   "earnings_yield": 7.53,
+   "bond_yield": 1.6865,
+   "erp": 5.84
+  },
+  "us": {
+   "index": "标普500",
+   "earnings_yield": 3.86,
+   "bond_yield": 4.998,
+   "erp": -1.14
+  },
+  "hk": null
+ },
+ "divergences": [
+  {
+   "name": "美股→A股联动",
+   "level": 0,
+   "detail": "隔夜标普-0.45%，当日上证-0.22%，联动正常"
+  },
+  {
+   "name": "波动率正常",
+   "level": 0,
+   "detail": "VIX=17.2，处于正常波动区间"
+  }
+ ],
+ "history": {
+  "us10y": [
+   {
+    "d": "2026-08-07",
+    "v": 4.649
+   },
+   {
+    "d": "2026-08-08",
+    "v": 4.649
+   },
+   {
+    "d": "2026-08-10",
+    "v": 4.664
+   },
+   {
+    "d": "2026-08-14",
+    "v": 4.649
+   },
+   {
+    "d": "2026-09-16",
+    "v": 4.998
+   }
+  ],
+  "cn10y": [
+   {
+    "d": "2026-08-07",
+    "v": 1.7114
+   },
+   {
+    "d": "2026-08-08",
+    "v": 1.7114
+   },
+   {
+    "d": "2026-08-10",
+    "v": 1.7114
+   },
+   {
+    "d": "2026-08-14",
+    "v": 1.7032
+   },
+   {
+    "d": "2026-09-16",
+    "v": 1.6865
+   }
+  ],
+  "vix": [
+   {
+    "d": "2026-08-07",
+    "v": 14.95
+   },
+   {
+    "d": "2026-08-08",
+    "v": 14.9
+   },
+   {
+    "d": "2026-08-10",
+    "v": 14.9
+   },
+   {
+    "d": "2026-08-14",
+    "v": 14.63
+   },
+   {
+    "d": "2026-09-16",
+    "v": 17.2
+   }
+  ],
+  "gold": [
+   {
+    "d": "2026-08-07",
+    "v": 4404.4
+   },
+   {
+    "d": "2026-08-08",
+    "v": 4404.09
+   },
+   {
+    "d": "2026-08-10",
+    "v": 4382.28
+   },
+   {
+    "d": "2026-08-14",
+    "v": 4373.94
+   },
+   {
+    "d": "2026-09-16",
+    "v": 4324.63
+   }
+  ],
+  "wti": [
+   {
+    "d": "2026-08-07",
+    "v": 77.99
+   },
+   {
+    "d": "2026-08-08",
+    "v": 77.03
+   },
+   {
+    "d": "2026-08-10",
+    "v": 78.94
+   },
+   {
+    "d": "2026-08-14",
+    "v": 81.14
+   },
+   {
+    "d": "2026-09-16",
+    "v": 100.26
+   }
+  ],
+  "risk_temp": [
+   {
+    "d": "2026-08-07",
+    "v": 16.6
+   },
+   {
+    "d": "2026-08-08",
+    "v": 16.0
+   },
+   {
+    "d": "2026-08-10",
+    "v": 23.5
+   },
+   {
+    "d": "2026-08-14",
+    "v": 22.8
+   },
+   {
+    "d": "2026-09-16",
+    "v": 37.8
+   }
+  ]
+ },
+ "errors": [
+  "kline sh000001: HTTP Error 501: Not Implemented",
+  "kline sz399001: HTTP Error 501: Not Implemented",
+  "kline sz399006: HTTP Error 501: Not Implemented",
+  "kline sh000300: HTTP Error 501: Not Implemented",
+  "kline sh000688: HTTP Error 501: Not Implemented",
+  "kline hkHSI: HTTP Error 501: Not Implemented",
+  "kline hkHSTECH: HTTP Error 501: Not Implemented",
+  "kline hkHSCEI: HTTP Error 501: Not Implemented",
+  "kline usDJI: HTTP Error 501: Not Implemented",
+  "kline usIXIC: HTTP Error 501: Not Implemented",
+  "kline usINX: HTTP Error 501: Not Implemented",
+  "kline whUSDCNY: HTTP Error 501: Not Implemented"
+ ]
+}

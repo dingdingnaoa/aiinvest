@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>管理后台 — 集群规则与筛选 · AI Invest</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- ECharts -->
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
+</head>
+<body>
+
+  <div class="container">
+    <!-- ===== Header ===== -->
+    <header class="header">
+      <div class="header-title-group">
+        <h1 class="header-title">管理后台</h1>
+        <p class="header-subtitle">集群规则 · 行业热度 · 标的池筛选 · 方法论 v6.1</p>
+      </div>
+      <div class="header-meta">
+        <a href="index.html" class="header-back-link">← 返回主站</a>
+        <div class="clock-live" id="liveClock">00:00:00</div>
+        <div class="data-status">
+          <span class="status-dot"></span>
+          <span id="dataStatusText">连接中...</span>
+        </div>
+        <div style="font-size:11px;color:var(--text-tertiary);" id="lastUpdate">数据更新: --</div>
+      </div>
+    </header>
+
+    <!-- ===== Data Version Bar ===== -->
+    <div class="data-version" id="dataVersionBar" style="display:none;">
+      <div class="data-version-left">
+        <span class="data-version-label">筛选标准同步</span>
+        <span>方法论 <strong id="methodologyVersion">v6.1</strong></span>
+        <span class="data-version-sep">|</span>
+        <span>集群: <strong id="clustersCount">--</strong></span>
+        <span class="data-version-sep">|</span>
+        <span>标的: <strong id="companiesCount">--</strong></span>
+        <span class="data-version-sep">|</span>
+        <span>Deep: <strong id="deepCount">--</strong></span>
+        <span class="data-version-sync">
+          <span class="data-version-sync-dot"></span>
+          <span id="dataSyncTime">同步中...</span>
+        </span>
+      </div>
+    </div>
+
+    <!-- ===== 集群规则 ===== -->
+    <section class="section fade-in-up">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">集群规则</h2>
+          <p class="section-subtitle">12 大产业集群 · 评分 / 等级 / 规模 / 子环节数</p>
+        </div>
+      </div>
+      <div class="cluster-rules-grid" id="clusterRulesGrid">
+        <div class="loading" style="grid-column:1/-1;">正在加载集群规则...</div>
+      </div>
+    </section>
+
+    <!-- ===== 行业热度 ===== -->
+    <section class="section fade-in-up">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">行业热度全景</h2>
+          <p class="section-subtitle">12 大产业集群综合评分与热度追踪（柱状 / 气泡双视图）</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="chart-container" id="heatmapChart" style="height: 500px;">
+          <div class="loading">正在加载行业数据...</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 标的池筛选 ===== -->
+    <section class="section fade-in-up">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">深度研究标的池</h2>
+          <p class="section-subtitle">搜索 / 行业 / 层级多维筛选 · 经过五阶漏斗的核心跟踪公司</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="table-controls">
+          <input
+            type="text"
+            id="companySearch"
+            class="search-input"
+            placeholder="搜索公司名称 / 代码 / 行业..."
+          >
+          <select id="industryFilter" class="filter-select">
+            <option value="all">全部行业</option>
+          </select>
+          <select id="ratingFilter" class="filter-select">
+            <option value="all">全部层级</option>
+            <option value="Deep">深度研究 (Deep)</option>
+            <option value="Shallow">浅层研究 (Shallow)</option>
+            <option value="Watch">观察池 (Watch)</option>
+          </select>
+        </div>
+
+        <div class="table-wrapper">
+          <table id="companyTable">
+            <thead>
+              <tr>
+                <th data-sort="name">公司名称 <span class="sort-icon"> ↕</span></th>
+                <th data-sort="code">代码/市场 <span class="sort-icon"> ↕</span></th>
+                <th data-sort="industry">所属集群 <span class="sort-icon"> ↕</span></th>
+                <th data-sort="sub_chain">子环节 <span class="sort-icon"> ↕</span></th>
+                <th data-sort="tier">层级 <span class="sort-icon"> ↕</span></th>
+                <th>信号灯</th>
+                <th>核心逻辑</th>
+                <th>市值参考</th>
+              </tr>
+            </thead>
+            <tbody id="companyTableBody">
+              <tr><td colspan="8"><div class="loading">正在加载公司数据...</div></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="record-count" id="companyCount"></div>
+      </div>
+    </section>
+
+    <!-- ===== Footer ===== -->
+    <footer class="footer">
+      <div class="footer-info">
+        基于 <strong>行业与标的筛选方法论 v6.1</strong> · 全球 12 大产业集群 · 三重交叉分类框架
+      </div>
+      <div class="footer-disclaimer">
+        免责声明：本页面展示的所有行业评分、公司评级仅供研究参考，不构成任何投资建议。
+        投资有风险，决策需谨慎。数据来源包括公开市场信息和行业研究报告。
+      </div>
+    </footer>
+  </div>
+
+  <!-- JavaScript Modules (order matters) -->
+  <script src="js/utils.js"></script>
+  <script src="js/clock.js"></script>
+  <script src="js/heatmap.js"></script>
+  <script src="js/ranking.js"></script>
+
+  <!--ADMIN_INIT-->
+  <script>
+    /**
+     * admin.html — 管理后台独立入口
+     * 仅加载 clusters + companies，渲染集群规则、行业热度、标的池筛选
+     */
+    (function (global) {
+      'use strict';
+
+      const Admin = {
+        async init() {
+          AIInvest.Clock.init();
+          AIInvest.Clock.setDataStatus('正在加载数据...');
+
+          try {
+            const [clustersRes, companiesRes, metaRes] = await Promise.all([
+              fetch('data/clusters.json'),
+              fetch('data/companies.json'),
+              fetch('data/meta.json').catch(() => null)
+            ]);
+
+            if (!clustersRes.ok || !companiesRes.ok) {
+              throw new Error('数据文件加载失败');
+            }
+
+            const clusters = await clustersRes.json();
+            const companies = await companiesRes.json();
+            const meta = metaRes && metaRes.ok ? await metaRes.json() : null;
+
+            this._renderVersion(clusters, companies, meta);
+            this._renderClusterRules(clusters);
+            AIInvest.HeatMap.init('heatmapChart', clusters);
+            AIInvest.Ranking.init(companies);
+
+            AIInvest.Clock.setDataStatus('数据就绪');
+            AIInvest.Clock.setLastUpdate(new Date().toISOString());
+          } catch (err) {
+            console.error('管理后台数据加载失败:', err);
+            AIInvest.Clock.setDataStatus('⚠️ 数据加载失败');
+          }
+        },
+
+        _renderVersion(clusters, companies, meta) {
+          const bar = document.getElementById('dataVersionBar');
+          if (!bar) return;
+          bar.style.display = 'flex';
+
+          const setText = (id, val) => {
+            const el = document.getElementById(id);
+            if (el) el.textContent = val;
+          };
+
+          if (meta) {
+            setText('methodologyVersion', meta.methodology_version || '--');
+            setText('clustersCount', meta.clusters_count || clusters.length);
+            setText('companiesCount', meta.companies_count || companies.length);
+            setText('deepCount', meta.deep_count || '--');
+            if (meta.data_last_updated) {
+              setText('dataSyncTime', new Date(meta.data_last_updated).toLocaleString('zh-CN'));
+            }
+          } else {
+            setText('clustersCount', clusters.length);
+            setText('companiesCount', companies.length);
+            const deep = companies.filter(c => (c.tier || '').toLowerCase() === 'deep').length;
+            setText('deepCount', deep);
+            setText('dataSyncTime', new Date().toLocaleString('zh-CN'));
+          }
+        },
+
+        _renderClusterRules(clusters) {
+          const grid = document.getElementById('clusterRulesGrid');
+          if (!grid) return;
+          // 排序：按 score 降序
+          const sorted = [...clusters].sort((a, b) => (b.score || 0) - (a.score || 0));
+          grid.innerHTML = sorted.map(c => {
+            const grade = (c.grade || 'C').toUpperCase();
+            const subChains = c.sub_chains ?? 0;
+            const companyCount = c.company_count ?? 0;
+            const deepCount = c.deep_count ?? 0;
+            const score = (c.score ?? 0).toFixed(2);
+            return `
+              <div class="cluster-rule-card">
+                <div class="cluster-rule-head">
+                  <div>
+                    <div class="cluster-rule-name">${c.name || ''}</div>
+                    <div class="cluster-rule-name-en">${c.name_en || ''}</div>
+                  </div>
+                  <div class="cluster-rule-grade grade-${grade}">${grade}</div>
+                </div>
+                <div class="cluster-rule-stats">
+                  <div class="cluster-rule-stat">
+                    <span class="cluster-rule-stat-label">综合评分</span>
+                    <span class="cluster-rule-stat-value score">${score}</span>
+                  </div>
+                  <div class="cluster-rule-stat">
+                    <span class="cluster-rule-stat-label">子环节</span>
+                    <span class="cluster-rule-stat-value">${subChains}</span>
+                  </div>
+                  <div class="cluster-rule-stat">
+                    <span class="cluster-rule-stat-label">标的 / Deep</span>
+                    <span class="cluster-rule-stat-value">${companyCount} / ${deepCount}</span>
+                  </div>
+                </div>
+              </div>
+            `;
+          }).join('');
+        }
+      };
+
+      window.addEventListener('DOMContentLoaded', () => Admin.init());
+      global.Admin = Admin;
+    })(window.AIInvest = window.AIInvest || {});
+  </script>
+
+</body>
+</html>

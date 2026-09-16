@@ -1,0 +1,41 @@
+name: market-pulse-snapshot
+
+# 定时刷新 data/market_pulse.json（真实数据源快照，供页面回退与历史序列累积）
+# 时间换算为 UTC（CST = UTC+8）：
+#   A股/港股盘中 09:00-17:00 CST → 01:00-09:00 UTC，周一至周五，每30分钟
+#   美股盘中 21:30-04:00 CST → 13:00-20:00 UTC（夏令时覆盖），周一至周五，每30分钟
+# 注意：GitHub 定时任务在高峰期可能延迟数分钟，页面端另有浏览器实时直连层兜底。
+
+on:
+  schedule:
+    - cron: '*/30 1-9 * * 1-5'    # A股+港股交易时段
+    - cron: '*/30 13-20 * * 1-5'  # 美股交易时段（美东夏令时）
+  workflow_dispatch: {}           # 允许手动触发
+
+permissions:
+  contents: write
+
+jobs:
+  update-snapshot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.11'
+
+      - name: Fetch market pulse snapshot
+        run: python scripts/fetch_market_pulse.py
+
+      - name: Commit snapshot
+        run: |
+          git config user.name "market-pulse-bot"
+          git config user.email "market-pulse-bot@users.noreply.github.com"
+          git add data/market_pulse.json
+          if git diff --cached --quiet; then
+            echo "no change"
+          else
+            git commit -m "chore(pulse): snapshot $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push
+          fi

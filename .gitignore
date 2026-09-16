@@ -1,0 +1,16 @@
+# ── 敏感/个人数据:绝不入库 ──
+data/portfolio.json
+data/accounts.json
+data/*.bak_*.json
+data/reports/
+
+# ── 本地构建产物与历史单文件 ──
+aiinvest_*.html
+aiinvest_admin_*.html
+gansiwande_deploy.zip
+*.zip
+
+# ── 截图与日志 ──
+screenshot*.png
+*.log
+/tmp/

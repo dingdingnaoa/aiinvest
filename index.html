@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A股产业研究与公司筛选平台 — 全球视角的行业热度追踪与深度研究标的池">
+  <title>产业研究与公司筛选 — AI Invest</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- ECharts -->
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
+</head>
+<body>
+
+  <div class="container">
+    <!-- ===== Header ===== -->
+    <header class="header">
+      <div class="header-title-group">
+        <h1 class="header-title">产业研究与公司筛选</h1>
+        <p class="header-subtitle">Global Industry Intelligence & Deep Research Pool · 方法论 v6.1</p>
+      </div>
+      <div class="header-meta">
+        <div class="clock-live" id="liveClock">00:00:00</div>
+        <div class="data-status">
+          <span class="status-dot"></span>
+          <span id="dataStatusText">连接中...</span>
+        </div>
+        <div style="font-size:11px;color:var(--text-tertiary);" id="lastUpdate">数据更新: --</div>
+      </div>
+    </header>
+
+    <!-- ===== Tab Navigation ===== -->
+    <nav class="tab-nav" id="mainTabNav">
+      <button class="tab-btn active" data-tab="tab-pulse">全球脉搏</button>
+      <button class="tab-btn" data-tab="tab-research">研究报告</button>
+      <button class="tab-btn" data-tab="tab-portfolio">投资组合 🔒</button>
+    </nav>
+
+    <!-- ===== Tab Content: GLOBAL MARKET PULSE 全球市场脉搏 ===== -->
+    <div class="tab-content active" id="tab-pulse">
+      <div id="pulseRoot">
+        <div class="pulse-loading">正在连接全球数据源...</div>
+      </div>
+    </div>
+
+    <!-- ===== Tab Content: 研究报告 ===== -->
+    <div class="tab-content" id="tab-research">
+      <!-- 未登录锁定层 -->
+      <div class="login-gate" id="researchGate" style="display:none;">
+        <div class="gate-card">
+          <div class="gate-icon">🔒</div>
+          <h3 class="gate-title">研究报告仅对登录用户开放</h3>
+          <p class="gate-desc">为保护持仓隐私,研究报告只展示登录账号持仓相关的公司深度研究与新闻动态。</p>
+          <button class="btn-primary" id="gateGoLoginBtn">前往登录</button>
+        </div>
+      </div>
+
+      <!-- 登录后:按持仓过滤的研究报告 -->
+      <section class="section" id="researchSection" style="display:none;">
+        <div class="section-header">
+          <div>
+            <h2 class="section-title">研究报告 <span class="section-tag" id="researchScopeTag">持仓组合</span></h2>
+            <p class="section-subtitle" id="researchSubTitle">只展示当前账号持仓公司 · 基于 v5.3 方法论</p>
+          </div>
+        </div>
+
+        <!-- 集群分组卡片 -->
+        <div class="research-clusters" id="researchClusters">
+          <div class="loading" style="grid-column:1/-1;padding:60px 0;">正在加载研究报告...</div>
+        </div>
+
+        <!-- 新闻专栏 -->
+        <div class="card" id="newsSection" style="margin-top: var(--space-lg);">
+          <div class="card-header">
+            <h3 class="card-title">📰 持仓新闻专栏</h3>
+            <span class="news-updated" id="newsUpdatedAt"></span>
+          </div>
+          <p class="news-scope-hint">只收录当前账号持仓公司的新闻与重大信息</p>
+          <div class="news-list" id="newsList">
+            <div class="empty-state">正在加载新闻...</div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ===== Tab Content: 投资组合 ===== -->
+    <div class="tab-content" id="tab-portfolio">
+      <!-- 未登录:登录门 -->
+      <div class="login-gate" id="portfolioGate">
+        <div class="gate-card">
+          <div class="gate-icon">🔐</div>
+          <h3 class="gate-title">投资组合需要登录查看</h3>
+          <p class="gate-desc">持仓数据经密码加密保险箱保护,请输入账号密码解锁。每个账号只能查看自己的持仓。</p>
+          <form class="login-form" id="loginForm" autocomplete="off">
+            <input type="text" id="loginUser" class="search-input login-input" placeholder="账号" autocomplete="username">
+            <input type="password" id="loginPassword" class="search-input login-input" placeholder="密码" autocomplete="current-password">
+            <button type="submit" class="btn-primary" id="loginBtn">登 录</button>
+          </form>
+          <div class="login-error" id="loginError" style="display:none;"></div>
+          <button type="button" class="gate-link-btn" id="activateToggle">🧾 有开通码?点此激活账号</button>
+          <div class="activate-box" id="activateBox" style="display:none;">
+            <textarea id="activateCode" class="login-input" rows="3" placeholder="粘贴主账号发给你的开通码(一段密文,不含密码)"></textarea>
+            <button type="button" class="btn-primary activate-btn" id="activateBtn">激活账号(约数秒)</button>
+            <div class="login-error" id="activateError" style="display:none;"></div>
+          </div>
+          <p class="gate-footnote">🔒 数据以密文存储 · 密码不经过网络传输 · 请妥善保管密码</p>
+        </div>
+      </div>
+
+      <!-- 登录后:持仓内容 -->
+      <section class="section" id="portfolioContent" style="display:none;">
+        <div class="section-header">
+          <div>
+            <h2 class="section-title">投资组合 <span class="user-badge" id="userBadge">👤 --</span></h2>
+            <p class="section-subtitle">持仓管理与估值跟踪 · <span id="portfolioSubCount">--</span></p>
+          </div>
+          <button class="footer-action-btn" id="logoutBtn" title="退出登录并清空本机会话">退出登录</button>
+        </div>
+
+        <!-- 区域A: 持仓汇总 + 录入 -->
+        <div class="card" style="margin-bottom: var(--space-lg);">
+          <div class="card-header">
+            <h3 class="card-title">我的持仓</h3>
+            <div class="portfolio-summary" id="portfolioSummary">
+              <span>总市值: <strong id="totalMarketValue">0.00</strong></span>
+              <span class="portfolio-summary-sep">|</span>
+              <span>总浮盈: <strong id="totalPnl" class="pnl-positive">--</strong></span>
+            </div>
+          </div>
+
+          <!-- 实时持仓KPI仪表盘 -->
+          <div class="portfolio-kpi-row" id="portfolioKpi">
+            <div class="kpi-card kpi-market">
+              <div class="kpi-label">总市值 <span class="kpi-currency">(实时)</span></div>
+              <div class="kpi-value" id="kpiMarketValue">--</div>
+              <div class="kpi-breakdown" id="kpiMarketBreakdown">--</div>
+            </div>
+            <div class="kpi-card kpi-pnl">
+              <div class="kpi-label">实时盈亏 <span class="kpi-currency">(未实现)</span></div>
+              <div class="kpi-value" id="kpiPnlValue">--</div>
+              <div class="kpi-breakdown">
+                <span id="kpiPnlPct">--</span>
+                <span class="kpi-sep">·</span>
+                <span id="kpiCostLabel">成本 --</span>
+              </div>
+            </div>
+            <div class="kpi-card kpi-live">
+              <div class="kpi-label">实时行情<span class="kpi-pulse"></span></div>
+              <div class="kpi-update" id="kpiLastUpdate">尚未拉取</div>
+              <div class="kpi-breakdown">每30秒自动刷新</div>
+            </div>
+          </div>
+
+          <!-- 本地与数据库不一致提示条 -->
+          <div class="sync-notice" id="syncNotice" style="display:none;">
+            <span>⚠️ 检测到本地持仓与数据库不一致（你在此浏览器中做过修改但尚未保存到数据库）</span>
+            <button type="button" id="exportPortfolioBtn2" class="sync-notice-btn">📤 导出保存到数据库</button>
+          </div>
+
+          <!-- 持仓录入表单 -->
+          <div class="position-form" id="positionForm">
+            <select id="positionStock" class="filter-select">
+              <option value="">选择公司...</option>
+            </select>
+            <input type="number" id="positionShares" class="search-input" placeholder="持仓数量 (股)" min="0" step="1" style="max-width:140px;">
+            <input type="number" id="positionCost" class="search-input" placeholder="成本价 (原币种)" step="0.01" style="max-width:140px;">
+            <input type="text" id="positionNote" class="search-input" placeholder="备注 (可选)" style="max-width:200px;">
+            <button id="positionAddBtn" class="btn-primary">添加持仓</button>
+          </div>
+
+          <!-- 纵向持仓卡片 -->
+          <div class="holding-cards" id="positionCards">
+            <div class="empty-state">正在加载持仓...</div>
+          </div>
+        </div>
+
+        <!-- 区域C: 账号管理(仅主账号 admin 可见) -->
+        <div class="card" id="adminAccountsCard" style="display:none; margin-bottom: var(--space-lg);">
+          <div class="card-header">
+            <h3 class="card-title">👥 账号管理 <span class="section-tag">仅主账号</span></h3>
+          </div>
+          <p class="admin-hint">开新号:设定用户名与密码 → 生成开通码发给对方。开通码是<b>纯密文</b>(不含密码,泄露也无法解密持仓);对方在登录页「开通码激活」粘贴即可在本机登录,同时把开通码发给站长固化进网站后,所有设备永久生效。</p>
+          <div class="position-form" id="adminAcctForm">
+            <input type="text" id="newAcctUser" class="search-input" placeholder="用户名 (英文/数字)" style="max-width:160px;">
+            <input type="text" id="newAcctDisplay" class="search-input" placeholder="显示名 (可选)" style="max-width:160px;">
+            <input type="password" id="newAcctPass" class="search-input" placeholder="密码 (至少 10 位)" style="max-width:180px;" autocomplete="new-password">
+            <button type="button" class="footer-action-btn" id="genRandPassBtn" title="生成 16 位随机强密码">🎲 随机强密码</button>
+            <button type="button" class="btn-primary" id="createAcctBtn">生成开通码</button>
+          </div>
+          <div class="login-error" id="adminAcctError" style="display:none;"></div>
+          <div class="activation-code-box" id="codeBox" style="display:none;">
+            <div class="code-head">
+              <span>开通码(发给对方 · 同时发站长固化)</span>
+              <button type="button" class="footer-action-btn" id="copyCodeBtn">📋 复制开通码</button>
+            </div>
+            <textarea id="activationCode" readonly rows="4"></textarea>
+            <p class="code-note">⚠️ 新账号初始持仓为空,对方登录后自行录入;录入后如需固化持仓到保险箱,把「导出」的 JSON 发给站长即可。</p>
+          </div>
+        </div>
+
+        <!-- 区域B: 持仓占比与操作计划（合并表格） -->
+        <div class="card" style="margin-bottom: var(--space-lg);">
+          <div class="card-header">
+            <h3 class="card-title">持仓占比与操作计划</h3>
+          </div>
+          <div class="plan-table-wrap">
+            <table id="weightPlanTable">
+              <thead>
+                <tr>
+                  <th>公司</th>
+                  <th>持仓占比</th>
+                  <th>操作</th>
+                  <th>下季度决策地图</th>
+                </tr>
+              </thead>
+              <tbody id="weightPlanBody">
+                <tr><td colspan="4" class="empty-state">正在加载...</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ===== Footer ===== -->
+    <footer class="footer">
+      <!-- 筛选标准同步信息（原顶部 data-version bar 下移） -->
+      <div class="footer-data-version" id="dataVersionBar" style="display:none;">
+        <span class="data-version-label">筛选标准同步</span>
+        <span>方法论 <strong id="methodologyVersion">v6.1</strong></span>
+        <span class="data-version-sep">|</span>
+        <span>集群: <strong id="clustersCount">--</strong></span>
+        <span class="data-version-sep">|</span>
+        <span>标的: <strong id="companiesCount">--</strong></span>
+        <span class="data-version-sep">|</span>
+        <span>持仓: <strong id="holdingsCount">0</strong></span>
+        <span class="data-version-sync">
+          <span class="data-version-sync-dot"></span>
+          <span id="dataSyncTime">同步中...</span>
+        </span>
+      </div>
+
+      <div class="footer-info">
+        基于 <strong>行业与标的筛选方法论 v6.1</strong> · 全球 12 大产业集群 · 三重交叉分类框架
+      </div>
+
+      <div class="footer-actions">
+        <div class="footer-save-group">
+          <button class="footer-action-btn footer-save-btn" id="saveCloudBtn" title="一键把当前持仓保存到服务器，无需下载">
+            💾 保存到云端
+          </button>
+          <span class="save-status" id="saveCloudStatus"></span>
+        </div>
+        <button class="footer-action-btn footer-export-btn" id="exportPortfolioBtn" title="复制当前持仓数据为 JSON 文本（保存服务不可用时的兜底）">
+          📤 导出
+        </button>
+        <a class="footer-admin-link" href="admin.html">产业研究与公司筛选</a>
+      </div>
+
+      <div class="footer-disclaimer">
+        免责声明：本页面展示的所有行业评分、公司评级仅供研究参考，不构成任何投资建议。
+        投资有风险，决策需谨慎。数据来源包括公开市场信息和行业研究报告。
+      </div>
+    </footer>
+  </div>
+
+  <!-- JavaScript Modules (order matters) -->
+  <script src="js/utils.js"></script>
+  <script src="js/clock.js"></script>
+  <script src="js/heatmap.js"></script>
+  <script src="js/ranking.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/admin-accounts.js"></script>
+  <script src="js/portfolio.js"></script>
+  <script src="js/research.js"></script>
+  <script src="js/market-pulse.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>

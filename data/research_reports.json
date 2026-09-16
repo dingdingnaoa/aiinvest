@@ -1,0 +1,2327 @@
+[
+  {
+    "name": "小米集团",
+    "ticker": "1810.HK",
+    "cluster_id": "02",
+    "cluster_name": "消费科技与OS生态",
+    "rating": "持有",
+    "investment_thesis": "「人车家全生态」消费科技平台，正从硬件公司向生态平台转型过渡期。核心资产是11.6亿AIoT连接设备+7.67亿MAU的高粘性用户底座，互联网服务毛利率76.8%提供真实现金流；汽车是第二曲线（SU7销冠、Q2交付104,199辆+28.2%），高端化突破（ASP 1,351元+25.9%创新高）。但2026Q2营收1,089亿(-6.1%)、经调整净利62.19亿(-42.6%)，受存储涨价+手机出货-26.5%+汽车亏损26亿三重压力。当前PE 16.74x处于历史中低位，但系利润下修所致，拐点（存储回落+汽车盈利）尚未确认，胜率中等。",
+    "upside_potential": "v5.2 复裁决（9/6，基准 9/4）：三情景 40/33/20｜ER_ex/悲观 +2.0% / -29.7%｜现价 28.44 HKD",
+    "target_price": "33 HKD（区间 20-40 HKD）",
+    "report_date": "2026-08-19",
+    "report_md": "data/reports/v5.0/小米/05_策略裁决_小米.md",
+    "methodology": "v5.0",
+    "report_stages": [
+      {
+        "stage": "01",
+        "label": "底层数据",
+        "file": "data/reports/v5.0/小米/01_底层数据_小米.md"
+      },
+      {
+        "stage": "02",
+        "label": "商业逻辑",
+        "file": "data/reports/v5.0/小米/02_商业逻辑_小米.md"
+      },
+      {
+        "stage": "03",
+        "label": "估值模型",
+        "file": "data/reports/v5.0/小米/03_估值模型_小米.md"
+      },
+      {
+        "stage": "04",
+        "label": "多空辩论",
+        "file": "data/reports/v5.0/小米/04_多空辩论_小米.md"
+      },
+      {
+        "stage": "05",
+        "label": "策略裁决",
+        "file": "data/reports/v5.0/小米/05_策略裁决_小米.md"
+      }
+    ]
+  },
+  {
+    "name": "阿里巴巴",
+    "ticker": "BABA/9988.HK",
+    "cluster_id": "04",
+    "cluster_name": "全球电商与本地生活",
+    "rating": "买入",
+    "investment_thesis": "云智能外部收入+45%（22季新高）、AI ARR突破495亿、EBITA margin由9.1%升至11%，验证「AI云重估」主线；AIDC本季EBITA转正、淘天CMR同口径+8%且88VIP破6,200万稳住现金流基本盘；净利润-75%、非GAAP净利-38%系AI资本开支前置所致（FY2027Q1 capex 676.78亿、+75%，FCF -446.7亿），账面现金5,208亿无债务风险，7项硬指标全过、8条红线全未触发；23x前瞻Non-GAAP尚未充分定价云AI溢价，当前价127港元介于Base 166与Bear 108之间，安全边际适中。",
+    "upside_potential": "v5.2 复裁决（9/6，基准 9/4）：三情景 200/165/86｜ER_ex/悲观 +30.9% / -22%｜现价 110.10 HKD",
+    "target_price": "165 HKD（区间 86-200 HKD）",
+    "report_date": "2026-08-20",
+    "report_md": "data/reports/v5.0/阿里巴巴/05_策略裁决_阿里巴巴.md",
+    "methodology": "v5.0",
+    "report_stages": [
+      {
+        "stage": "01",
+        "label": "底层数据",
+        "file": "data/reports/v5.0/阿里巴巴/01_底层数据_阿里巴巴.md"
+      },
+      {
+        "stage": "02",
+        "label": "商业逻辑",
+        "file": "data/reports/v5.0/阿里巴巴/02_商业逻辑_阿里巴巴.md"
+      },
+      {
+        "stage": "03",
+        "label": "估值模型",
+        "file": "data/reports/v5.0/阿里巴巴/03_估值模型_阿里巴巴.md"
+      },
+      {
+        "stage": "04",
+        "label": "多空辩论",
+        "file": "data/reports/v5.0/阿里巴巴/04_多空辩论_阿里巴巴.md"
+      },
+      {
+        "stage": "05",
+        "label": "策略裁决",
+        "file": "data/reports/v5.0/阿里巴巴/05_策略裁决_阿里巴巴.md"
+      }
+    ]
+  },
+  {
+    "name": "拼多多",
+    "ticker": "PDD",
+    "cluster_id": "04",
+    "cluster_name": "全球电商与本地生活",
+    "rating": "买入",
+    "investment_thesis": "「中国第三大电商+全球第二跨境电商Temu+天量净现金」组合体。2025年营收4,318亿(+10%)、净利994亿(-12%)，却以不足阿里一半营收实现利润反超。当前股价对应Forward PE仅7.2x、PEG 0.67x、剔现金PE 3.8x，账上$610亿净现金占市值47%提供每股$43.6硬底。市场过度折价Temu盈利拐点——GMV+92%、亏损率收窄至18%的第二曲线几乎被免费赠送。",
+    "upside_potential": "v5.2 复裁决（9/6，基准 9/4）：三情景 165/120/72｜ER_ex/悲观 +27.4% / -12.4%｜现价 82.21 USD",
+    "target_price": "120 USD（区间 72-165 USD）",
+    "report_date": "2026-08-13",
+    "report_md": "data/reports/v5.0/拼多多/05_策略裁决_拼多多.md",
+    "methodology": "v5.0",
+    "report_stages": [
+      {
+        "stage": "01",
+        "label": "底层数据",
+        "file": "data/reports/v5.0/拼多多/01_底层数据_拼多多.md"
+      },
+      {
+        "stage": "02",
+        "label": "商业逻辑",
+        "file": "data/reports/v5.0/拼多多/02_商业逻辑_拼多多.md"
+      },
+      {
+        "stage": "03",
+        "label": "估值模型",
+        "file": "data/reports/v5.0/拼多多/03_估值模型_拼多多.md"
+      },
+      {
+        "stage": "04",
+        "label": "多空辩论",
+        "file": "data/reports/v5.0/拼多多/04_多空辩论_拼多多.md"
+      },
+      {
+        "stage": "05",
+        "label": "策略裁决",
+        "file": "data/reports/v5.0/拼多多/05_策略裁决_拼多多.md"
+      }
+    ]
+  },
+  {
+    "name": "蔚来汽车",
+    "ticker": "9866.HK / NIO.US",
+    "cluster_id": "06",
+    "cluster_name": "新能源与智能出行",
+    "rating": "增持",
+    "investment_thesis": "中国高端智能纯电+换电龙头拐点实证首次齐全：2026Q2营收321.4亿（+69.1%）、交付107,658辆（+49.4%，Q2新势力最快）、综合毛利率18.4%、整车毛利率18.5%（同比+8.2pct）、GAAP净亏收窄至5.28亿（经营亏损收窄92.9%）、调整后净利+0.26亿连续两季为正、调整后经营利润+2.07亿连续三季为正；现金储备567亿环比+85亿创新高、连续四季正经营现金流、2025年OCF首次全年转正（+29.9亿）。NIO主品牌6月成交均价44.3万超BBA、萤火虫连续15个月高端小车市占第一、换电站4,123座全球独一份可运营网络；但7项硬指标全不通过与~89%负债率（应付账款533亿）决定财务折价未除，2026交付假设下修至~42.9万辆（+30%），评级由Q1版回避/30港元中枢上调至增持/40港元。",
+    "upside_potential": "v5.2 复裁决（9/6，基准 9/4）：三情景 58/37/22｜ER_ex/悲观 +15.9% / -25.4%｜现价 29.50 HKD",
+    "target_price": "37 HKD（区间 22-58 HKD）",
+    "report_date": "2026-09-01",
+    "report_md": "data/reports/v5.0/蔚来/05_策略裁决_蔚来.md",
+    "methodology": "v5.0",
+    "report_stages": [
+      {
+        "stage": "01",
+        "label": "底层数据",
+        "file": "data/reports/v5.0/蔚来/01_底层数据_蔚来.md"
+      },
+      {
+        "stage": "02",
+        "label": "商业逻辑",
+        "file": "data/reports/v5.0/蔚来/02_商业逻辑_蔚来.md"
+      },
+      {
+        "stage": "03",
+        "label": "估值模型",
+        "file": "data/reports/v5.0/蔚来/03_估值模型_蔚来.md"
+      },
+      {
+        "stage": "04",
+        "label": "多空辩论",
+        "file": "data/reports/v5.0/蔚来/04_多空辩论_蔚来.md"
+      },
+      {
+        "stage": "05",
+        "label": "策略裁决",
+        "file": "data/reports/v5.0/蔚来/05_策略裁决_蔚来.md"
+      }
+    ]
+  },
+  {
+    "name": "SpaceX",
+    "ticker": "SPCX",
+    "cluster_id": "10",
+    "cluster_name": "航空航天与防务",
+    "rating": "中性偏多（持有/谨慎买入）",
+    "investment_thesis": "全球唯一「可复用火箭+卫星互联网+军工星盾+AI算力」四位一体平台。星链唯一盈利业务（2026Q2运营利润16.6亿美元、EBITDA率63%、用户1,200万翻倍增长），火箭复用19次构成成本端垄断。但上市不足2月仍净亏损，当前1.93万亿市值对应103倍PS，已把星链垄断、AI期权、星舰革命全部提前兑现——公司伟大，价格偏贵。",
+    "upside_potential": "中性偏多：SOTP合理区间1.0-1.6万亿美元（中枢1.3万亿），当前市值1.93万亿超上沿+20.6%、超中枢+48%。需回调至1.3万亿以下再考虑加仓。",
+    "target_price": "SOTP 1.0-1.6万亿美元",
+    "report_date": "2026-08-13",
+    "report_md": "data/reports/v5.0/SpaceX/05_策略裁决_SpaceX.md",
+    "methodology": "v5.0",
+    "report_stages": [
+      {
+        "stage": "01",
+        "label": "底层数据",
+        "file": "data/reports/v5.0/SpaceX/01_底层数据_SpaceX.md"
+      },
+      {
+        "stage": "02",
+        "label": "商业逻辑",
+        "file": "data/reports/v5.0/SpaceX/02_商业逻辑_SpaceX.md"
+      },
+      {
+        "stage": "03",
+        "label": "估值模型",
+        "file": "data/reports/v5.0/SpaceX/03_估值模型_SpaceX.md"
+      },
+      {
+        "stage": "04",
+        "label": "多空辩论",
+        "file": "data/reports/v5.0/SpaceX/04_多空辩论_SpaceX.md"
+      },
+      {
+        "stage": "05",
+        "label": "策略裁决",
+        "file": "data/reports/v5.0/SpaceX/05_策略裁决_SpaceX.md"
+      }
+    ]
+  },
+  {
+    "name": "MiniMax稀宇科技",
+    "ticker": "0100.HK",
+    "cluster_id": "05",
+    "cluster_name": "AI应用与数字娱乐",
+    "rating": "回避",
+    "investment_thesis": "中国AI大模型『六强』中唯一实现全球化商业闭环的公司：ARR 5个月从1亿飙升至3亿美元+、企业/开发者客户半年+5倍至100万+、H3视频模型开源24小时登顶HuggingFace。8月6日调入港股通、8月13日纳入恒生科技100指数，流动性重估启动。但当前PS(2026E) 55-60x已隐含『2027收入6亿美元×25x』的完美预期，安全边际消失——基本面真实改善，价格已从『低估』回到『合理』，从标配/高赔率调整为中性/持有。",
+    "upside_potential": "v5.2 复裁决（9/6，基准 9/4）：三情景 506/360/185｜ER_ex/悲观 -13.7% / -50%｜现价 370 HKD",
+    "target_price": "360 HKD（区间 185-506 HKD）",
+    "report_date": "2026-08-14",
+    "report_md": "data/reports/v5.0/MiniMax/05_策略裁决_MiniMax.md",
+    "methodology": "v5.0",
+    "report_stages": [
+      {
+        "stage": "01",
+        "label": "底层数据",
+        "file": "data/reports/v5.0/MiniMax/01_底层数据_MiniMax.md"
+      },
+      {
+        "stage": "02",
+        "label": "商业逻辑",
+        "file": "data/reports/v5.0/MiniMax/02_商业逻辑_MiniMax.md"
+      },
+      {
+        "stage": "03",
+        "label": "估值模型",
+        "file": "data/reports/v5.0/MiniMax/03_估值模型_MiniMax.md"
+      },
+      {
+        "stage": "04",
+        "label": "多空辩论",
+        "file": "data/reports/v5.0/MiniMax/04_多空辩论_MiniMax.md"
+      },
+      {
+        "stage": "05",
+        "label": "策略裁决",
+        "file": "data/reports/v5.0/MiniMax/05_策略裁决_MiniMax.md"
+      }
+    ]
+  },
+  {
+    "name": "台积电",
+    "ticker": "TSM",
+    "cluster_id": "01",
+    "cluster_name": "AI与半导体产业链",
+    "rating": "买入（台北通道 2-3%）｜ADR 持有等待",
+    "investment_thesis": "双通道裁决分化：台北通道 ER_ex +8.9pct 达标给预算；ADR 因溢价 13.6% 导致 ER_ex -4.1pct 不及格，明确等待 $385 首建触发。基本面 Q2 毛利率 67.7% 创纪录、8 月营收同比 +53.3%，N2 溢价约 50% 且年内产能订满，AI 需求结构性支撑。",
+    "upside_potential": "ADR：ER +7.9%（ER_ex -4.1pct，剔除溢价后不及格）；台北：ER +20.9%（ER_ex +8.9pct，及格线12%强地缘+2pct）",
+    "target_price": "490 USD（区间 310-580 USD）",
+    "report_date": "2026-09-14",
+    "report_md": "data/reports/v5.3/台积电_TSM/投资决策报告_TSMC_20260914.md",
+    "methodology": "v5.3",
+    "report_stages": [
+      {
+        "stage": "01",
+        "label": "v5.3 决策报告",
+        "file": "data/reports/v5.3/台积电_TSM/投资决策报告_TSMC_20260914.md"
+      },
+      {
+        "stage": "02",
+        "label": "v5.3 完整分析",
+        "file": "data/reports/v5.3/台积电_TSM/完整分析_TSMC_20260914.md"
+      },
+      {
+        "stage": "03",
+        "label": "底层数据",
+        "file": "data/reports/v5.0/TSMC/01_底层数据_TSMC.md"
+      },
+      {
+        "stage": "04",
+        "label": "商业逻辑",
+        "file": "data/reports/v5.0/TSMC/02_商业逻辑_TSMC.md"
+      },
+      {
+        "stage": "05",
+        "label": "估值模型",
+        "file": "data/reports/v5.0/TSMC/03_估值模型_TSMC.md"
+      },
+      {
+        "stage": "06",
+        "label": "多空辩论",
+        "file": "data/reports/v5.0/TSMC/04_多空辩论_TSMC.md"
+      },
+      {
+        "stage": "07",
+        "label": "策略裁决",
+        "file": "data/reports/v5.0/TSMC/05_策略裁决_TSMC.md"
+      }
+    ]
+  },
+  {
+    "name": "微软",
+    "ticker": "MSFT",
+    "cluster_id": "01",
+    "cluster_name": "AI与半导体产业链",
+    "rating": "买入",
+    "investment_thesis": "AI 基建最大买家与企业 AI 分销入口：Azure 增速 40%→43%→指引 +45% 连续加速、年收入破 1000 亿；商业 RPO 6780 亿 +84% 约为营收 2 倍；Copilot 席位单季净增 1000 万至 3000 万+。估值压缩（YTD 一度 -18%，七巨头最弱）源于 capex 侵蚀 FCF 与 OpenAI 集中度的「质量疑虑」而非「需求证伪」，约 800 亿 Azure 订单因电力无法交付、连续多季供给不足，属错杀与基本面分化讨论核心。",
+    "upside_potential": "报告未给 ER 测算；forward P/E 约 25.3x（FY27E 共识 19.72-19.75）处自身五年低位；共识目标价隐含约 +13%",
+    "target_price": "430-665美元（中枢565）",
+    "report_date": "2026-09-14",
+    "report_md": "data/reports/v5.3/微软_MSFT/投资决策报告_Microsoft_20260914.md",
+    "methodology": "v5.3",
+    "report_stages": [
+      {
+        "stage": "01",
+        "label": "v5.3 决策报告",
+        "file": "data/reports/v5.3/微软_MSFT/投资决策报告_Microsoft_20260914.md"
+      },
+      {
+        "stage": "02",
+        "label": "v5.3 完整分析",
+        "file": "data/reports/v5.3/微软_MSFT/完整分析_Microsoft_20260914.md"
+      },
+      {
+        "stage": "03",
+        "label": "底层数据",
+        "file": "data/reports/v5.0/Microsoft/01_底层数据_Microsoft.md"
+      },
+      {
+        "stage": "04",
+        "label": "商业逻辑",
+        "file": "data/reports/v5.0/Microsoft/02_商业逻辑_Microsoft.md"
+      },
+      {
+        "stage": "05",
+        "label": "估值模型",
+        "file": "data/reports/v5.0/Microsoft/03_估值模型_Microsoft.md"
+      },
+      {
+        "stage": "06",
+        "label": "多空辩论",
+        "file": "data/reports/v5.0/Microsoft/04_多空辩论_Microsoft.md"
+      },
+      {
+        "stage": "07",
+        "label": "策略裁决",
+        "file": "data/reports/v5.0/Microsoft/05_策略裁决_Microsoft.md"
+      }
+    ]
+  },
+  {
+    "name": "苹果",
+    "ticker": "AAPL",
+    "cluster_id": "02",
+    "cluster_name": "消费科技与OS生态",
+    "rating": "回避",
+    "investment_thesis": "商业质量 A+ 的全球最优现金机器（FCF 约 1400 亿/年 + 千亿回购 + 净现金 620 亿），但在 37.9x FY26E 的十年高位估值上，监管四线侵蚀（美国 0% 外链/欧盟 26% 新费率/日本 10-21%/韩国待罚）+ 内存「百年一遇」涨价 + FY27 EPS 下修趋势（90 天 6 升 24 降）已把预期回报打到 1% 以下。市场对其「AI 避风港」的溢价本身即最大风险敞口——SOTP 低于市价约 40%。9/14 黑天鹅当日逆势 +0.70% 验证防御属性，但防御是相对的，Bear 情景仍可能跟跌 25%。",
+    "upside_potential": "Bull +22.5% / Base +3.1% / Bear -25.3%；ER +0.9%，ER_ex -9.1%（及格线 10%）直接 D 档；OR 0.12（赔率极差）；D_Bear -25.3%；卖方平均目标价 324.4-335.9 已低于或贴合现价",
+    "target_price": "345 USD（区间 250-410 USD）",
+    "report_date": "2026-09-14",
+    "report_md": "data/reports/v5.3/苹果_AAPL/投资决策报告_Apple_20260914.md",
+    "methodology": "v5.3",
+    "report_stages": [
+      {
+        "stage": "01",
+        "label": "v5.3 决策报告",
+        "file": "data/reports/v5.3/苹果_AAPL/投资决策报告_Apple_20260914.md"
+      },
+      {
+        "stage": "02",
+        "label": "v5.3 完整分析",
+        "file": "data/reports/v5.3/苹果_AAPL/完整分析_Apple_20260914.md"
+      },
+      {
+        "stage": "03",
+        "label": "底层数据",
+        "file": "data/reports/v5.0/Apple/01_底层数据_Apple.md"
+      },
+      {
+        "stage": "04",
+        "label": "商业逻辑",
+        "file": "data/reports/v5.0/Apple/02_商业逻辑_Apple.md"
+      },
+      {
+        "stage": "05",
+        "label": "估值模型",
+        "file": "data/reports/v5.0/Apple/03_估值模型_Apple.md"
+      },
+      {
+        "stage": "06",
+        "label": "多空辩论",
+        "file": "data/reports/v5.0/Apple/04_多空辩论_Apple.md"
+      },
+      {
+        "stage": "07",
+        "label": "策略裁决",
+        "file": "data/reports/v5.0/Apple/05_策略裁决_Apple.md"
+      }
+    ]
+  },
+  {
+    "name": "Alphabet",
+    "ticker": "GOOGL",
+    "cluster_id": "03",
+    "cluster_name": "企业软件与数字广告平台",
+    "rating": "持有",
+    "investment_thesis": "全栈 AI 收租人（质量分良偏优）：云 +82%、backlog 5,140 亿 = 5 倍年化收入、TPU 从自用变外售产品线、Search 连续 6 季 17-19% 增长。但现价已按 2027 乐观情景付定金——正常化 PE 约 35x、Q2 FCF -59 亿（上市以来首次为负）、回购归零、2027 capex 再上台阶。ER 门不过即等待，质量分不豁免。",
+    "upside_potential": "Bull +36.0% / Base +9.9% / Bear -29.1%；ER +6.7%，ER_ex -3.3pct（及格线10%）落 D 档；OR 0.34；D_Bear -29.1%",
+    "target_price": "380 USD（区间 245-470 USD）",
+    "report_date": "2026-09-14",
+    "report_md": "data/reports/v5.3/谷歌_GOOGL/投资决策报告_Google_20260914.md",
+    "methodology": "v5.3",
+    "report_stages": [
+      {
+        "stage": "01",
+        "label": "v5.3 决策报告",
+        "file": "data/reports/v5.3/谷歌_GOOGL/投资决策报告_Google_20260914.md"
+      },
+      {
+        "stage": "02",
+        "label": "v5.3 完整分析",
+        "file": "data/reports/v5.3/谷歌_GOOGL/完整分析_Google_20260914.md"
+      },
+      {
+        "stage": "03",
+        "label": "底层数据",
+        "file": "data/reports/v5.0/Alphabet/01_底层数据_Alphabet.md"
+      },
+      {
+        "stage": "04",
+        "label": "商业逻辑",
+        "file": "data/reports/v5.0/Alphabet/02_商业逻辑_Alphabet.md"
+      },
+      {
+        "stage": "05",
+        "label": "估值模型",
+        "file": "data/reports/v5.0/Alphabet/03_估值模型_Alphabet.md"
+      },
+      {
+        "stage": "06",
+        "label": "多空辩论",
+        "file": "data/reports/v5.0/Alphabet/04_多空辩论_Alphabet.md"
+      },
+      {
+        "stage": "07",
+        "label": "策略裁决",
+        "file": "data/reports/v5.0/Alphabet/05_策略裁决_Alphabet.md"
+      }
+    ]
+  },
+  {
+    "name": "Meta",
+    "ticker": "META",
+    "cluster_id": "03",
+    "cluster_name": "企业软件与数字广告平台",
+    "rating": "增持（首次覆盖）",
+    "investment_thesis": "拥有36亿日活社交生态+AI广告引擎(GEM转化+15.7%)的数字广告巨头。2026Q2营收608亿(+28%)达指引上限，广告收入594亿(+27%)量+14%+价+12%双升，Instagram 20亿、Threads 5亿突破。剔除一次性费用后营业利润+9%，核心广告业务盈利健康(利润率39%)。风险在于capex+83%压制FCF(-91%)与净利(-14%)，但AI广告引擎是五巨头中变现最直接的。PE 21.2x与增速匹配。",
+    "upside_potential": "目标价650美元（区间470-800），上行+10%。AI广告引擎持续提升转化、企业AI计算服务商业化、Reality Labs AI眼镜放量、Q3财报超指引是核心催化剂。",
+    "target_price": "470-800美元（中枢650）",
+    "report_date": "2026-08-16",
+    "report_md": "data/reports/v5.0/Meta/05_策略裁决_Meta.md",
+    "methodology": "v5.0",
+    "report_stages": [
+      {
+        "stage": "01",
+        "label": "底层数据",
+        "file": "data/reports/v5.0/Meta/01_底层数据_Meta.md"
+      },
+      {
+        "stage": "02",
+        "label": "商业逻辑",
+        "file": "data/reports/v5.0/Meta/02_商业逻辑_Meta.md"
+      },
+      {
+        "stage": "03",
+        "label": "估值模型",
+        "file": "data/reports/v5.0/Meta/03_估值模型_Meta.md"
+      },
+      {
+        "stage": "04",
+        "label": "多空辩论",
+        "file": "data/reports/v5.0/Meta/04_多空辩论_Meta.md"
+      },
+      {
+        "stage": "05",
+        "label": "策略裁决",
+        "file": "data/reports/v5.0/Meta/05_策略裁决_Meta.md"
+      }
+    ]
+  },
+  {
+    "name": "Amazon",
+    "ticker": "AMZN",
+    "cluster_id": "04",
+    "cluster_name": "全球电商与本地生活",
+    "rating": "增持（受限额度起步）",
+    "investment_thesis": "backlog 4,960亿+Trainium双绑定=订单分子确定性，9/12-14事件只伤估值分母不伤订单分子；ER_ex +7.6%、OR 1.60、质量分A，允许给预算，但加息与Anthropic单点敞口要求低配起步、触发价加仓。",
+    "upside_potential": "+17.6%（ER期望回报）",
+    "target_price": "300 USD（区间 220-350 USD）",
+    "report_date": "2026-09-14",
+    "report_md": "data/reports/v5.3/亚马逊_AMZN/投资决策报告_Amazon_20260914.md",
+    "methodology": "v5.3",
+    "report_stages": [
+      {
+        "stage": "01",
+        "label": "v5.3 决策报告",
+        "file": "data/reports/v5.3/亚马逊_AMZN/投资决策报告_Amazon_20260914.md"
+      },
+      {
+        "stage": "03",
+        "label": "底层数据",
+        "file": "data/reports/v5.0/Amazon/01_底层数据_Amazon.md"
+      },
+      {
+        "stage": "04",
+        "label": "商业逻辑",
+        "file": "data/reports/v5.0/Amazon/02_商业逻辑_Amazon.md"
+      },
+      {
+        "stage": "05",
+        "label": "估值模型",
+        "file": "data/reports/v5.0/Amazon/03_估值模型_Amazon.md"
+      },
+      {
+        "stage": "06",
+        "label": "多空辩论",
+        "file": "data/reports/v5.0/Amazon/04_多空辩论_Amazon.md"
+      },
+      {
+        "stage": "07",
+        "label": "策略裁决",
+        "file": "data/reports/v5.0/Amazon/05_策略裁决_Amazon.md"
+      }
+    ]
+  },
+  {
+    "name": "ASML",
+    "ticker": "ASML",
+    "cluster_id": "01",
+    "cluster_name": "AI与半导体产业链",
+    "rating": "持有",
+    "investment_thesis": "基本面为真（EUV 100% 垄断、2027 low-NA 产能订单接近全覆盖、2026 指引二次上调至 €43-45B），但现价已计入 Base 情景的 2027-2028 利润与中枢估值上沿：TTM PE 53-57x 处历史带顶部，Base 仅 +9.5%，5 年跨周期口径年化为负。分歧全在价格而非基本面。",
+    "upside_potential": "Bull +41.3% / Base +9.5% / Bear -49.9%；ER +4.2%（12个月口径），ER_ex -7.8pct（及格线12%含强周期+2pct）不及格",
+    "target_price": "1860 USD（区间 850-2400 USD）",
+    "report_date": "2026-09-14",
+    "report_md": "data/reports/v5.3/阿斯麦_ASML/投资决策报告_ASML_20260914.md",
+    "methodology": "v5.3",
+    "report_stages": [
+      {
+        "stage": "01",
+        "label": "v5.3 决策报告",
+        "file": "data/reports/v5.3/阿斯麦_ASML/投资决策报告_ASML_20260914.md"
+      },
+      {
+        "stage": "02",
+        "label": "v5.3 完整分析",
+        "file": "data/reports/v5.3/阿斯麦_ASML/完整分析_ASML_20260914.md"
+      },
+      {
+        "stage": "03",
+        "label": "底层数据",
+        "file": "data/reports/v5.0/ASML/01_底层数据_ASML.md"
+      },
+      {
+        "stage": "04",
+        "label": "商业逻辑",
+        "file": "data/reports/v5.0/ASML/02_商业逻辑_ASML.md"
+      },
+      {
+        "stage": "05",
+        "label": "估值模型",
+        "file": "data/reports/v5.0/ASML/03_估值模型_ASML.md"
+      },
+      {
+        "stage": "06",
+        "label": "多空辩论",
+        "file": "data/reports/v5.0/ASML/04_多空辩论_ASML.md"
+      },
+      {
+        "stage": "07",
+        "label": "策略裁决",
+        "file": "data/reports/v5.0/ASML/05_策略裁决_ASML.md"
+      }
+    ]
+  },
+  {
+    "name": "腾讯控股",
+    "ticker": "0700.HK",
+    "cluster_id": "03",
+    "cluster_name": "企业软件与数字广告平台",
+    "rating": "买入",
+    "report_date": "2026-08-14",
+    "target_price": "570 HKD（区间 385-750 HKD）",
+    "investment_thesis": "基于2026Q2财报（8/12披露）：广告+游戏双引擎，视频号商业化加速，AI资本开支周期下利润释放稳健。当前股价对应2026E PE约19x，盈利质量与回购注销支撑估值修复。",
+    "upside_potential": "v5.2 复裁决（9/6，基准 9/4）：三情景 750/570/385｜ER_ex/悲观 +19.4% / -13.1%｜现价 442.80 HKD",
+    "report_md": "data/reports/v5.0/腾讯/05_策略裁决_腾讯.md",
+    "methodology": "v5.0",
+    "report_stages": [
+      {
+        "stage": "01",
+        "label": "底层数据",
+        "file": "data/reports/v5.0/腾讯/01_底层数据_腾讯.md"
+      },
+      {
+        "stage": "02",
+        "label": "商业逻辑",
+        "file": "data/reports/v5.0/腾讯/02_商业逻辑_腾讯.md"
+      },
+      {
+        "stage": "03",
+        "label": "估值模型",
+        "file": "data/reports/v5.0/腾讯/03_估值模型_腾讯.md"
+      },
+      {
+        "stage": "04",
+        "label": "多空辩论",
+        "file": "data/reports/v5.0/腾讯/04_多空辩论_腾讯.md"
+      },
+      {
+        "stage": "05",
+        "label": "策略裁决",
+        "file": "data/reports/v5.0/腾讯/05_策略裁决_腾讯.md"
+      }
+    ]
+  },
+  {
+    "name": "泡泡玛特",
+    "ticker": "9992.HK",
+    "cluster_id": "09",
+    "cluster_name": "全球消费品牌",
+    "rating": "持有",
+    "investment_thesis": "全球IP潮玩龙头，6大IP破10亿、星星人+580%验证多IP矩阵接棒能力，H1营收171.73亿（+23.8%）、经调整净利51.6亿、净利率30%、毛利率69.7%处消费行业顶端，7项财务硬指标全过、8条红线全未触发，资产质量顶级；但增速从此前100%+降档至23.8%、海外收入-11%尚未反转、管理层指引谨慎，腰斩后~18x PE已回归合理却缺乏短期催化剂，多空在「成长叙事 vs 盈利质量」上各占一半。",
+    "upside_potential": "v5.2 复裁决（9/6，基准 9/4）：三情景 238/184/110｜ER_ex/悲观 +3.5% / -28.6%｜现价 154.00 HKD",
+    "target_price": "184 HKD（区间 110-238 HKD）",
+    "report_date": "2026-08-20",
+    "report_md": "data/reports/v5.0/泡泡玛特/05_策略裁决_泡泡玛特.md",
+    "methodology": "v5.0",
+    "report_stages": [
+      {
+        "stage": "01",
+        "label": "底层数据",
+        "file": "data/reports/v5.0/泡泡玛特/01_底层数据_泡泡玛特.md"
+      },
+      {
+        "stage": "02",
+        "label": "商业逻辑",
+        "file": "data/reports/v5.0/泡泡玛特/02_商业逻辑_泡泡玛特.md"
+      },
+      {
+        "stage": "03",
+        "label": "估值模型",
+        "file": "data/reports/v5.0/泡泡玛特/03_估值模型_泡泡玛特.md"
+      },
+      {
+        "stage": "04",
+        "label": "多空辩论",
+        "file": "data/reports/v5.0/泡泡玛特/04_多空辩论_泡泡玛特.md"
+      },
+      {
+        "stage": "05",
+        "label": "策略裁决",
+        "file": "data/reports/v5.0/泡泡玛特/05_策略裁决_泡泡玛特.md"
+      }
+    ]
+  },
+  {
+    "name": "京东集团",
+    "ticker": "9618.HK",
+    "cluster_id": "04",
+    "cluster_name": "全球电商与本地生活",
+    "rating": "买入",
+    "investment_thesis": "利润拐点确立：2026Q2 Non-GAAP净利89亿（+20.3%，连续两季改善）、京东零售经营利润率4.6%创大促季历史新高（广告+8.3%驱动的结构优化而非砍费）、单季FCF 318亿（+44.6%）、净现金2,351亿占市值82%；前瞻PE ~8.5x为中国电商最低，7项硬指标6过1临界、8条红线全未触发。风险在于商品收入-2.9%尚未转正、外卖（亏损98.5亿、减亏49亿）可持续性仍需观察；上行37% vs 下行17%，赔率显著偏多。",
+    "upside_potential": "v5.2 复裁决（9/6，基准 9/4）：三情景 215/155/96｜ER_ex/悲观 +31.6% / -13.0%｜现价 110.40 HKD",
+    "target_price": "155 HKD（区间 96-215 HKD）",
+    "report_date": "2026-08-24",
+    "report_md": "data/reports/v5.0/京东/05_策略裁决_京东.md",
+    "methodology": "v5.0",
+    "report_stages": [
+      {
+        "stage": "01",
+        "label": "底层数据",
+        "file": "data/reports/v5.0/京东/01_底层数据_京东.md"
+      },
+      {
+        "stage": "02",
+        "label": "商业逻辑",
+        "file": "data/reports/v5.0/京东/02_商业逻辑_京东.md"
+      },
+      {
+        "stage": "03",
+        "label": "估值模型",
+        "file": "data/reports/v5.0/京东/03_估值模型_京东.md"
+      },
+      {
+        "stage": "04",
+        "label": "多空辩论",
+        "file": "data/reports/v5.0/京东/04_多空辩论_京东.md"
+      },
+      {
+        "stage": "05",
+        "label": "策略裁决",
+        "file": "data/reports/v5.0/京东/05_策略裁决_京东.md"
+      }
+    ]
+  },
+  {
+    "name": "吉利汽车",
+    "ticker": "0175.HK",
+    "cluster_id": "06",
+    "cluster_name": "新能源与智能出行",
+    "rating": "买入",
+    "investment_thesis": "「一个吉利」整合见效：2026H1收入1,736亿（+15%）、核心净利96.8亿（+46%）、单车净利6,806元（+45%），核心净利率5.6%为行业均值1.6%的3.5倍；出海H1销量47.4万（+158%）全年目标上调至92万辆、12座海外工厂覆盖114个市场，极氪（客单价35万）高端化与银河、领克、中国星构成5-40万全价格带；7项硬指标全过、8条红线全未触发，18.4x PE对应PEG 0.61显著低估30%增速。风险为行业价格战、海外关税与治理过渡期。",
+    "upside_potential": "v5.2 复裁决（9/6，基准 9/4）：三情景 31.0/25.0/15.5｜ER_ex/悲观 +31.4% / -10.3%｜现价 17.28 HKD",
+    "target_price": "25 HKD（区间 15.5-31 HKD）",
+    "report_date": "2026-08-19",
+    "report_md": "data/reports/v5.0/吉利汽车/05_策略裁决_吉利汽车.md",
+    "methodology": "v5.0",
+    "report_stages": [
+      {
+        "stage": "01",
+        "label": "底层数据",
+        "file": "data/reports/v5.0/吉利汽车/01_底层数据_吉利汽车.md"
+      },
+      {
+        "stage": "02",
+        "label": "商业逻辑",
+        "file": "data/reports/v5.0/吉利汽车/02_商业逻辑_吉利汽车.md"
+      },
+      {
+        "stage": "03",
+        "label": "估值模型",
+        "file": "data/reports/v5.0/吉利汽车/03_估值模型_吉利汽车.md"
+      },
+      {
+        "stage": "04",
+        "label": "多空辩论",
+        "file": "data/reports/v5.0/吉利汽车/04_多空辩论_吉利汽车.md"
+      },
+      {
+        "stage": "05",
+        "label": "策略裁决",
+        "file": "data/reports/v5.0/吉利汽车/05_策略裁决_吉利汽车.md"
+      }
+    ]
+  },
+  {
+    "name": "上纬新材",
+    "ticker": "688585.SH",
+    "cluster_id": "11",
+    "cluster_name": "工业自动化与机器人",
+    "rating": "回避",
+    "investment_thesis": "智元机器人入主、稚晖君任董事长带来顶级赛道与资源（真实正面），但机器人业务0收入、H1研发1.64亿、归母净利-1.67亿（-656.97%）由盈转亏、Q2亏损环比扩大205%；615亿市值相对Base情景130亿（合理中枢~32元）溢价+373%，即便2028年兑现40亿收入、按12x PS亦仅支撑480亿；激励目标只考核收入不考核净利润。7项硬指标3项不达标、8条红线触发3条（博傻/无法承受归零/别人都在买），构成完整否决链——好故事、坏价格。",
+    "upside_potential": "v5.2 复裁决（9/6，基准 9/4）：三情景 80/28/20｜ER_ex/悲观 -85% / -85.6%｜现价 139.37",
+    "target_price": "28（区间 20-80）",
+    "report_date": "2026-08-19",
+    "report_md": "data/reports/v5.0/上纬新材/05_策略裁决_上纬新材.md",
+    "methodology": "v5.0",
+    "report_stages": [
+      {
+        "stage": "01",
+        "label": "底层数据",
+        "file": "data/reports/v5.0/上纬新材/01_底层数据_上纬新材.md"
+      },
+      {
+        "stage": "02",
+        "label": "商业逻辑",
+        "file": "data/reports/v5.0/上纬新材/02_商业逻辑_上纬新材.md"
+      },
+      {
+        "stage": "03",
+        "label": "估值模型",
+        "file": "data/reports/v5.0/上纬新材/03_估值模型_上纬新材.md"
+      },
+      {
+        "stage": "04",
+        "label": "多空辩论",
+        "file": "data/reports/v5.0/上纬新材/04_多空辩论_上纬新材.md"
+      },
+      {
+        "stage": "05",
+        "label": "策略裁决",
+        "file": "data/reports/v5.0/上纬新材/05_策略裁决_上纬新材.md"
+      }
+    ]
+  },
+  {
+    "name": "中际旭创",
+    "ticker": "300308.SZ / 03308.HK",
+    "cluster_id": "01",
+    "cluster_name": "AI与半导体产业链",
+    "rating": "增持",
+    "investment_thesis": "全球光模块龙头（连续五年收入份额第一、22.1%），1.6T全球市占50-70%、英伟达1.6T采购份额~80%，硅光自研成本低15-32%、良率95%。2026H1营收417.78亿（+182.5%）、归母净利136.51亿（+241.7%）半年超2025全年、毛利率46.59%创历史新高，订单锁定2026全年92%、2027年40%、英伟达排期至2027年底。2026E动态~30x、2027E ~18x、PEG<0.3，增长快于估值膨胀；H股募资后净现金~500亿。对机构一致目标1,444元按现金流质量（H1 OCF/净利0.13、锁料性占款）与客户集中（英伟达~60%）折价25-30%至1,050元，属「信任但验证」的中枢。",
+    "upside_potential": "v5.2 复裁决（9/6，基准 9/4）：三情景 1375/1050/450｜ER_ex/悲观 +10.6% / -44.7%｜现价 814.00",
+    "target_price": "1050（区间 450-1375）",
+    "report_date": "2026-09-01",
+    "report_md": "data/reports/v5.0/中际旭创/05_策略裁决_中际旭创.md",
+    "methodology": "v5.0",
+    "report_stages": [
+      {
+        "stage": "01",
+        "label": "底层数据",
+        "file": "data/reports/v5.0/中际旭创/01_底层数据_中际旭创.md"
+      },
+      {
+        "stage": "02",
+        "label": "商业逻辑",
+        "file": "data/reports/v5.0/中际旭创/02_商业逻辑_中际旭创.md"
+      },
+      {
+        "stage": "03",
+        "label": "估值模型",
+        "file": "data/reports/v5.0/中际旭创/03_估值模型_中际旭创.md"
+      },
+      {
+        "stage": "04",
+        "label": "多空辩论",
+        "file": "data/reports/v5.0/中际旭创/04_多空辩论_中际旭创.md"
+      },
+      {
+        "stage": "05",
+        "label": "策略裁决",
+        "file": "data/reports/v5.0/中际旭创/05_策略裁决_中际旭创.md"
+      }
+    ]
+  },
+  {
+    "name": "新易盛",
+    "ticker": "300502.SZ",
+    "cluster_id": "01",
+    "cluster_name": "AI与半导体产业链",
+    "rating": "增持",
+    "investment_thesis": "全球第二大光模块厂商、AI算力光互连核心资产：2026H1营收209.1亿（+100.3%）、净利75.29亿（+91.0%）、Q2单季净利47.49亿环比+70.8%、毛利率48.46%，ROE 72.75%行业第5。1.6T自2026Q2放量（英伟达链二供30-40%、Meta LRO独家、亚马逊导入），2027年行业1.6T需求9,000万只（+200%）、订单能见度覆盖2028年；LPO全球60-75%独供Meta+硅光自供75-80%构成降价缓冲。~26.9x 2026E/~15.1x 2027E低于历史均值28x，实质无有息负债、资产负债表极干净；隐忧为2026H1净现比降至~21%的备货占款与研发费率仅2.1%。",
+    "upside_potential": "v5.2 复裁决（9/6，基准 9/4）：三情景 660/500/200｜ER_ex/悲观 +10.5% / -48.2%｜现价 386.00",
+    "target_price": "500（区间 200-660）",
+    "report_date": "2026-09-01",
+    "report_md": "data/reports/v5.0/新易盛/05_策略裁决_新易盛.md",
+    "methodology": "v5.0",
+    "report_stages": [
+      {
+        "stage": "01",
+        "label": "底层数据",
+        "file": "data/reports/v5.0/新易盛/01_底层数据_新易盛.md"
+      },
+      {
+        "stage": "02",
+        "label": "商业逻辑",
+        "file": "data/reports/v5.0/新易盛/02_商业逻辑_新易盛.md"
+      },
+      {
+        "stage": "03",
+        "label": "估值模型",
+        "file": "data/reports/v5.0/新易盛/03_估值模型_新易盛.md"
+      },
+      {
+        "stage": "04",
+        "label": "多空辩论",
+        "file": "data/reports/v5.0/新易盛/04_多空辩论_新易盛.md"
+      },
+      {
+        "stage": "05",
+        "label": "策略裁决",
+        "file": "data/reports/v5.0/新易盛/05_策略裁决_新易盛.md"
+      }
+    ]
+  },
+  {
+    "name": "百度",
+    "ticker": "BIDU.US / 9888.HK",
+    "cluster_id": "01",
+    "cluster_name": "AI与半导体产业链",
+    "rating": "买入",
+    "investment_thesis": "AI转型期的资产负债表定价机会：净现金2,831亿超市值（约2,430亿），AI新业务占核心收入50%（智能云+50%、GPU云+283%），昆仑芯2026H1订单30万卡（国产AI芯片第三）、A+H上市推进；广告连续8季下滑但降幅首次收窄（-22%→-19%），Q2核心Non-GAAP经营利润38亿超预期5.5%、OCF连续4季为正。净利-64%系汇兑+投入周期而非主业恶化，真正问题是capex翻倍致FCF -79.5亿。当前价$95.28贴近空方Bear锚（大摩$80），综合目标$125系在$149-160估值上再折让19%留安全边际——胜率证据未齐、赔率明显不对称，故给增持+分批而非一次性重仓。",
+    "upside_potential": "v5.2 复裁决（9/6，基准 9/4）：三情景 185/140/85｜ER_ex/悲观 +34.4% / -11.4%｜现价 95.90 HKD",
+    "target_price": "140 HKD（区间 85-185 HKD）",
+    "report_date": "2026-09-01",
+    "report_md": "data/reports/v5.0/百度/05_策略裁决_百度.md",
+    "methodology": "v5.0",
+    "report_stages": [
+      {
+        "stage": "01",
+        "label": "底层数据",
+        "file": "data/reports/v5.0/百度/01_底层数据_百度.md"
+      },
+      {
+        "stage": "02",
+        "label": "商业逻辑",
+        "file": "data/reports/v5.0/百度/02_商业逻辑_百度.md"
+      },
+      {
+        "stage": "03",
+        "label": "估值模型",
+        "file": "data/reports/v5.0/百度/03_估值模型_百度.md"
+      },
+      {
+        "stage": "04",
+        "label": "多空辩论",
+        "file": "data/reports/v5.0/百度/04_多空辩论_百度.md"
+      },
+      {
+        "stage": "05",
+        "label": "策略裁决",
+        "file": "data/reports/v5.0/百度/05_策略裁决_百度.md"
+      }
+    ]
+  },
+  {
+    "name": "网易",
+    "ticker": "9999.HK / NTES.US",
+    "cluster_id": "05",
+    "cluster_name": "AI应用与数字娱乐",
+    "rating": "买入",
+    "investment_thesis": "中国自研游戏双寡头：2026Q2营收301亿（+7.9%）与游戏收入250亿（+9.7%）双超预期，毛利率70.4%创历史新高、营业利润+33%，净利-18.6%纯属34亿投资浮亏+汇兑的一次性扰动。长青游戏基本盘创纪录（梦幻西游PCU 390万、蛋仔注册7亿），全球化破圈（燕云Steam好评87%+登Xbox、漫威争锋登顶Steam畅销榜），有道连续8季经营盈利。递延蓄水池模式下OCF/净利1.5x、净现金1,635亿占市值29%、分红率40.7%、FCF收益率~8.4%；前瞻14.4x处全球长青内容同业（EA 17x/任天堂24x/腾讯19x）低端，2026-06-30港股通纳入带来边际买家，7项硬指标全过。",
+    "upside_potential": "v5.2 复裁决（9/6，基准 9/4）：三情景 320/245/165｜ER_ex/悲观 +22.0% / -12.7%｜现价 189.10 HKD",
+    "target_price": "245 HKD（区间 165-320 HKD）",
+    "report_date": "2026-09-01",
+    "report_md": "data/reports/v5.0/网易/05_策略裁决_网易.md",
+    "methodology": "v5.0",
+    "report_stages": [
+      {
+        "stage": "01",
+        "label": "底层数据",
+        "file": "data/reports/v5.0/网易/01_底层数据_网易.md"
+      },
+      {
+        "stage": "02",
+        "label": "商业逻辑",
+        "file": "data/reports/v5.0/网易/02_商业逻辑_网易.md"
+      },
+      {
+        "stage": "03",
+        "label": "估值模型",
+        "file": "data/reports/v5.0/网易/03_估值模型_网易.md"
+      },
+      {
+        "stage": "04",
+        "label": "多空辩论",
+        "file": "data/reports/v5.0/网易/04_多空辩论_网易.md"
+      },
+      {
+        "stage": "05",
+        "label": "策略裁决",
+        "file": "data/reports/v5.0/网易/05_策略裁决_网易.md"
+      }
+    ]
+  },
+  {
+    "name": "美团",
+    "ticker": "3690.HK",
+    "cluster_id": "04",
+    "cluster_name": "全球电商与本地生活",
+    "rating": "买入",
+    "investment_thesis": "即时零售效率霸主战损修复拐点确立：2026Q2营收1,046亿（+14.4%重新加速）、经营溢利+26.9亿环比转正、经调整净利25.24亿（+69%）、核心本地商业利润56.68亿（+52.3%、利润率7.9%）远超预期，新业务亏损收窄至17.39亿。外卖大战监管封顶+竞争理性化，纯餐饮外卖份额仍~78%（单量份额51%），700万骑手+5万闪电仓的密度壁垒在效率竞争阶段价值最大化；闪购日均1,560-2,000万单（+20%+）、闪电仓5万个，Keeta沙特22个月转盈验证出海复制性。P/B 2.5x历史最低区、净现金~1,300亿，券商均值目标121.9港元、本报告保守取108（认可最坏时刻已过，但阿里「三年不亏」的资源容忍度是最大变量，Q3-Q4 UE连续验证前不满分定价）。",
+    "upside_potential": "v5.2 复裁决（9/6，基准 9/4）：三情景 160/110/60｜ER_ex/悲观 +29.7% / -26.6%｜现价 81.75 HKD",
+    "target_price": "110 HKD（区间 60-160 HKD）",
+    "report_date": "2026-09-01",
+    "report_md": "data/reports/v5.0/美团/05_策略裁决_美团.md",
+    "methodology": "v5.0",
+    "report_stages": [
+      {
+        "stage": "01",
+        "label": "底层数据",
+        "file": "data/reports/v5.0/美团/01_底层数据_美团.md"
+      },
+      {
+        "stage": "02",
+        "label": "商业逻辑",
+        "file": "data/reports/v5.0/美团/02_商业逻辑_美团.md"
+      },
+      {
+        "stage": "03",
+        "label": "估值模型",
+        "file": "data/reports/v5.0/美团/03_估值模型_美团.md"
+      },
+      {
+        "stage": "04",
+        "label": "多空辩论",
+        "file": "data/reports/v5.0/美团/04_多空辩论_美团.md"
+      },
+      {
+        "stage": "05",
+        "label": "策略裁决",
+        "file": "data/reports/v5.0/美团/05_策略裁决_美团.md"
+      }
+    ]
+  },
+  {
+    "name": "鸿海",
+    "ticker": "2317.TW",
+    "cluster_id": "02",
+    "cluster_name": "消费科技与OS生态",
+    "rating": "增持（Overweight）",
+    "investment_thesis": "全球最大EMS转型AI基础设施平台：2026Q2营收25,259亿TWD（+41%逐季加速）、归母净利600亿TWD（+35%创同期新高）、云端网络占比51%首破五成、AI收入超消费电子之和，营益率3.75%连续四季抬升创单季历史新高（费用仅+5%）。全球AI机柜市占>40%（目标50%）、VR平台锁定四大CSP，ASIC占比年底目标20%、CPO交换机Q3量产；前瞻2026E约14.3x为全球AI服务器链最低一档，净现金2,198亿+股息率~3.6%。最大瑕疵为H1 FCF -1,500亿（营运资金+扩产占用），CCC 42天（-6天）与Consign模式推广显示现金效率改善中，H2转正是关键验证点。",
+    "upside_potential": "目标价295新台币（Bull 345 / Bear 155），现价250 TWD上行~18%。催化剂为8月营收验证旺季斜率、Q4 Vera Rubin机柜首次出货+2027年CoWoS配额明朗、ASIC占比升至20%、H2 FCF转正、iPhone 17旺季+2027年20周年改款。",
+    "target_price": "155-345新台币（中枢295）",
+    "report_date": "2026-09-01",
+    "report_md": "data/reports/v5.0/鸿海/05_策略裁决_鸿海.md",
+    "methodology": "v5.0",
+    "report_stages": [
+      {
+        "stage": "01",
+        "label": "底层数据",
+        "file": "data/reports/v5.0/鸿海/01_底层数据_鸿海.md"
+      },
+      {
+        "stage": "02",
+        "label": "商业逻辑",
+        "file": "data/reports/v5.0/鸿海/02_商业逻辑_鸿海.md"
+      },
+      {
+        "stage": "03",
+        "label": "估值模型",
+        "file": "data/reports/v5.0/鸿海/03_估值模型_鸿海.md"
+      },
+      {
+        "stage": "04",
+        "label": "多空辩论",
+        "file": "data/reports/v5.0/鸿海/04_多空辩论_鸿海.md"
+      },
+      {
+        "stage": "05",
+        "label": "策略裁决",
+        "file": "data/reports/v5.0/鸿海/05_策略裁决_鸿海.md"
+      }
+    ]
+  },
+  {
+    "name": "宁德时代",
+    "ticker": "300750.SZ / 03750.HK",
+    "cluster_id": "06",
+    "cluster_name": "新能源与智能出行",
+    "rating": "买入",
+    "investment_thesis": "全球动力电池绝对龙头：2026Q1市占率40.7%创同期新高、连续9年第一，韩系份额萎缩至15.6%。2026H1营收+54.8%、归母净利+42%（连续六季增速30%+），储能收入532.6亿（同比~+90%）、销量~110GWh翻倍，AIDC配储卡位产业级新需求；境外收入871亿占31.5%、境外毛利率31.44%，德国盈利+匈牙利投产。毛利率23.15%下行主因碳酸锂传导时滞，Q2单位净利0.094元/Wh仍为行业2倍；净现比1.7、净现金2,700亿、分红率44%+回购200-400亿，~14x 2027E处历史区间下沿而增速处历史高位，H股43%溢价证明国际资金定价更高。",
+    "upside_potential": "v5.2 复裁决（9/6，基准 9/4）：三情景 620/480/275｜ER_ex/悲观 +24.1% / -21.7%｜现价 351.00",
+    "target_price": "480（区间 275-620）",
+    "report_date": "2026-09-01",
+    "report_md": "data/reports/v5.0/宁德时代/05_策略裁决_宁德时代.md",
+    "methodology": "v5.0",
+    "report_stages": [
+      {
+        "stage": "01",
+        "label": "底层数据",
+        "file": "data/reports/v5.0/宁德时代/01_底层数据_宁德时代.md"
+      },
+      {
+        "stage": "02",
+        "label": "商业逻辑",
+        "file": "data/reports/v5.0/宁德时代/02_商业逻辑_宁德时代.md"
+      },
+      {
+        "stage": "03",
+        "label": "估值模型",
+        "file": "data/reports/v5.0/宁德时代/03_估值模型_宁德时代.md"
+      },
+      {
+        "stage": "04",
+        "label": "多空辩论",
+        "file": "data/reports/v5.0/宁德时代/04_多空辩论_宁德时代.md"
+      },
+      {
+        "stage": "05",
+        "label": "策略裁决",
+        "file": "data/reports/v5.0/宁德时代/05_策略裁决_宁德时代.md"
+      }
+    ]
+  },
+  {
+    "name": "比亚迪",
+    "ticker": "002594.SZ / 1211.HK",
+    "cluster_id": "06",
+    "cluster_name": "新能源与智能出行",
+    "rating": "买入",
+    "investment_thesis": "全球NEV销量冠军利润拐点确立：2026Q2净利82.4亿（+29.7%，逾一年首次转正）、毛利率18.88%创5季新高、单车净利7,200元（+47%）、扣非+51.5%。增长引擎完成切换：海外收入占比52.57%历史首超国内、H1出口79.2万辆（+67.8%）、121国八国八厂年底产能70万辆；国内销量-15.7%系政策透支+主动以利润换份额（7月总销量+21.8%转正）。2027E约15.5-17x、PEG≈0.5，现金储备1,674亿，弗迪电池（2025年装机194.8GWh全球第二、外供20%+）从未被独立定价；需容忍研发资本化率19.2%（上年4.2%）的利润质量噪音与欧盟27%关税。",
+    "upside_potential": "v5.2 复裁决（9/6，基准 9/4）：三情景 148/114/70｜ER_ex/悲观 +16.6% / -20.5%｜现价 88.08",
+    "target_price": "114（区间 70-148）",
+    "report_date": "2026-09-01",
+    "report_md": "data/reports/v5.0/比亚迪/05_策略裁决_比亚迪.md",
+    "methodology": "v5.0",
+    "report_stages": [
+      {
+        "stage": "01",
+        "label": "底层数据",
+        "file": "data/reports/v5.0/比亚迪/01_底层数据_比亚迪.md"
+      },
+      {
+        "stage": "02",
+        "label": "商业逻辑",
+        "file": "data/reports/v5.0/比亚迪/02_商业逻辑_比亚迪.md"
+      },
+      {
+        "stage": "03",
+        "label": "估值模型",
+        "file": "data/reports/v5.0/比亚迪/03_估值模型_比亚迪.md"
+      },
+      {
+        "stage": "04",
+        "label": "多空辩论",
+        "file": "data/reports/v5.0/比亚迪/04_多空辩论_比亚迪.md"
+      },
+      {
+        "stage": "05",
+        "label": "策略裁决",
+        "file": "data/reports/v5.0/比亚迪/05_策略裁决_比亚迪.md"
+      }
+    ]
+  },
+  {
+    "name": "阳光电源",
+    "ticker": "300274.SZ",
+    "cluster_id": "06",
+    "cluster_name": "新能源与智能出行",
+    "rating": "买入",
+    "investment_thesis": "全球光储双龙头（储能集成全球第三/9%份额、逆变器全球前二/可融资性第一）：2026H1营收-29%系中东高基数（-52亿）+主动收缩开发业务（-71亿）+关税顺延三因素叠加，而储能发货25GWh（+28%）、综合毛利率38.6%创新高、储能毛利率32.43%、Q2净利率19%环比修复、经营现金流+8.75%证明经营质地未坏。海外收入占比73.4%，埃及10GWh/波兰/泰国/墨西哥产能布局对冲地缘；美国政策冲击量化为2027年后15-20亿/年（2-3年缓冲），2027年前存量订单锁定。货币资金228.31亿、中期分红率25%+回购启动，~15.8x 2026E/~12.6x 2027E低于宁德/比亚迪；赔率对称、胜率取决于H2确收验证，故增持而非买入。",
+    "upside_potential": "v5.2 复裁决（9/6，基准 9/4）：三情景 185/115/63｜ER_ex/悲观 +25.1% / -28.8%｜现价 88.43",
+    "target_price": "115（区间 63-185）",
+    "report_date": "2026-09-01",
+    "report_md": "data/reports/v5.0/阳光电源/05_策略裁决_阳光电源.md",
+    "methodology": "v5.0",
+    "report_stages": [
+      {
+        "stage": "01",
+        "label": "底层数据",
+        "file": "data/reports/v5.0/阳光电源/01_底层数据_阳光电源.md"
+      },
+      {
+        "stage": "02",
+        "label": "商业逻辑",
+        "file": "data/reports/v5.0/阳光电源/02_商业逻辑_阳光电源.md"
+      },
+      {
+        "stage": "03",
+        "label": "估值模型",
+        "file": "data/reports/v5.0/阳光电源/03_估值模型_阳光电源.md"
+      },
+      {
+        "stage": "04",
+        "label": "多空辩论",
+        "file": "data/reports/v5.0/阳光电源/04_多空辩论_阳光电源.md"
+      },
+      {
+        "stage": "05",
+        "label": "策略裁决",
+        "file": "data/reports/v5.0/阳光电源/05_策略裁决_阳光电源.md"
+      }
+    ]
+  },
+  {
+    "name": "赛力斯",
+    "ticker": "601127.SH / 09927.HK",
+    "cluster_id": "06",
+    "cluster_name": "新能源与智能出行",
+    "rating": "持有",
+    "investment_thesis": "问界50万级盈利资产的换代期错杀：2026H1转亏（归母-17.17亿）系一次性减值+M9/M8换代空窗+原材料通胀三因叠加，而M6上市97天破4万台、全新M9换代7周破2万台（连续两月50万级销冠、全系累计30万台）证明需求底盘完好；毛利率23.3%仍居新势力第一梯队（对比理想H1整车毛利率9.4%）。净现金~690亿占市值~80%、2025年OCF 289.1亿为净利4.8倍、「以销定产」存货周转7.5天，资产极轻现金极厚；回购5.87亿+董监高增持1.48亿+张兴海进入引望董事会加深利益绑定。2027E一致预期净利51.1亿（+190%），当前对应约17x 2027E；华为多品牌分流为难以量化的结构性折价，评级止步增持。",
+    "upside_potential": "v5.2 复裁决（9/6，基准 9/4）：三情景 72/56/33｜ER_ex/悲观 -6.7% / -33%｜现价 49.52",
+    "target_price": "56（区间 33-72）",
+    "report_date": "2026-09-01",
+    "report_md": "data/reports/v5.0/赛力斯/05_策略裁决_赛力斯.md",
+    "methodology": "v5.0",
+    "report_stages": [
+      {
+        "stage": "01",
+        "label": "底层数据",
+        "file": "data/reports/v5.0/赛力斯/01_底层数据_赛力斯.md"
+      },
+      {
+        "stage": "02",
+        "label": "商业逻辑",
+        "file": "data/reports/v5.0/赛力斯/02_商业逻辑_赛力斯.md"
+      },
+      {
+        "stage": "03",
+        "label": "估值模型",
+        "file": "data/reports/v5.0/赛力斯/03_估值模型_赛力斯.md"
+      },
+      {
+        "stage": "04",
+        "label": "多空辩论",
+        "file": "data/reports/v5.0/赛力斯/04_多空辩论_赛力斯.md"
+      },
+      {
+        "stage": "05",
+        "label": "策略裁决",
+        "file": "data/reports/v5.0/赛力斯/05_策略裁决_赛力斯.md"
+      }
+    ]
+  },
+  {
+    "name": "中国平安",
+    "ticker": "601318.SH / 2318.HK",
+    "cluster_id": "07",
+    "cluster_name": "金融与支付",
+    "rating": "增持",
+    "investment_thesis": "综合金融+医养龙头，NBV三年连增（2025年369亿、+29.3%）、价值率28.5%创新高、EV 15,043亿（+5.7%）、营运利润+10.3%；2026H1归母净利925.85亿（+36.1%）、Q2 +84.6%，资管三年出清-336亿后26Q1营运利润+193%转正。分红险转型将利率风险转移给客户、预定利率动态机制下负债成本系统性下降，经营现金流6,586亿（浮存金模式）远超净利。0.63x 2026E P/EV仅按Bear情景EV定价，股息率4.83%（H股5.2%）且分红连续14年增长，公募对平安-A低配幅度为保险板块最大，7项硬指标全过、8条红线全未触发。",
+    "upside_potential": "v5.2 复裁决（9/6，基准 9/4）：三情景 82/70/50｜ER_ex/悲观 +8.8% / -14.1%｜现价 58.24",
+    "target_price": "70（区间 50-82）",
+    "report_date": "2026-09-01",
+    "report_md": "data/reports/v5.0/中国平安/05_策略裁决_中国平安.md",
+    "methodology": "v5.0",
+    "report_stages": [
+      {
+        "stage": "01",
+        "label": "底层数据",
+        "file": "data/reports/v5.0/中国平安/01_底层数据_中国平安.md"
+      },
+      {
+        "stage": "02",
+        "label": "商业逻辑",
+        "file": "data/reports/v5.0/中国平安/02_商业逻辑_中国平安.md"
+      },
+      {
+        "stage": "03",
+        "label": "估值模型",
+        "file": "data/reports/v5.0/中国平安/03_估值模型_中国平安.md"
+      },
+      {
+        "stage": "04",
+        "label": "多空辩论",
+        "file": "data/reports/v5.0/中国平安/04_多空辩论_中国平安.md"
+      },
+      {
+        "stage": "05",
+        "label": "策略裁决",
+        "file": "data/reports/v5.0/中国平安/05_策略裁决_中国平安.md"
+      }
+    ]
+  },
+  {
+    "name": "工商银行",
+    "ticker": "601398.SH / 1398.HK",
+    "cluster_id": "07",
+    "cluster_name": "金融与支付",
+    "rating": "持有",
+    "investment_thesis": "全球最大商业银行，2026中报营收4,462亿（+9.1%）、归母净利1,737亿（+3.3%），NIM 1.29%企稳（净利息差同比转正）、不良率五连降至1.29%、拨备覆盖率217.58%，「量增价稳质升」为2021年以来最佳组合。拨备前利润+11.4%显著快于净利，差额全部用于多提减值（+22.2%），利润增长是「藏」出来的而非「挤」出来的。30%派息率+中期分红538.53亿常态化+上市20年累计分红1.64万亿，H股股息率4.6%较10年国债溢价~200bp处历史极值；A股0.73x/H股0.59x PB已充分定价ROE下行，核心一级13.21%为唯一趋势性约束。",
+    "upside_potential": "v5.2 复裁决（9/6，基准 9/4）：三情景 10.4/9.0/7.2｜ER_ex/悲观 +6.0% / -8.1%｜现价 8.16",
+    "target_price": "9（区间 7.2-10.4）",
+    "report_date": "2026-09-01",
+    "report_md": "data/reports/v5.0/工商银行/05_策略裁决_工商银行.md",
+    "methodology": "v5.0",
+    "report_stages": [
+      {
+        "stage": "01",
+        "label": "底层数据",
+        "file": "data/reports/v5.0/工商银行/01_底层数据_工商银行.md"
+      },
+      {
+        "stage": "02",
+        "label": "商业逻辑",
+        "file": "data/reports/v5.0/工商银行/02_商业逻辑_工商银行.md"
+      },
+      {
+        "stage": "03",
+        "label": "估值模型",
+        "file": "data/reports/v5.0/工商银行/03_估值模型_工商银行.md"
+      },
+      {
+        "stage": "04",
+        "label": "多空辩论",
+        "file": "data/reports/v5.0/工商银行/04_多空辩论_工商银行.md"
+      },
+      {
+        "stage": "05",
+        "label": "策略裁决",
+        "file": "data/reports/v5.0/工商银行/05_策略裁决_工商银行.md"
+      }
+    ]
+  },
+  {
+    "name": "恒瑞医药",
+    "ticker": "600276.SH / 1276.HK",
+    "cluster_id": "08",
+    "cluster_name": "生命科学与医疗",
+    "rating": "增持",
+    "investment_thesis": "中国创新药一哥转型跨过临界点：2026H1创新药销售收入88.09亿（+16.38%）占药品销售63.16%首破六成，非肿瘤板块+73.97%证明多元化拐点，仿制药-16.07%主动出清至尾声。13笔/约420亿美元BD管道（GSK 120亿+BMS 152亿，BMS反向授权中国区权益验证平台地位），HRS9531双靶减重药NDA审评中、2026Q4-2027初获批期权。财务结构全市场稀缺：净现金409.6亿、零有息负债、净现比1.46、毛利率86.6%、7项硬指标全过。Q2净利-15.25%系许可高基数扰动，Q3起基数回归+BMS首付款确认带来利润弹性，2026E一致预期净利101.6亿（+31.8%）。",
+    "upside_potential": "v5.2 复裁决（9/6，基准 9/4）：三情景 73/60/32｜ER_ex/悲观 +14.2% / -30.5%｜现价 46.02",
+    "target_price": "60（区间 32-73）",
+    "report_date": "2026-09-01",
+    "report_md": "data/reports/v5.0/恒瑞医药/05_策略裁决_恒瑞医药.md",
+    "methodology": "v5.0",
+    "report_stages": [
+      {
+        "stage": "01",
+        "label": "底层数据",
+        "file": "data/reports/v5.0/恒瑞医药/01_底层数据_恒瑞医药.md"
+      },
+      {
+        "stage": "02",
+        "label": "商业逻辑",
+        "file": "data/reports/v5.0/恒瑞医药/02_商业逻辑_恒瑞医药.md"
+      },
+      {
+        "stage": "03",
+        "label": "估值模型",
+        "file": "data/reports/v5.0/恒瑞医药/03_估值模型_恒瑞医药.md"
+      },
+      {
+        "stage": "04",
+        "label": "多空辩论",
+        "file": "data/reports/v5.0/恒瑞医药/04_多空辩论_恒瑞医药.md"
+      },
+      {
+        "stage": "05",
+        "label": "策略裁决",
+        "file": "data/reports/v5.0/恒瑞医药/05_策略裁决_恒瑞医药.md"
+      }
+    ]
+  },
+  {
+    "name": "迈瑞医疗",
+    "ticker": "300760.SZ",
+    "cluster_id": "08",
+    "cluster_name": "生命科学与医疗",
+    "rating": "持有",
+    "investment_thesis": "全球医械国产龙头拐点确认：2026H1营收+6.0%、Q2收入+10.45%加速，剔除汇兑7.4亿后扣非+11.08%，OCF 48.77亿（+24.35%）、合同负债+50%创新高指向订单蓄水池而非压货。国内设备行业三年调整见底（招投标6月转正、公司指引全年转正），国际业务94.71亿占53.4%（美元口径+18.42%、欧洲+25%）以全球化穿越集采周期；国际IVD+20%、新兴业务+19.59%（毛利率65.03%、惠泰PFA放量）结构升级。资产质地顶尖：净利现金含量141.7%、负债率27%、几乎零有息负债、65%分红率（2026中期合计31.28亿）、23.4x 2026E/20.5x 2027E处历史最低分位，7项硬指标全过、8条红线零触发。",
+    "upside_potential": "v5.2 复裁决（9/6，基准 9/4）：三情景 256/195/120｜ER_ex/悲观 +4.7% / -29.4%｜现价 169.91",
+    "target_price": "195（区间 120-256）",
+    "report_date": "2026-09-01",
+    "report_md": "data/reports/v5.0/迈瑞医疗/05_策略裁决_迈瑞医疗.md",
+    "methodology": "v5.0",
+    "report_stages": [
+      {
+        "stage": "01",
+        "label": "底层数据",
+        "file": "data/reports/v5.0/迈瑞医疗/01_底层数据_迈瑞医疗.md"
+      },
+      {
+        "stage": "02",
+        "label": "商业逻辑",
+        "file": "data/reports/v5.0/迈瑞医疗/02_商业逻辑_迈瑞医疗.md"
+      },
+      {
+        "stage": "03",
+        "label": "估值模型",
+        "file": "data/reports/v5.0/迈瑞医疗/03_估值模型_迈瑞医疗.md"
+      },
+      {
+        "stage": "04",
+        "label": "多空辩论",
+        "file": "data/reports/v5.0/迈瑞医疗/04_多空辩论_迈瑞医疗.md"
+      },
+      {
+        "stage": "05",
+        "label": "策略裁决",
+        "file": "data/reports/v5.0/迈瑞医疗/05_策略裁决_迈瑞医疗.md"
+      }
+    ]
+  },
+  {
+    "name": "百济神州",
+    "ticker": "ONC.US / 06160.HK / 688235.SH",
+    "cluster_id": "08",
+    "cluster_name": "生命科学与医疗",
+    "rating": "持有",
+    "investment_thesis": "中国全球化药企标杆：百悦泽Q2全球收入$12亿（+31%）、1H26份额37.3%登顶全球BTKi（vs 伊布替尼26.0%），索托克拉2026-05-13获FDA批准（全球唯一获批的next-gen BCL2）、BGB-16673为临床进度最快的BTK降解器（Fast Track/PRIME）。盈利拐点结构性确立：2026H1营收$32.19亿（+32%）、GAAP净利$4.64亿（+386%）、毛利率90%、FCF $5.96亿（+187%），且研发费率~40%（155亿元/+9.7%）仍在加码；2026指引收入$66-68亿、GAAP经营利润$10-11亿。7项硬指标4过3附条件豁免（研发投入期历史包袱、修复通道明确），A股269.86元较Base折算228元溢价37%、评级主锚在ADS/H股。",
+    "upside_potential": "v5.2 复裁决（9/6，基准 9/4）：三情景 366/278/165｜ER_ex/悲观 -9.7% / -39%｜现价 271.00",
+    "target_price": "278（区间 165-366）",
+    "report_date": "2026-09-01",
+    "report_md": "data/reports/v5.0/百济神州/05_策略裁决_百济神州.md",
+    "methodology": "v5.0",
+    "report_stages": [
+      {
+        "stage": "01",
+        "label": "底层数据",
+        "file": "data/reports/v5.0/百济神州/01_底层数据_百济神州.md"
+      },
+      {
+        "stage": "02",
+        "label": "商业逻辑",
+        "file": "data/reports/v5.0/百济神州/02_商业逻辑_百济神州.md"
+      },
+      {
+        "stage": "03",
+        "label": "估值模型",
+        "file": "data/reports/v5.0/百济神州/03_估值模型_百济神州.md"
+      },
+      {
+        "stage": "04",
+        "label": "多空辩论",
+        "file": "data/reports/v5.0/百济神州/04_多空辩论_百济神州.md"
+      },
+      {
+        "stage": "05",
+        "label": "策略裁决",
+        "file": "data/reports/v5.0/百济神州/05_策略裁决_百济神州.md"
+      }
+    ]
+  },
+  {
+    "name": "贵州茅台",
+    "ticker": "600519.SH",
+    "cluster_id": "09",
+    "cluster_name": "全球消费品牌",
+    "rating": "持有",
+    "investment_thesis": "超高端白酒垄断者周期出清尾声+改革兑现：2026H1营业总收入922.78亿（+1.3%）企稳、经营现金流706.91亿（+438.8%）强劲修复、飞天批价淡季逆势站稳1,740-1,760元、上半年茅台酒销量+~22%而批价不跌反涨。渠道改革进入兑现期：i茅台收入402.64亿（+274%）、直销占比57.3%首超批发、年内两度提价（合同价1,369元）贡献约56亿增量集中H2入账，Q4净利有望在低基数下增长~17%。财务体质A股之巅：ROE 33%、毛利率89%+、净利率~50%、7项硬指标全过且余量巨大；19.95x TTM处十年低分位、股息率4.0%、分红率79%，对全球烈酒/奢侈品折价60%+为历史极值。",
+    "upside_potential": "v5.2 复裁决（9/6，基准 9/4）：三情景 2100/1505/740｜ER_ex/悲观 +4.6% / -43%｜现价 1298.88",
+    "target_price": "1505（区间 740-2100）",
+    "report_date": "2026-09-01",
+    "report_md": "data/reports/v5.0/贵州茅台/05_策略裁决_贵州茅台.md",
+    "methodology": "v5.0",
+    "report_stages": [
+      {
+        "stage": "01",
+        "label": "底层数据",
+        "file": "data/reports/v5.0/贵州茅台/01_底层数据_贵州茅台.md"
+      },
+      {
+        "stage": "02",
+        "label": "商业逻辑",
+        "file": "data/reports/v5.0/贵州茅台/02_商业逻辑_贵州茅台.md"
+      },
+      {
+        "stage": "03",
+        "label": "估值模型",
+        "file": "data/reports/v5.0/贵州茅台/03_估值模型_贵州茅台.md"
+      },
+      {
+        "stage": "04",
+        "label": "多空辩论",
+        "file": "data/reports/v5.0/贵州茅台/04_多空辩论_贵州茅台.md"
+      },
+      {
+        "stage": "05",
+        "label": "策略裁决",
+        "file": "data/reports/v5.0/贵州茅台/05_策略裁决_贵州茅台.md"
+      }
+    ]
+  },
+  {
+    "name": "五粮液",
+    "ticker": "000858.SZ",
+    "cluster_id": "09",
+    "cluster_name": "全球消费品牌",
+    "rating": "增持",
+    "investment_thesis": "高端白酒龙头深度出清后率先复苏：2026H1净利87.53亿（+89.3%）、动销两位数增长、社会库存约2个月低位、普五批价730→800元红线修复、合同负债141.38亿（+39%）。净现金~1,250亿占市值45%、股息率7.2%（历史高点）、80-100亿注销式回购+30-50亿大股东增持构成综合回报10%+；263亿监管商品款项是经销商真实打款的蓄水池，未来收入有据可依。19家白酒上市公司H1中率先正增长，出清顺序验证龙头先复苏剧本；7项硬指标全过、资产质量A股顶级，一致预期已修复至88.78元。",
+    "upside_potential": "v5.2 复裁决（9/6，基准 9/4）：三情景 108/88/57｜ER_ex/悲观 +12.6% / -19.4%｜现价 70.68",
+    "target_price": "88（区间 57-108）",
+    "report_date": "2026-09-01",
+    "report_md": "data/reports/v5.0/五粮液/05_策略裁决_五粮液.md",
+    "methodology": "v5.0",
+    "report_stages": [
+      {
+        "stage": "01",
+        "label": "底层数据",
+        "file": "data/reports/v5.0/五粮液/01_底层数据_五粮液.md"
+      },
+      {
+        "stage": "02",
+        "label": "商业逻辑",
+        "file": "data/reports/v5.0/五粮液/02_商业逻辑_五粮液.md"
+      },
+      {
+        "stage": "03",
+        "label": "估值模型",
+        "file": "data/reports/v5.0/五粮液/03_估值模型_五粮液.md"
+      },
+      {
+        "stage": "04",
+        "label": "多空辩论",
+        "file": "data/reports/v5.0/五粮液/04_多空辩论_五粮液.md"
+      },
+      {
+        "stage": "05",
+        "label": "策略裁决",
+        "file": "data/reports/v5.0/五粮液/05_策略裁决_五粮液.md"
+      }
+    ]
+  },
+  {
+    "name": "万华化学",
+    "ticker": "600309.SH",
+    "cluster_id": "12",
+    "cluster_name": "能源资源与材料",
+    "rating": "增持",
+    "investment_thesis": "全球MDI垄断级龙头（450万吨产能、份额35%），2026H1营收1,193.16亿（+31.3%）、归母净利100.63亿（+64.4%）、Q2单季+108.7%，石化毛利率+7.2pct扭亏性修复、新材料收入+44.3%。盈利中枢上移具备结构性支撑：欧洲巴斯夫/科思创/亨斯迈2026-27关停70-110万吨MDI为成本决定的不可逆退出，万华乙烷路线成本200-350美元/吨碾压欧洲石脑油路线885美元/吨。当前~12.4x 2026E/~10.6x 2027E、1.7x PB、股息率~2.6%，Bear情景61元与PB周期锚62元互相印证，7项硬指标全过、8条红线零触发。",
+    "upside_potential": "v5.2 复裁决（9/6，基准 9/4）：三情景 130/96/61｜ER_ex/悲观 +11.1% / -21.4%｜现价 77.66",
+    "target_price": "96（区间 61-130）",
+    "report_date": "2026-09-01",
+    "report_md": "data/reports/v5.0/万华化学/05_策略裁决_万华.md",
+    "methodology": "v5.0",
+    "report_stages": [
+      {
+        "stage": "01",
+        "label": "底层数据",
+        "file": "data/reports/v5.0/万华化学/01_底层数据_万华.md"
+      },
+      {
+        "stage": "02",
+        "label": "商业逻辑",
+        "file": "data/reports/v5.0/万华化学/02_商业逻辑_万华.md"
+      },
+      {
+        "stage": "03",
+        "label": "估值模型",
+        "file": "data/reports/v5.0/万华化学/03_估值模型_万华.md"
+      },
+      {
+        "stage": "04",
+        "label": "多空辩论",
+        "file": "data/reports/v5.0/万华化学/04_多空辩论_万华.md"
+      },
+      {
+        "stage": "05",
+        "label": "策略裁决",
+        "file": "data/reports/v5.0/万华化学/05_策略裁决_万华.md"
+      }
+    ]
+  },
+  {
+    "name": "紫金矿业",
+    "ticker": "601899.SH / 2899.HK",
+    "cluster_id": "12",
+    "cluster_name": "能源资源与材料",
+    "rating": "持有",
+    "investment_thesis": "全球头部矿业平台2026H1净利391.7亿（+68.2%）创历史最好半年、经营现金流554.72亿（+92.4%）：黄金产量47吨（+13%）、实现金价4,643美元（+51%）、紫金黄金国际净利14.51亿美元（+179%）；铜剔除卡莫阿后产量+5%证明单点风险已消化；锂产量4.36万吨（+496%）成第三曲线。矿产金AISC 1,500-1,700美元的成本优势碾压巴里克（1,760-1,950美元指引），2026E净利~830亿（+60%）不依赖价格上行假设；~11.1x 2026E/~9.7x 2027E低于纽蒙特14.1x与巴里克12.6x，5年累计FCF约+1,500亿、7项硬指标全过。",
+    "upside_potential": "v5.2 复裁决（9/6，基准 9/4）：三情景 50/41/17.3｜ER_ex/悲观 +6.8% / -48.1%｜现价 33.35",
+    "target_price": "41（区间 17.3-50）",
+    "report_date": "2026-09-01",
+    "report_md": "data/reports/v5.0/紫金矿业/05_策略裁决_紫金.md",
+    "methodology": "v5.0",
+    "report_stages": [
+      {
+        "stage": "01",
+        "label": "底层数据",
+        "file": "data/reports/v5.0/紫金矿业/01_底层数据_紫金.md"
+      },
+      {
+        "stage": "02",
+        "label": "商业逻辑",
+        "file": "data/reports/v5.0/紫金矿业/02_商业逻辑_紫金.md"
+      },
+      {
+        "stage": "03",
+        "label": "估值模型",
+        "file": "data/reports/v5.0/紫金矿业/03_估值模型_紫金.md"
+      },
+      {
+        "stage": "04",
+        "label": "多空辩论",
+        "file": "data/reports/v5.0/紫金矿业/04_多空辩论_紫金.md"
+      },
+      {
+        "stage": "05",
+        "label": "策略裁决",
+        "file": "data/reports/v5.0/紫金矿业/05_策略裁决_紫金.md"
+      }
+    ]
+  },
+  {
+    "name": "高意",
+    "ticker": "COHR",
+    "cluster_id": "01",
+    "cluster_name": "AI与半导体产业链",
+    "rating": "增持（暂停加仓，待验证信号恢复）",
+    "investment_thesis": "FY2027 基本订满、PO 延伸至 2028、LTA take-or-pay 至 2030 年底，合同层保护是事件中最强护甲；数据中心营收 +58.6%，NVIDIA 20 亿美元入股绑定 CPO。",
+    "upside_potential": "ER 口径约 +9%（事件日保守口径，Base $320 对应约 +15.7%）",
+    "target_price": "320 USD（区间 163-400 USD）",
+    "report_date": "2026-09-14",
+    "report_md": "data/reports/v5.3/高意_COHR/投资决策报告_AAOI_COHR重评与持仓行动_20260914.md",
+    "report_stages": [
+      {
+        "stage": "01",
+        "label": "v5.3 决策报告",
+        "file": "data/reports/v5.3/高意_COHR/投资决策报告_AAOI_COHR重评与持仓行动_20260914.md"
+      }
+    ],
+    "methodology": "v5.3"
+  },
+  {
+    "name": "应用光电",
+    "ticker": "AAOI",
+    "cluster_id": "01",
+    "cluster_name": "AI与半导体产业链",
+    "rating": "买入（3-4% 区间下沿执行）",
+    "investment_thesis": "1.6T 在手订单超 2 亿美元、需求超产能 20-40% 持续至 2027 年中，Q2 营收 +86% 创连续纪录；黑天鹅仅为叙事冲击，订单簿未变，价格下移改善赔率。",
+    "upside_potential": "ER 较现价 +41%，ER_ex 约 +29pct（及格线 12%）",
+    "target_price": "130 USD（区间 55-230 USD）",
+    "report_date": "2026-09-14",
+    "report_md": "data/reports/v5.3/应用光电_AAOI/投资决策报告_AAOI_COHR重评与持仓行动_20260914.md",
+    "report_stages": [
+      {
+        "stage": "01",
+        "label": "v5.3 决策报告",
+        "file": "data/reports/v5.3/应用光电_AAOI/投资决策报告_AAOI_COHR重评与持仓行动_20260914.md"
+      }
+    ],
+    "methodology": "v5.3"
+  },
+  {
+    "name": "英伟达",
+    "ticker": "NVDA",
+    "cluster_id": "01",
+    "cluster_name": "AI与半导体产业链",
+    "rating": "买入",
+    "investment_thesis": "AI 算力军备竞赛主军火商，CUDA 生态+整机+网络构成平台壁垒；现价对应 FY2028 前瞻仅 14.1x、五年隐含回报年化约 19-20%，是 AI 链中唯一相对自身增长仍然便宜的定价锚。",
+    "upside_potential": "Base +48.9%；平均预期回报 ER +60.9%，超及格线约 49pct",
+    "target_price": "325 USD（区间 160-450 USD）",
+    "report_date": "2026-09-14",
+    "report_md": "data/reports/v5.3/英伟达_NVDA/投资决策报告_NVIDIA_20260914.md",
+    "report_stages": [
+      {
+        "stage": "01",
+        "label": "v5.3 决策报告",
+        "file": "data/reports/v5.3/英伟达_NVDA/投资决策报告_NVIDIA_20260914.md"
+      },
+      {
+        "stage": "02",
+        "label": "v5.3 完整分析",
+        "file": "data/reports/v5.3/英伟达_NVDA/完整分析_NVIDIA_20260914.md"
+      }
+    ],
+    "methodology": "v5.3"
+  },
+  {
+    "name": "美光",
+    "ticker": "MU",
+    "cluster_id": "01",
+    "cluster_name": "AI与半导体产业链",
+    "rating": "持有",
+    "investment_thesis": "基本面处历史最强上行段（GM 四个季度 39%→84.9%，SCA 长协 $1,000 亿锁定至 2030，2027 DRAM 缺口 -13.6% 为 30 年最深），但 9/12-14 叙事转向后估值杀尚未出清，价格二阶导放缓（合约价 +93%→+58%→+13-18%），强周期资产 ER_ex 与 OR 双双不达标，按纪律明确等待。",
+    "upside_potential": "Bull +74% / Base +25% / Bear -43%；ER +23%，ER_ex +11%（< +15% 重仓线）；OR 0.58（< 0.75）；D_Bear -43%",
+    "target_price": "1150 USD（区间 520-1600 USD）",
+    "report_date": "2026-09-14",
+    "report_md": "data/reports/v5.3/美光_MU/投资决策报告_Micron_20260914.md",
+    "report_stages": [
+      {
+        "stage": "01",
+        "label": "v5.3 决策报告",
+        "file": "data/reports/v5.3/美光_MU/投资决策报告_Micron_20260914.md"
+      },
+      {
+        "stage": "02",
+        "label": "v5.3 完整分析",
+        "file": "data/reports/v5.3/美光_MU/完整分析_Micron_20260914.md"
+      }
+    ],
+    "methodology": "v5.3"
+  },
+  {
+    "name": "楷登电子",
+    "ticker": "CDNS",
+    "cluster_id": "01",
+    "cluster_name": "AI与半导体产业链",
+    "rating": "增持",
+    "investment_thesis": "AI 芯片卖铲人的铲子中质地最纯：Q2 营收 15.84 亿 +24.2% 创纪录、年内两次上调指引至 +19%、backlog 81 亿锁定约 13 个月收入、首次逼近 Rule of 60；9/14 黑天鹅当日逆势 +1.55%，市场把 EDA 记在「设计活动」而非「算力信仰」一栏。复杂度红利（IP +40%/SDA +37%）与设计活动前置使收入与训练减速基本脱钩。",
+    "upside_potential": "ER 约 15.1%（及格线 12%），ER_ex 约 +3.1%，OR 约 1.02；质量分 A；卖方共识目标价隐含 +39%",
+    "target_price": "355 USD（区间 225-390 USD）",
+    "report_date": "2026-09-14",
+    "report_md": "data/reports/v5.3/楷登电子_CDNS/投资决策报告_Cadence_20260914.md",
+    "report_stages": [
+      {
+        "stage": "01",
+        "label": "v5.3 决策报告",
+        "file": "data/reports/v5.3/楷登电子_CDNS/投资决策报告_Cadence_20260914.md"
+      },
+      {
+        "stage": "02",
+        "label": "v5.3 完整分析",
+        "file": "data/reports/v5.3/楷登电子_CDNS/完整分析_Cadence_20260914.md"
+      }
+    ],
+    "methodology": "v5.3"
+  },
+  {
+    "name": "新思科技",
+    "ticker": "SNPS",
+    "cluster_id": "01",
+    "cluster_name": "AI与半导体产业链",
+    "rating": "增持",
+    "investment_thesis": "EDA 双寡头中便宜一半的那一个：约 26.3x FY26E 低于十年均值 30x，Q3 营收 24.77 亿 +42%（含 Ansys）、backlog 109 亿锁定约 11 个月、EDA 内生增速加速至双位数、NVIDIA 20 亿入股（成本 414.79 构成市场心理底）+Elliott 入驻董事会。9 月上旬已回撤 14.5%，卖压前置消化，9/14 黑天鹅当日几乎持平验证「设计活动资产」分类。",
+    "upside_potential": "ER 约 17.3%（及格线 12%），ER_ex 约 +5.3%（EDA 三家最高），OR 约 1.13；质量分 A；卖方共识隐含 +37.4%",
+    "target_price": "485 USD（区间 320-560 USD）",
+    "report_date": "2026-09-14",
+    "report_md": "data/reports/v5.3/新思科技_SNPS/投资决策报告_Synopsys_20260914.md",
+    "report_stages": [
+      {
+        "stage": "01",
+        "label": "v5.3 决策报告",
+        "file": "data/reports/v5.3/新思科技_SNPS/投资决策报告_Synopsys_20260914.md"
+      },
+      {
+        "stage": "02",
+        "label": "v5.3 完整分析",
+        "file": "data/reports/v5.3/新思科技_SNPS/完整分析_Synopsys_20260914.md"
+      }
+    ],
+    "methodology": "v5.3"
+  },
+  {
+    "name": "安谋",
+    "ticker": "ARM",
+    "cluster_id": "01",
+    "cluster_name": "AI与半导体产业链",
+    "rating": "回避",
+    "investment_thesis": "AI 时代最纯粹的「架构税」收租公：v9 使单片 royalty 翻倍至 4-5%、CSS 推至约 10% ASP、Neoverse 连续三季翻倍、数据中心重心迁移（2030 基础设施约占 royalty 50%）。但 TTM P/E 约 250-270x、远期 110-125x、PEG 7.85 为全市场极端值，叠加软银约 90% 持股与 200 亿美元股票质押融资的连环抵押风险，风险调整后回报不达标。9/14 单日 -8.84% 验证其为「算力信仰资产」——真正风险是估值锚塌缩先于基本面恶化。",
+    "upside_potential": "ER 约 9.7%（及格线 12%），ER_ex 约 -2.3%（低于零），OR 约 0.70，质量分 A-；最保守卖方目标隐含上行仅约 12%，与及格线相当",
+    "target_price": "295 USD（区间 165-330 USD）",
+    "report_date": "2026-09-14",
+    "report_md": "data/reports/v5.3/安谋_ARM/投资决策报告_ARM_20260914.md",
+    "report_stages": [
+      {
+        "stage": "01",
+        "label": "v5.3 决策报告",
+        "file": "data/reports/v5.3/安谋_ARM/投资决策报告_ARM_20260914.md"
+      },
+      {
+        "stage": "02",
+        "label": "v5.3 完整分析",
+        "file": "data/reports/v5.3/安谋_ARM/完整分析_ARM_20260914.md"
+      }
+    ],
+    "methodology": "v5.3"
+  },
+  {
+    "name": "博通",
+    "ticker": "AVGO",
+    "cluster_id": "01",
+    "cluster_name": "AI与半导体产业链",
+    "rating": "持有",
+    "investment_thesis": "定制 AI 加速器双雄之一 + 以太网交换事实标准 + 企业虚拟化垄断者：Q3 营收 295.9 亿 +86%，AI 收入 167 亿 +221%（XPU 占 73%），FY26 AI 指引 580 亿 → FY27 1150 亿 → FY28 2300 亿，AI 积压 730 亿；软件地板约四分之一市值。但 FY27 共识 EPS 19.28 隐含 AI 收入 1300 亿高于指引，市场在为完美执行付预付款；且正从轻资产芯片公司向半导体行业准担保人演变（XPV 表外 RVG 敞口 290 亿），敏感性检验显示任一单变量 ±10% 即翻转档位。",
+    "upside_potential": "Bull +49.9% / Base +19.5% / Bear -38.5%；ER 12.6%，ER_ex +2.6pct（及格线 10%）勉强及格；OR 0.51（上行不足下行一半）；D_Bear -38.5%；五年年化加权 11.1%",
+    "target_price": "430 USD（区间 220-540 USD）",
+    "report_date": "2026-09-14",
+    "report_md": "data/reports/v5.3/博通_AVGO/投资决策报告_Broadcom_20260914.md",
+    "report_stages": [
+      {
+        "stage": "01",
+        "label": "v5.3 决策报告",
+        "file": "data/reports/v5.3/博通_AVGO/投资决策报告_Broadcom_20260914.md"
+      },
+      {
+        "stage": "02",
+        "label": "v5.3 完整分析",
+        "file": "data/reports/v5.3/博通_AVGO/完整分析_Broadcom_20260914.md"
+      }
+    ],
+    "methodology": "v5.3"
+  },
+  {
+    "name": "三星电子",
+    "ticker": "005930.KS",
+    "cluster_id": "01",
+    "cluster_name": "AI与半导体产业链",
+    "rating": "持有",
+    "investment_thesis": "存储超级周期利润发动机 + HBM 翻身仗已兑现大半（份额 15%→33%，全球首家量产 HBM4 良率约 80%，OpenAI 独家协议）+ 代工翻身仗进行中尚未赢（2nm 良率 55-60% vs 台积电 70%，UBS 预计 2027Q3 扭亏）。SOTP 正常化约 1,972 万亿韩元（每股 33 万），治理折价 15% 后锚定 Base 29.5 万。远期 P/E 约 5.2x + 净现金 167.6 万亿，估值不贵但 OR 0.72 赔率不利、年内 +117% 后有下坠惯性。",
+    "upside_potential": "Bull +52.6% / Base +18.5% / Bear -25.7%；ER 17.7%，ER_ex +5.7%（及格线 12% 含强周期+强地缘，为正但薄）；OR 0.72；D_Bear -25.7%",
+    "target_price": "295000 KRW（区间 185000-380000 KRW）",
+    "report_date": "2026-09-14",
+    "report_md": "data/reports/v5.3/三星电子_005930/投资决策报告_Samsung_20260914.md",
+    "report_stages": [
+      {
+        "stage": "01",
+        "label": "v5.3 决策报告",
+        "file": "data/reports/v5.3/三星电子_005930/投资决策报告_Samsung_20260914.md"
+      },
+      {
+        "stage": "02",
+        "label": "v5.3 完整分析",
+        "file": "data/reports/v5.3/三星电子_005930/完整分析_Samsung_20260914.md"
+      }
+    ],
+    "methodology": "v5.3"
+  },
+  {
+    "name": "SK海力士",
+    "ticker": "000660.KS",
+    "cluster_id": "01",
+    "cluster_name": "AI与半导体产业链",
+    "rating": "买入",
+    "investment_thesis": "HBM 定价权最强、估值最低（约 3.2x 2027E P/E）的存储龙头：Q2 OPM 76.3%、GM 83% 全球第一，净现金 ₩69.4 万亿，≥50% FCF 回报承诺；Vera Rubin HBM4 配额 60-70% 主供地位稳固，约 10 家 LTA + NVIDIA 至 2030 + Stargate 90 万片/月锁定需求。距 6 月高点已回撤约 43%，估值出清较美光更充分——这是本案给预算而美光等待的核心差异。ER_ex 与 OR 双达标，为存储两家唯一。",
+    "upside_potential": "Bull +89% / Base +40% / Bear -50%；ER +32%，ER_ex +20%（≥ +15% 达标）；OR 0.81（≥ 0.75 达标）；D_Bear -50%（超 -40% 警戒线，以分批+仓位上限对冲）",
+    "target_price": "2.38e+06 KRW（区间 850000-3.2e+06 KRW）",
+    "report_date": "2026-09-14",
+    "report_md": "data/reports/v5.3/SK海力士_000660/投资决策报告_SK_Hynix_20260914.md",
+    "report_stages": [
+      {
+        "stage": "01",
+        "label": "v5.3 决策报告",
+        "file": "data/reports/v5.3/SK海力士_000660/投资决策报告_SK_Hynix_20260914.md"
+      },
+      {
+        "stage": "02",
+        "label": "v5.3 完整分析",
+        "file": "data/reports/v5.3/SK海力士_000660/完整分析_SK_Hynix_20260914.md"
+      }
+    ],
+    "methodology": "v5.3"
+  },
+  {
+    "name": "立讯精密",
+    "ticker": "002475.SZ",
+    "cluster_id": "02",
+    "cluster_name": "消费科技与OS生态",
+    "rating": "持有",
+    "investment_thesis": "「好公司、贵一半的价格表达、错位的周期」：基本面动量强（H1 营收 +40.16%、汽车 +274%、通讯 +49.7%）但股价动量弱（20 日 -10.3%），AI 业务被情绪牵着走。护城河为「制造工艺 + 客户绑定」型：iPhone 17 组装份额约 45% 首超富士康、AirPods 约 70%、AI「光-铜-热-电」全栈内资唯一。但 ER_ex 近零 + OR 小于 1，52.78 元的价格既未给周期风险留足补偿也不满足加仓不对称条件。9/14 黑天鹅 -4.71% 为「情绪实锤、基本面待证伪」——情绪税不是基本面税。",
+    "upside_potential": "Bull +51.6% / Base +23.2% / Bear -28.0%；ER 17.5%（及格线 17% = A 股 15% + 强周期 2pct），ER_ex +0.5pct 勉强通过、安全垫为零；OR 0.83；D_Bear -28.0%",
+    "target_price": "65 CNY（区间 38-80 CNY）",
+    "report_date": "2026-09-14",
+    "report_md": "data/reports/v5.3/立讯精密_002475SZ/投资决策报告_Luxshare_20260914.md",
+    "report_stages": [
+      {
+        "stage": "01",
+        "label": "v5.3 决策报告",
+        "file": "data/reports/v5.3/立讯精密_002475SZ/投资决策报告_Luxshare_20260914.md"
+      },
+      {
+        "stage": "02",
+        "label": "v5.3 完整分析",
+        "file": "data/reports/v5.3/立讯精密_002475SZ/完整分析_Luxshare_20260914.md"
+      }
+    ],
+    "methodology": "v5.3"
+  },
+  {
+    "name": "奈飞",
+    "ticker": "NFLX",
+    "cluster_id": "02",
+    "cluster_name": "消费科技与OS生态",
+    "rating": "持有",
+    "investment_thesis": "「好资产、中等价格、弱不对称」：商业模式顶级（复利资产 A 级）——3.25 亿付费用户、流失率 2.11% 行业最低、年 200 亿内容投入全球摊薄的复利回路（内容投资→摊销→提价权→现金流→回购）、TTM FCF 约 112 亿 + 净债务仅 52 亿 + 单季回购 47 亿创纪录。估值已回到 20x 前瞻附近（一年 -36% 但业务创纪录），但增速换挡（Q3 指引 +11.7% 为 2023 年末以来最低）+ 透明度倒退（停披露用户数）+ 9/14 逆势 +4.2% 已部分兑现防御溢价，等更好的出手点。",
+    "upside_potential": "Bull +42.1% / Base +18.9% / Bear -18.6%；ER 15.3%（及格线 10%），ER_ex +5.3pct 通过但安全垫薄；OR 1.02（不对称性弱，不满足 A 档）；D_Bear -18.6%；前瞻 P/E 约 20-21x vs 五年均值 32.3x、PEG 约 0.64",
+    "target_price": "92 USD（区间 63-110 USD）",
+    "report_date": "2026-09-14",
+    "report_md": "data/reports/v5.3/奈飞_NFLX/投资决策报告_Netflix_20260914.md",
+    "report_stages": [
+      {
+        "stage": "01",
+        "label": "v5.3 决策报告",
+        "file": "data/reports/v5.3/奈飞_NFLX/投资决策报告_Netflix_20260914.md"
+      },
+      {
+        "stage": "02",
+        "label": "v5.3 完整分析",
+        "file": "data/reports/v5.3/奈飞_NFLX/完整分析_Netflix_20260914.md"
+      }
+    ],
+    "methodology": "v5.3"
+  },
+  {
+    "name": "亿纬锂能",
+    "ticker": "300014.SZ",
+    "cluster_id": "06",
+    "cluster_name": "新能源与智能出行",
+    "rating": "回避",
+    "investment_thesis": "储能电芯价格周期型；ER_ex +2.2% 不足 8% 及格线，价格战周期位置不低",
+    "upside_potential": "三情景 Bull 83 / Bear 32，现价 51.05",
+    "target_price": "57（区间 32-83）",
+    "report_date": "2026-09-10",
+    "report_md": "data/reports/v5.3/固态钠电批次/v53裁决摘要_亿纬锂能_20260910.md",
+    "report_stages": [
+      {
+        "stage": "01",
+        "label": "v5.3 裁决摘要",
+        "file": "data/reports/v5.3/固态钠电批次/v53裁决摘要_亿纬锂能_20260910.md"
+      }
+    ],
+    "methodology": "v5.3"
+  },
+  {
+    "name": "先导智能",
+    "ticker": "300450.SZ",
+    "cluster_id": "06",
+    "cluster_name": "新能源与智能出行",
+    "rating": "回避",
+    "investment_thesis": "设备订单周期型；订单 240 亿为真但 29.7x 已预支，周期位置中高",
+    "upside_potential": "三情景 Bull 48 / Bear 18，现价 31.57｜触发买入 < 29.6",
+    "target_price": "37（区间 18-48）",
+    "report_date": "2026-09-10",
+    "report_md": "data/reports/v5.3/固态钠电批次/v53裁决摘要_先导智能_20260910.md",
+    "report_stages": [
+      {
+        "stage": "01",
+        "label": "v5.3 裁决摘要",
+        "file": "data/reports/v5.3/固态钠电批次/v53裁决摘要_先导智能_20260910.md"
+      }
+    ],
+    "methodology": "v5.3"
+  },
+  {
+    "name": "国轩高科",
+    "ticker": "002074.SZ",
+    "cluster_id": "06",
+    "cluster_name": "新能源与智能出行",
+    "rating": "增持（小额验证 0.5%，预算减半）",
+    "investment_thesis": "矩阵 B 但主营质量评级不达标（2026H1 利润八成来自炒股浮盈，扣非 PE 约 100x）→ A/B 资格被压制，预算减半",
+    "upside_potential": "三情景 Bull 54 / Bear 20，现价 25.95",
+    "target_price": "29（区间 20-54）",
+    "report_date": "2026-09-10",
+    "report_md": "data/reports/v5.3/固态钠电批次/v53裁决摘要_国轩高科_20260910.md",
+    "report_stages": [
+      {
+        "stage": "01",
+        "label": "v5.3 裁决摘要",
+        "file": "data/reports/v5.3/固态钠电批次/v53裁决摘要_国轩高科_20260910.md"
+      }
+    ],
+    "methodology": "v5.3"
+  },
+  {
+    "name": "QuantumScape",
+    "ticker": "QS",
+    "cluster_id": "06",
+    "cluster_name": "新能源与智能出行",
+    "rating": "增持（小额验证仓位 ≤1%）",
+    "investment_thesis": "氧化物路线「技术许可收租者」候选；矩阵无法验证、里程碑可验证（PowerCo+本田+防务）",
+    "upside_potential": "三情景 Bull $11.50 USD / Bear 2.80 USD，现价 $5.48",
+    "target_price": "7 USD（区间 2.8-11.5 USD）",
+    "report_date": "2026-09-10",
+    "report_md": "data/reports/v5.3/固态钠电批次/v53裁决摘要_QuantumScape_20260910.md",
+    "report_stages": [
+      {
+        "stage": "01",
+        "label": "v5.3 裁决摘要",
+        "file": "data/reports/v5.3/固态钠电批次/v53裁决摘要_QuantumScape_20260910.md"
+      }
+    ],
+    "methodology": "v5.3"
+  },
+  {
+    "name": "当升科技",
+    "ticker": "300073.SZ",
+    "cluster_id": "06",
+    "cluster_name": "新能源与智能出行",
+    "rating": "回避",
+    "investment_thesis": "正极加工费周期型；海外高镍下行期，固态期权未行权",
+    "upside_potential": "三情景 Bull 61 / Bear 24，现价 38.66",
+    "target_price": "44（区间 24-61）",
+    "report_date": "2026-09-10",
+    "report_md": "data/reports/v5.3/固态钠电批次/v53裁决摘要_当升科技_20260910.md",
+    "report_stages": [
+      {
+        "stage": "01",
+        "label": "v5.3 裁决摘要",
+        "file": "data/reports/v5.3/固态钠电批次/v53裁决摘要_当升科技_20260910.md"
+      }
+    ],
+    "methodology": "v5.3"
+  },
+  {
+    "name": "Solid Power",
+    "ticker": "",
+    "cluster_id": "06",
+    "cluster_name": "新能源与智能出行",
+    "rating": "增持（小额验证仓位 ≤1%）",
+    "investment_thesis": "硫化物稀缺纯标的但 15 年零商业合同；v5.2「人为降 C」的犹豫在 v5.3 明确为期权性质",
+    "upside_potential": "三情景 Bull $6.50 USD / Bear 1.55 USD，现价 $2.52｜触发买入 ≤ $2.00",
+    "target_price": "3 USD（区间 1.55-6.5 USD）",
+    "report_date": "2026-09-10",
+    "report_md": "data/reports/v5.3/固态钠电批次/v53裁决摘要_Solid Power_20260910.md",
+    "report_stages": [
+      {
+        "stage": "01",
+        "label": "v5.3 裁决摘要",
+        "file": "data/reports/v5.3/固态钠电批次/v53裁决摘要_Solid Power_20260910.md"
+      }
+    ],
+    "methodology": "v5.3"
+  },
+  {
+    "name": "SES AI",
+    "ticker": "SES",
+    "cluster_id": "06",
+    "cluster_name": "新能源与智能出行",
+    "rating": "回避",
+    "investment_thesis": "治理履历否决：微盘股持续增发摊薄 + NDAA 政策窗口套利属性；v5.2 最亮读数（+47%）被一票否决",
+    "upside_potential": "三情景 Bull $1.70 USD / Bear 0.28 USD，现价 $0.503｜触发买入 事件出清（治理瑕疵出清+增发摊薄停止）",
+    "target_price": "0.8 USD（区间 0.28-1.7 USD）",
+    "report_date": "2026-09-10",
+    "report_md": "data/reports/v5.3/固态钠电批次/v53裁决摘要_SES AI_20260910.md",
+    "report_stages": [
+      {
+        "stage": "01",
+        "label": "v5.3 裁决摘要",
+        "file": "data/reports/v5.3/固态钠电批次/v53裁决摘要_SES AI_20260910.md"
+      }
+    ],
+    "methodology": "v5.3"
+  },
+  {
+    "name": "利元亨",
+    "ticker": "688499.SH",
+    "cluster_id": "06",
+    "cluster_name": "新能源与智能出行",
+    "rating": "回避",
+    "investment_thesis": "设备订单周期型；ER_ex +10.9% 但主营质量评级低（生存依赖未落地的定增）",
+    "upside_potential": "三情景 Bull 65 / Bear 21，现价 32.67",
+    "target_price": "36（区间 21-65）",
+    "report_date": "2026-09-10",
+    "report_md": "data/reports/v5.3/固态钠电批次/v53裁决摘要_利元亨_20260910.md",
+    "report_stages": [
+      {
+        "stage": "01",
+        "label": "v5.3 裁决摘要",
+        "file": "data/reports/v5.3/固态钠电批次/v53裁决摘要_利元亨_20260910.md"
+      }
+    ],
+    "methodology": "v5.3"
+  },
+  {
+    "name": "三祥新材",
+    "ticker": "603663.SH",
+    "cluster_id": "06",
+    "cluster_name": "新能源与智能出行",
+    "rating": "回避",
+    "investment_thesis": "锆源周期型；ER_ex -23.4%，固态锆源胜负手不在自己手里",
+    "upside_potential": "三情景 Bull 60 / Bear 14，现价 38.20",
+    "target_price": "36（区间 14-60）",
+    "report_date": "2026-09-10",
+    "report_md": "data/reports/v5.3/固态钠电批次/v53裁决摘要_三祥新材_20260910.md",
+    "report_stages": [
+      {
+        "stage": "01",
+        "label": "v5.3 裁决摘要",
+        "file": "data/reports/v5.3/固态钠电批次/v53裁决摘要_三祥新材_20260910.md"
+      }
+    ],
+    "methodology": "v5.3"
+  },
+  {
+    "name": "孚能科技",
+    "ticker": "688567.SH",
+    "cluster_id": "06",
+    "cluster_name": "新能源与智能出行",
+    "rating": "回避",
+    "investment_thesis": "主营质量评级低；边缘化海外利基供应商，等待国资重组的被整合对象",
+    "upside_potential": "三情景 Bull 17 / Bear 5，现价 9.02",
+    "target_price": "9.5（区间 5-17）",
+    "report_date": "2026-09-10",
+    "report_md": "data/reports/v5.3/固态钠电批次/v53裁决摘要_孚能科技_20260910.md",
+    "report_stages": [
+      {
+        "stage": "01",
+        "label": "v5.3 裁决摘要",
+        "file": "data/reports/v5.3/固态钠电批次/v53裁决摘要_孚能科技_20260910.md"
+      }
+    ],
+    "methodology": "v5.3"
+  },
+  {
+    "name": "上海洗霸",
+    "ticker": "603200.SH",
+    "cluster_id": "06",
+    "cluster_name": "新能源与智能出行",
+    "rating": "回避",
+    "investment_thesis": "8 条红线不变：主业与固态无关 + 材料收入仅 1297 万 + 高管被罚 + 质押平仓线 34.29 元 + 9/24 减持窗口",
+    "upside_potential": "三情景 Bull 52 / Bear 20，现价 41.10",
+    "target_price": "29（区间 20-52）",
+    "report_date": "2026-09-10",
+    "report_md": "data/reports/v5.3/固态钠电批次/v53裁决摘要_上海洗霸_20260910.md",
+    "report_stages": [
+      {
+        "stage": "01",
+        "label": "v5.3 裁决摘要",
+        "file": "data/reports/v5.3/固态钠电批次/v53裁决摘要_上海洗霸_20260910.md"
+      }
+    ],
+    "methodology": "v5.3"
+  },
+  {
+    "name": "容百科技",
+    "ticker": "688005.SH",
+    "cluster_id": "06",
+    "cluster_name": "新能源与智能出行",
+    "rating": "回避",
+    "investment_thesis": "治理履历否决：监管处罚 950 万元记录 → 小额验证仓位资格永久剥夺",
+    "upside_potential": "三情景 Bull 37 / Bear 19，现价 24.53",
+    "target_price": "23（区间 19-37）",
+    "report_date": "2026-09-10",
+    "report_md": "data/reports/v5.3/固态钠电批次/v53裁决摘要_容百科技_20260910.md",
+    "report_stages": [
+      {
+        "stage": "01",
+        "label": "v5.3 裁决摘要",
+        "file": "data/reports/v5.3/固态钠电批次/v53裁决摘要_容百科技_20260910.md"
+      }
+    ],
+    "methodology": "v5.3"
+  },
+  {
+    "name": "振华新材",
+    "ticker": "688707.SH",
+    "cluster_id": "06",
+    "cluster_name": "新能源与智能出行",
+    "rating": "回避",
+    "investment_thesis": "正极周期型；周期底部赌宁德钠电订单转正，位置低但价格未低于历史谷底参照",
+    "upside_potential": "三情景 Bull 17.2 / Bear 7.6，现价 10.29",
+    "target_price": "12.3（区间 7.6-17.2）",
+    "report_date": "2026-09-10",
+    "report_md": "data/reports/v5.3/固态钠电批次/v53裁决摘要_振华新材_20260910.md",
+    "report_stages": [
+      {
+        "stage": "01",
+        "label": "v5.3 裁决摘要",
+        "file": "data/reports/v5.3/固态钠电批次/v53裁决摘要_振华新材_20260910.md"
+      }
+    ],
+    "methodology": "v5.3"
+  },
+  {
+    "name": "鼎胜新材",
+    "ticker": "603876.SH",
+    "cluster_id": "06",
+    "cluster_name": "新能源与智能出行",
+    "rating": "回避",
+    "investment_thesis": "铝箔加工费周期型；ER_ex +6.9% < 8% 及格线；钠电铝箔 2026H1 零批量出货",
+    "upside_potential": "三情景 Bull 36.6 / Bear 11.6，现价 19.82",
+    "target_price": "23.4（区间 11.6-36.6）",
+    "report_date": "2026-09-10",
+    "report_md": "data/reports/v5.3/固态钠电批次/v53裁决摘要_鼎胜新材_20260910.md",
+    "report_stages": [
+      {
+        "stage": "01",
+        "label": "v5.3 裁决摘要",
+        "file": "data/reports/v5.3/固态钠电批次/v53裁决摘要_鼎胜新材_20260910.md"
+      }
+    ],
+    "methodology": "v5.3"
+  },
+  {
+    "name": "天奈科技",
+    "ticker": "688116.SH",
+    "cluster_id": "06",
+    "cluster_name": "新能源与智能出行",
+    "rating": "增持（小额验证仓位 ≤1%）",
+    "investment_thesis": "多壁碳管现金牛 + 单壁三寡头冠军；52x TTM 预付放量价，矩阵读数不够 B，里程碑 = 单壁放量节奏",
+    "upside_potential": "三情景 Bull 63 / Bear 24，现价 34.86",
+    "target_price": "40（区间 24-63）",
+    "report_date": "2026-09-10",
+    "report_md": "data/reports/v5.3/固态钠电批次/v53裁决摘要_天奈科技_20260910.md",
+    "report_stages": [
+      {
+        "stage": "01",
+        "label": "v5.3 裁决摘要",
+        "file": "data/reports/v5.3/固态钠电批次/v53裁决摘要_天奈科技_20260910.md"
+      }
+    ],
+    "methodology": "v5.3"
+  },
+  {
+    "name": "鹏辉能源",
+    "ticker": "300438.SZ",
+    "cluster_id": "06",
+    "cluster_name": "新能源与智能出行",
+    "rating": "回避",
+    "investment_thesis": "户储电芯周期型；28% 全球第一是真资产但 ER_ex +5.7% 不足，钠电纯度低",
+    "upside_potential": "三情景 Bull 92 / Bear 28，现价 54.82",
+    "target_price": "67（区间 28-92）",
+    "report_date": "2026-09-10",
+    "report_md": "data/reports/v5.3/固态钠电批次/v53裁决摘要_鹏辉能源_20260910.md",
+    "report_stages": [
+      {
+        "stage": "01",
+        "label": "v5.3 裁决摘要",
+        "file": "data/reports/v5.3/固态钠电批次/v53裁决摘要_鹏辉能源_20260910.md"
+      }
+    ],
+    "methodology": "v5.3"
+  },
+  {
+    "name": "华阳股份",
+    "ticker": "600348.SH",
+    "cluster_id": "06",
+    "cluster_name": "新能源与智能出行",
+    "rating": "回避",
+    "investment_thesis": "煤炭周期型；体质好于先验（ROE 5y 16.7%）但 25% 市值是钠电溢价，纯煤逻辑不支撑现价",
+    "upside_potential": "三情景 Bull 12.5 / Bear 5.8，现价 8.89｜触发买入 < 7.4",
+    "target_price": "9.3（区间 5.8-12.5）",
+    "report_date": "2026-09-10",
+    "report_md": "data/reports/v5.3/固态钠电批次/v53裁决摘要_华阳股份_20260910.md",
+    "report_stages": [
+      {
+        "stage": "01",
+        "label": "v5.3 裁决摘要",
+        "file": "data/reports/v5.3/固态钠电批次/v53裁决摘要_华阳股份_20260910.md"
+      }
+    ],
+    "methodology": "v5.3"
+  },
+  {
+    "name": "元力股份",
+    "ticker": "300174.SZ",
+    "cluster_id": "06",
+    "cluster_name": "新能源与智能出行",
+    "rating": "回避",
+    "investment_thesis": "硬碳周期型；活性炭现金牛但主供是贝特瑞/华阳，边缘挑战者",
+    "upside_potential": "三情景 Bull 30 / Bear 10.5，现价 18.15",
+    "target_price": "19.5（区间 10.5-30）",
+    "report_date": "2026-09-10",
+    "report_md": "data/reports/v5.3/固态钠电批次/v53裁决摘要_元力股份_20260910.md",
+    "report_stages": [
+      {
+        "stage": "01",
+        "label": "v5.3 裁决摘要",
+        "file": "data/reports/v5.3/固态钠电批次/v53裁决摘要_元力股份_20260910.md"
+      }
+    ],
+    "methodology": "v5.3"
+  },
+  {
+    "name": "圣泉集团",
+    "ticker": "605589.SH",
+    "cluster_id": "06",
+    "cluster_name": "新能源与智能出行",
+    "rating": "回避",
+    "investment_thesis": "周期型 + 88% PE 分位；真引擎是 AI 电子树脂而非钠电硬碳",
+    "upside_potential": "三情景 Bull 58 / Bear 22，现价 36.86",
+    "target_price": "40（区间 22-58）",
+    "report_date": "2026-09-10",
+    "report_md": "data/reports/v5.3/固态钠电批次/v53裁决摘要_圣泉集团_20260910.md",
+    "report_stages": [
+      {
+        "stage": "01",
+        "label": "v5.3 裁决摘要",
+        "file": "data/reports/v5.3/固态钠电批次/v53裁决摘要_圣泉集团_20260910.md"
+      }
+    ],
+    "methodology": "v5.3"
+  },
+  {
+    "name": "多氟多",
+    "ticker": "002407.SZ",
+    "cluster_id": "06",
+    "cluster_name": "新能源与智能出行",
+    "rating": "回避",
+    "investment_thesis": "治理履历否决：监管函记录；LiPF6 强周期决定利润表，NaPF6 收入占比仅 2-4%",
+    "upside_potential": "三情景 Bull 53 / Bear 13.5，现价 32.80",
+    "target_price": "24（区间 13.5-53）",
+    "report_date": "2026-09-10",
+    "report_md": "data/reports/v5.3/固态钠电批次/v53裁决摘要_多氟多_20260910.md",
+    "report_stages": [
+      {
+        "stage": "01",
+        "label": "v5.3 裁决摘要",
+        "file": "data/reports/v5.3/固态钠电批次/v53裁决摘要_多氟多_20260910.md"
+      }
+    ],
+    "methodology": "v5.3"
+  },
+  {
+    "name": "贝特瑞",
+    "ticker": "835185.BJ",
+    "cluster_id": "06",
+    "cluster_name": "新能源与智能出行",
+    "rating": "回避",
+    "investment_thesis": "负极周期型；全球第一但钠电纯度 <1%，第二梯队卡位",
+    "upside_potential": "三情景 Bull 34 / Bear 12，现价 21.33",
+    "target_price": "21.8（区间 12-34）",
+    "report_date": "2026-09-10",
+    "report_md": "data/reports/v5.3/固态钠电批次/v53裁决摘要_贝特瑞_20260910.md",
+    "report_stages": [
+      {
+        "stage": "01",
+        "label": "v5.3 裁决摘要",
+        "file": "data/reports/v5.3/固态钠电批次/v53裁决摘要_贝特瑞_20260910.md"
+      }
+    ],
+    "methodology": "v5.3"
+  },
+  {
+    "name": "普利特",
+    "ticker": "002324.SZ",
+    "cluster_id": "06",
+    "cluster_name": "新能源与智能出行",
+    "rating": "回避",
+    "investment_thesis": "改性材料周期型；ER_ex +0.1%，三张期权（LCP/钠电/固态）均未到行权条件",
+    "upside_potential": "三情景 Bull 14.8 / Bear 6.5，现价 9.01",
+    "target_price": "9.5（区间 6.5-14.8）",
+    "report_date": "2026-09-10",
+    "report_md": "data/reports/v5.3/固态钠电批次/v53裁决摘要_普利特_20260910.md",
+    "report_stages": [
+      {
+        "stage": "01",
+        "label": "v5.3 裁决摘要",
+        "file": "data/reports/v5.3/固态钠电批次/v53裁决摘要_普利特_20260910.md"
+      }
+    ],
+    "methodology": "v5.3"
+  },
+  {
+    "name": "派能科技",
+    "ticker": "688063.SH",
+    "cluster_id": "06",
+    "cluster_name": "新能源与智能出行",
+    "rating": "回避",
+    "investment_thesis": "户储周期型；欧洲冠军退位成区域分部商，ER_ex +0.8%",
+    "upside_potential": "三情景 Bull 61 / Bear 30，现价 41.77｜触发买入 ≤ 35",
+    "target_price": "47（区间 30-61）",
+    "report_date": "2026-09-10",
+    "report_md": "data/reports/v5.3/固态钠电批次/v53裁决摘要_派能科技_20260910.md",
+    "report_stages": [
+      {
+        "stage": "01",
+        "label": "v5.3 裁决摘要",
+        "file": "data/reports/v5.3/固态钠电批次/v53裁决摘要_派能科技_20260910.md"
+      }
+    ],
+    "methodology": "v5.3"
+  },
+  {
+    "name": "传艺科技",
+    "ticker": "002866.SZ",
+    "cluster_id": "06",
+    "cluster_name": "新能源与智能出行",
+    "rating": "回避",
+    "investment_thesis": "治理履历否决：信披监管函 + 2025 年股东套现 1.39 亿 + 钠电累亏 3.66 亿",
+    "upside_potential": "三情景 Bull 22 / Bear 10，现价 14.37",
+    "target_price": "13（区间 10-22）",
+    "report_date": "2026-09-10",
+    "report_md": "data/reports/v5.3/固态钠电批次/v53裁决摘要_传艺科技_20260910.md",
+    "report_stages": [
+      {
+        "stage": "01",
+        "label": "v5.3 裁决摘要",
+        "file": "data/reports/v5.3/固态钠电批次/v53裁决摘要_传艺科技_20260910.md"
+      }
+    ],
+    "methodology": "v5.3"
+  },
+  {
+    "name": "维科技术",
+    "ticker": "600152.SH",
+    "cluster_id": "06",
+    "cluster_name": "新能源与智能出行",
+    "rating": "回避",
+    "investment_thesis": "治理履历否决：定增问询回复中自认碳酸锂价格敏感性——信披态度扣分",
+    "upside_potential": "三情景 Bull 30 / Bear 11，现价 10.55",
+    "target_price": "19（区间 11-30）",
+    "report_date": "2026-09-10",
+    "report_md": "data/reports/v5.3/固态钠电批次/v53裁决摘要_维科技术_20260910.md",
+    "report_stages": [
+      {
+        "stage": "01",
+        "label": "v5.3 裁决摘要",
+        "file": "data/reports/v5.3/固态钠电批次/v53裁决摘要_维科技术_20260910.md"
+      }
+    ],
+    "methodology": "v5.3"
+  }
+]
