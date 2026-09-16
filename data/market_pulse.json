@@ -1,101 +1,101 @@
 {
- "updated_at": "2026-09-16T09:47:31+08:00",
+ "updated_at": "2026-09-16T19:55:26+08:00",
  "indices": {
   "sh000001": {
    "name": "上证指数",
    "market": "cn",
-   "price": 3855.87,
-   "chg_pct": -0.22,
-   "chg": -8.41,
+   "price": 3891.6,
+   "chg_pct": 0.71,
+   "chg": 27.32,
    "high52": 4258.86,
    "low52": 3741.11,
-   "time": "20260916094727",
-   "chg5d": null,
-   "vol20": null
+   "time": "20260916161403",
+   "chg5d": -1.52,
+   "vol20": 9.2
   },
   "sz399001": {
    "name": "深证成指",
    "market": "cn",
-   "price": 13244.95,
-   "chg_pct": -0.32,
-   "chg": -43.02,
+   "price": 13454.74,
+   "chg_pct": 1.26,
+   "chg": 166.77,
    "high52": 16374.02,
    "low52": 12448.32,
-   "time": "20260916094727",
-   "chg5d": null,
-   "vol20": null
+   "time": "20260916161427",
+   "chg5d": -1.96,
+   "vol20": 17.1
   },
   "sz399006": {
    "name": "创业板指",
    "market": "cn",
-   "price": 3238.44,
-   "chg_pct": -0.29,
-   "chg": -9.48,
+   "price": 3311.47,
+   "chg_pct": 1.96,
+   "chg": 63.55,
    "high52": 4380.41,
    "low52": 2892.27,
-   "time": "20260916094727",
-   "chg5d": null,
-   "vol20": null
+   "time": "20260916161442",
+   "chg5d": -1.3,
+   "vol20": 24.7
   },
   "sh000300": {
    "name": "沪深300",
    "market": "cn",
-   "price": 4431.09,
-   "chg_pct": -0.43,
-   "chg": -18.95,
+   "price": 4480.27,
+   "chg_pct": 0.68,
+   "chg": 30.23,
    "high52": 5064.27,
    "low52": 4394.29,
-   "time": "20260916094727",
-   "chg5d": null,
-   "vol20": null
+   "time": "20260916161415",
+   "chg5d": -2.02,
+   "vol20": 10.5
   },
   "sh000688": {
    "name": "科创50",
    "market": "cn",
-   "price": 1565.88,
-   "chg_pct": 0.9,
-   "chg": 13.92,
+   "price": 1616.19,
+   "chg_pct": 4.14,
+   "chg": 64.23,
    "high52": 2255.25,
    "low52": 1249.01,
-   "time": "20260916094727",
-   "chg5d": null,
-   "vol20": null
+   "time": "20260916161415",
+   "chg5d": 2.29,
+   "vol20": 31.8
   },
   "hkHSI": {
    "name": "恒生指数",
    "market": "hk",
-   "price": 24683.05,
-   "chg_pct": 0.06,
-   "chg": 15.81,
+   "price": 24713.78,
+   "chg_pct": 0.19,
+   "chg": 46.54,
    "high52": 28056.1,
    "low52": 22518.0,
-   "time": "2026/09/16 09:32:24",
-   "chg5d": null,
-   "vol20": null
+   "time": "2026/09/16 18:31:45",
+   "chg5d": -2.22,
+   "vol20": 13.6
   },
   "hkHSTECH": {
    "name": "恒生科技",
    "market": "hk",
-   "price": 4286.04,
-   "chg_pct": -0.12,
-   "chg": -5.3,
+   "price": 4325.45,
+   "chg_pct": 0.79,
+   "chg": 34.11,
    "high52": 6715.46,
    "low52": 4229.94,
-   "time": "2026/09/16 09:32:24",
-   "chg5d": null,
-   "vol20": null
+   "time": "2026/09/16 16:09:08",
+   "chg5d": -2.16,
+   "vol20": 20.5
   },
   "hkHSCEI": {
    "name": "恒生国企",
    "market": "hk",
-   "price": 8203.46,
-   "chg_pct": -0.02,
-   "chg": -1.45,
+   "price": 8206.37,
+   "chg_pct": 0.02,
+   "chg": 1.46,
    "high52": 9770.21,
    "low52": 7404.47,
-   "time": "2026/09/16 09:32:24",
-   "chg5d": null,
-   "vol20": null
+   "time": "2026/09/16 16:09:08",
+   "chg5d": -1.94,
+   "vol20": 14.8
   },
   "usDJI": {
    "name": "道琼斯",
@@ -138,212 +138,212 @@
   "sz399986": {
    "name": "中证银行",
    "market": "cn",
-   "price": 7499.73,
-   "chg_pct": -0.89,
-   "pe": 7.28,
-   "time": "20260916094727"
+   "price": 7516.0,
+   "chg_pct": -0.67,
+   "pe": 7.3,
+   "time": "20260916161433"
   },
   "sz399975": {
    "name": "证券公司",
    "market": "cn",
-   "price": 724.73,
-   "chg_pct": -0.55,
-   "pe": 12.03,
-   "time": "20260916094727"
+   "price": 732.54,
+   "chg_pct": 0.52,
+   "pe": 12.16,
+   "time": "20260916161421"
   },
   "sz399808": {
    "name": "中证新能",
    "market": "cn",
-   "price": 2208.85,
-   "chg_pct": -1.11,
-   "pe": 29.58,
-   "time": "20260916094727"
+   "price": 2239.54,
+   "chg_pct": 0.26,
+   "pe": 29.9,
+   "time": "20260916161457"
   },
   "sz399811": {
    "name": "CSSW电子",
    "market": "cn",
-   "price": 7262.13,
-   "chg_pct": 0.78,
-   "pe": 49.71,
-   "time": "20260916094727"
+   "price": 7467.27,
+   "chg_pct": 3.62,
+   "pe": 51.1,
+   "time": "20260916161406"
   },
   "sz399989": {
    "name": "中证医疗",
    "market": "cn",
-   "price": 6632.48,
-   "chg_pct": 0.92,
-   "pe": 29.92,
-   "time": "20260916094727"
+   "price": 6608.87,
+   "chg_pct": 0.56,
+   "pe": 29.78,
+   "time": "20260916161439"
   },
   "sz399997": {
    "name": "中证白酒",
    "market": "cn",
-   "price": 6146.24,
-   "chg_pct": -0.95,
-   "pe": 19.51,
-   "time": "20260916094727"
+   "price": 6182.27,
+   "chg_pct": -0.37,
+   "pe": 19.48,
+   "time": "20260916161403"
   },
   "sz399967": {
    "name": "中证军工",
    "market": "cn",
-   "price": 11589.29,
-   "chg_pct": 0.47,
-   "pe": 61.29,
-   "time": "20260916094727"
+   "price": 11648.62,
+   "chg_pct": 0.99,
+   "pe": 61.49,
+   "time": "20260916161403"
   },
   "sz399998": {
    "name": "中证煤炭",
    "market": "cn",
-   "price": 2385.75,
-   "chg_pct": -0.78,
-   "pe": 19.4,
-   "time": "20260916094727"
+   "price": 2399.48,
+   "chg_pct": -0.21,
+   "pe": 19.5,
+   "time": "20260916161406"
   },
   "sz399971": {
    "name": "中证传媒",
    "market": "cn",
-   "price": 1182.78,
-   "chg_pct": -0.41,
-   "pe": 30.66,
-   "time": "20260916094727"
+   "price": 1188.27,
+   "chg_pct": 0.06,
+   "pe": 30.78,
+   "time": "20260916161409"
   },
   "sz399976": {
    "name": "CS新能车",
    "market": "cn",
-   "price": 3440.95,
-   "chg_pct": -1.53,
-   "pe": 20.65,
-   "time": "20260916094727"
+   "price": 3492.99,
+   "chg_pct": -0.04,
+   "pe": 20.88,
+   "time": "20260916161424"
   },
   "sz399933": {
    "name": "中证医药",
    "market": "cn",
-   "price": 7678.82,
-   "chg_pct": 0.42,
-   "pe": 29.86,
-   "time": "20260916094727"
+   "price": 7653.38,
+   "chg_pct": 0.08,
+   "pe": 29.75,
+   "time": "20260916161445"
   },
   "sz399970": {
    "name": "移动互联",
    "market": "cn",
-   "price": 4800.73,
-   "chg_pct": 0.02,
-   "pe": 40.73,
-   "time": "20260916094727"
+   "price": 4896.06,
+   "chg_pct": 2.01,
+   "pe": 41.77,
+   "time": "20260916161406"
   },
   "hkHSI": {
    "name": "恒生指数",
    "market": "hk",
-   "price": 24683.05,
-   "chg_pct": 0.06,
+   "price": 24713.78,
+   "chg_pct": 0.19,
    "pe": 0.0,
-   "time": "2026/09/16 09:32:24"
+   "time": "2026/09/16 18:31:45"
   },
   "hkHSTECH": {
    "name": "恒生科技",
    "market": "hk",
-   "price": 4286.04,
-   "chg_pct": -0.12,
+   "price": 4325.45,
+   "chg_pct": 0.79,
    "pe": 0.0,
-   "time": "2026/09/16 09:32:24"
+   "time": "2026/09/16 16:09:08"
   },
   "hkHSCEI": {
    "name": "恒生国企",
    "market": "hk",
-   "price": 8203.46,
-   "chg_pct": -0.02,
+   "price": 8206.37,
+   "chg_pct": 0.02,
    "pe": 0.0,
-   "time": "2026/09/16 09:32:24"
+   "time": "2026/09/16 16:09:08"
   },
   "hkHSCCI": {
    "name": "红筹指数",
    "market": "hk",
-   "price": 4071.18,
-   "chg_pct": 0.06,
+   "price": 4078.2,
+   "chg_pct": 0.24,
    "pe": 0.0,
-   "time": "2026/09/16 09:32:24"
+   "time": "2026/09/16 16:09:08"
   }
  },
  "commodities": {
   "GC": {
    "name": "COMEX黄金",
-   "price": 4324.63,
-   "chg_pct": -0.19,
-   "high": 4339.5,
+   "price": 4389.34,
+   "chg_pct": 1.3,
+   "high": 4394.8,
    "low": 4315.2,
-   "time": "2026-09-16 09:47:04"
+   "time": "2026-09-16 19:55:05"
   },
   "CL": {
    "name": "WTI原油",
-   "price": 100.26,
-   "chg_pct": -0.48,
+   "price": 98.66,
+   "chg_pct": -2.08,
    "high": 100.61,
-   "low": 99.75,
-   "time": "2026-09-16 09:47:04"
+   "low": 98.3,
+   "time": "2026-09-16 19:55:03"
   },
   "SI": {
    "name": "COMEX白银",
-   "price": 64.13,
-   "chg_pct": 0.43,
-   "high": 64.48,
+   "price": 65.46,
+   "chg_pct": 2.51,
+   "high": 65.47,
    "low": 63.94,
-   "time": "2026-09-16 09:47:03"
+   "time": "2026-09-16 19:55:05"
   },
   "HG": {
    "name": "COMEX铜",
-   "price": 6.45,
-   "chg_pct": 0.1,
+   "price": 6.521,
+   "chg_pct": 1.2,
    "high": null,
    "low": null,
-   "time": "2026-09-15T21:38:04.000-0400"
+   "time": "2026-09-16T07:45:36.000-0400"
   }
  },
  "forex": {
   "USDCNY": null,
   "DXY": {
    "name": "美元指数(期货)",
-   "price": 99.455,
-   "chg_pct": 0.11,
-   "time": "2026-09-15T21:38:29.000-0400"
+   "price": 99.38,
+   "chg_pct": 0.04,
+   "time": "2026-09-16T07:45:38.000-0400"
   }
  },
  "rates": {
   "us10y": {
-   "value": 4.998,
-   "time": "2026-09-15T21:46:56.000-0400"
+   "value": 4.971,
+   "time": "2026-09-16T07:55:18.000-0400"
   },
   "cn10y": {
-   "value": 1.6865,
-   "date": "2026-09-15"
+   "value": 1.6858,
+   "date": "2026-09-16"
   },
   "cn30y": {
-   "value": 2.14,
-   "date": "2026-09-15"
+   "value": 2.1375,
+   "date": "2026-09-16"
   },
   "cn1y": {
    "value": 1.2439,
-   "date": "2026-09-15"
+   "date": "2026-09-16"
   },
-  "spread_bp": 331.2,
+  "spread_bp": 328.5,
   "us10y_5d_bp": null
  },
  "vix": {
-  "value": 17.2,
-  "chg_pct": 0.58,
-  "time": "2026-09-15T16:15:01.000-0400"
+  "value": 16.76,
+  "chg_pct": -2.56,
+  "time": "2026-09-16T07:55:31.000-0400"
  },
  "valuation": {
-  "csi300_pe": 13.28,
+  "csi300_pe": 13.38,
   "spx_ey": 3.86,
   "spx_ey_mean": 7.19,
   "spx_ey_median": 6.63,
   "spx_ey_asof": "Sep 15"
  },
  "risk": {
-  "temp": 37.8,
+  "temp": 29.1,
   "components": {
-   "volatility": 22.6,
-   "momentum": 62.0
+   "volatility": 20.7,
+   "momentum": 42.6
   },
   "level": "温和",
   "desc": "风险指标整体平稳"
@@ -351,16 +351,16 @@
  "erp": {
   "cn": {
    "index": "沪深300",
-   "pe": 13.28,
-   "earnings_yield": 7.53,
-   "bond_yield": 1.6865,
-   "erp": 5.84
+   "pe": 13.38,
+   "earnings_yield": 7.47,
+   "bond_yield": 1.6858,
+   "erp": 5.79
   },
   "us": {
    "index": "标普500",
    "earnings_yield": 3.86,
-   "bond_yield": 4.998,
-   "erp": -1.14
+   "bond_yield": 4.971,
+   "erp": -1.11
   },
   "hk": null
  },
@@ -368,12 +368,12 @@
   {
    "name": "美股→A股联动",
    "level": 0,
-   "detail": "隔夜标普-0.45%，当日上证-0.22%，联动正常"
+   "detail": "隔夜标普-0.45%，当日上证+0.71%，联动正常"
   },
   {
    "name": "波动率正常",
    "level": 0,
-   "detail": "VIX=17.2，处于正常波动区间"
+   "detail": "VIX=16.8，处于正常波动区间"
   }
  ],
  "history": {
@@ -396,7 +396,7 @@
    },
    {
     "d": "2026-09-16",
-    "v": 4.998
+    "v": 4.971
    }
   ],
   "cn10y": [
@@ -418,7 +418,7 @@
    },
    {
     "d": "2026-09-16",
-    "v": 1.6865
+    "v": 1.6858
    }
   ],
   "vix": [
@@ -440,7 +440,7 @@
    },
    {
     "d": "2026-09-16",
-    "v": 17.2
+    "v": 16.76
    }
   ],
   "gold": [
@@ -462,7 +462,7 @@
    },
    {
     "d": "2026-09-16",
-    "v": 4324.63
+    "v": 4389.34
    }
   ],
   "wti": [
@@ -484,7 +484,7 @@
    },
    {
     "d": "2026-09-16",
-    "v": 100.26
+    "v": 98.66
    }
   ],
   "risk_temp": [
@@ -506,22 +506,9 @@
    },
    {
     "d": "2026-09-16",
-    "v": 37.8
+    "v": 29.1
    }
   ]
  },
- "errors": [
-  "kline sh000001: HTTP Error 501: Not Implemented",
-  "kline sz399001: HTTP Error 501: Not Implemented",
-  "kline sz399006: HTTP Error 501: Not Implemented",
-  "kline sh000300: HTTP Error 501: Not Implemented",
-  "kline sh000688: HTTP Error 501: Not Implemented",
-  "kline hkHSI: HTTP Error 501: Not Implemented",
-  "kline hkHSTECH: HTTP Error 501: Not Implemented",
-  "kline hkHSCEI: HTTP Error 501: Not Implemented",
-  "kline usDJI: HTTP Error 501: Not Implemented",
-  "kline usIXIC: HTTP Error 501: Not Implemented",
-  "kline usINX: HTTP Error 501: Not Implemented",
-  "kline whUSDCNY: HTTP Error 501: Not Implemented"
- ]
+ "errors": []
 }
