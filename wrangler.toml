@@ -1,0 +1,12 @@
+# Cloudflare Pages 配置 — AI Invest 账号系统
+# Pages 项目连着 GitHub 仓库时,本文件让 wrangler/构建系统能识别 D1 绑定。
+# database_id 在执行 "wrangler d1 create aiinvest-db" 后回填,
+# 或直接在 Dashboard: Pages 项目 → Settings → Functions → D1 bindings 手动添加(变量名必须是 DB)。
+name = "gansiwande"
+pages_build_output_dir = "."
+compatibility_date = "2024-09-01"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "aiinvest-db"
+database_id = "PLACEHOLDER_RUN_D1_CREATE_THEN_FILL"

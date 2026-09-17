@@ -92,20 +92,22 @@
         <div class="gate-card">
           <div class="gate-icon">🔐</div>
           <h3 class="gate-title">投资组合需要登录查看</h3>
-          <p class="gate-desc">持仓数据经密码加密保险箱保护,请输入账号密码解锁。每个账号只能查看自己的持仓。</p>
+          <p class="gate-desc">持仓数据云端存储,同一账号在手机、电脑任何设备登录,看到的都是同一份持仓。没有账号?点击下方「注册新账号」,30 秒开通。</p>
           <form class="login-form" id="loginForm" autocomplete="off">
             <input type="text" id="loginUser" class="search-input login-input" placeholder="账号" autocomplete="username">
             <input type="password" id="loginPassword" class="search-input login-input" placeholder="密码" autocomplete="current-password">
             <button type="submit" class="btn-primary" id="loginBtn">登 录</button>
           </form>
+          <form class="login-form" id="registerForm" autocomplete="off" style="display:none;">
+            <input type="text" id="registerUser" class="search-input login-input" placeholder="账号 (2-20 位,中文/字母/数字/下划线)" autocomplete="username">
+            <input type="password" id="registerPassword" class="search-input login-input" placeholder="密码 (至少 8 位)" autocomplete="new-password">
+            <input type="text" id="registerDisplay" class="search-input login-input" placeholder="显示名 (可选,如昵称)">
+            <button type="submit" class="btn-primary" id="registerBtn">注册并登录</button>
+          </form>
           <div class="login-error" id="loginError" style="display:none;"></div>
-          <button type="button" class="gate-link-btn" id="activateToggle">🧾 有开通码?点此激活账号</button>
-          <div class="activate-box" id="activateBox" style="display:none;">
-            <textarea id="activateCode" class="login-input" rows="3" placeholder="粘贴主账号发给你的开通码(一段密文,不含密码)"></textarea>
-            <button type="button" class="btn-primary activate-btn" id="activateBtn">激活账号(约数秒)</button>
-            <div class="login-error" id="activateError" style="display:none;"></div>
-          </div>
-          <p class="gate-footnote">🔒 数据以密文存储 · 密码不经过网络传输 · 请妥善保管密码</p>
+          <div class="login-error" id="registerError" style="display:none;"></div>
+          <button type="button" class="gate-link-btn" id="registerToggle">✨ 没有账号?点此注册</button>
+          <p class="gate-footnote">☁️ 持仓云端存储 · 每个账号数据独立隔离 · 请妥善保管密码(忘记密码需联系管理员重置)</p>
         </div>
       </div>
 
@@ -116,7 +118,7 @@
             <h2 class="section-title">投资组合 <span class="user-badge" id="userBadge">👤 --</span></h2>
             <p class="section-subtitle">持仓管理与估值跟踪 · <span id="portfolioSubCount">--</span></p>
           </div>
-          <button class="footer-action-btn" id="logoutBtn" title="退出登录并清空本机会话">退出登录</button>
+          <button class="footer-action-btn" id="logoutBtn" title="退出登录">退出登录</button>
         </div>
 
         <!-- 区域A: 持仓汇总 + 录入 -->
@@ -153,10 +155,10 @@
             </div>
           </div>
 
-          <!-- 本地与数据库不一致提示条 -->
+          <!-- 云端同步状态提示条 -->
           <div class="sync-notice" id="syncNotice" style="display:none;">
-            <span>⚠️ 检测到本地持仓与数据库不一致（你在此浏览器中做过修改但尚未保存到数据库）</span>
-            <button type="button" id="exportPortfolioBtn2" class="sync-notice-btn">📤 导出保存到数据库</button>
+            <span>⚠️ 检测到本地持仓与云端不一致</span>
+            <button type="button" id="exportPortfolioBtn2" class="sync-notice-btn">📤 导出持仓数据</button>
           </div>
 
           <!-- 持仓录入表单 -->
@@ -176,28 +178,31 @@
           </div>
         </div>
 
-        <!-- 区域C: 账号管理(仅主账号 admin 可见) -->
+        <!-- 区域C: 用户管理(仅管理员可见) -->
         <div class="card" id="adminAccountsCard" style="display:none; margin-bottom: var(--space-lg);">
           <div class="card-header">
-            <h3 class="card-title">👥 账号管理 <span class="section-tag">仅主账号</span></h3>
+            <h3 class="card-title">👥 用户管理 <span class="section-tag">仅管理员</span></h3>
+            <button type="button" class="footer-action-btn" id="adminUsersRefresh">🔄 刷新</button>
           </div>
-          <p class="admin-hint">开新号:设定用户名与密码 → 生成开通码发给对方。开通码是<b>纯密文</b>(不含密码,泄露也无法解密持仓);对方在登录页「开通码激活」粘贴即可在本机登录,同时把开通码发给站长固化进网站后,所有设备永久生效。</p>
-          <div class="position-form" id="adminAcctForm">
-            <input type="text" id="newAcctUser" class="search-input" placeholder="用户名 (英文/数字)" style="max-width:160px;">
-            <input type="text" id="newAcctDisplay" class="search-input" placeholder="显示名 (可选)" style="max-width:160px;">
-            <input type="password" id="newAcctPass" class="search-input" placeholder="密码 (至少 10 位)" style="max-width:180px;" autocomplete="new-password">
-            <button type="button" class="footer-action-btn" id="genRandPassBtn" title="生成 16 位随机强密码">🎲 随机强密码</button>
-            <button type="button" class="btn-primary" id="createAcctBtn">生成开通码</button>
+          <p class="admin-hint">全部注册用户一览(数据存云端数据库)。删除用户将同时删除其云端持仓数据,不可恢复;管理员账号受保护不可删除。</p>
+          <div class="table-wrapper" style="max-height:380px; overflow:auto;">
+            <table>
+              <thead>
+                <tr>
+                  <th>用户名</th>
+                  <th>显示名</th>
+                  <th>注册时间</th>
+                  <th>数据量</th>
+                  <th>持仓更新</th>
+                  <th>操作</th>
+                </tr>
+              </thead>
+              <tbody id="userTableBody">
+                <tr><td colspan="6" class="empty-state">--</td></tr>
+              </tbody>
+            </table>
           </div>
-          <div class="login-error" id="adminAcctError" style="display:none;"></div>
-          <div class="activation-code-box" id="codeBox" style="display:none;">
-            <div class="code-head">
-              <span>开通码(发给对方 · 同时发站长固化)</span>
-              <button type="button" class="footer-action-btn" id="copyCodeBtn">📋 复制开通码</button>
-            </div>
-            <textarea id="activationCode" readonly rows="4"></textarea>
-            <p class="code-note">⚠️ 新账号初始持仓为空,对方登录后自行录入;录入后如需固化持仓到保险箱,把「导出」的 JSON 发给站长即可。</p>
-          </div>
+          <div class="record-count" id="adminUserCount"></div>
         </div>
 
         <!-- 区域B: 持仓占比与操作计划（合并表格） -->
@@ -248,12 +253,12 @@
 
       <div class="footer-actions">
         <div class="footer-save-group">
-          <button class="footer-action-btn footer-save-btn" id="saveCloudBtn" title="一键把当前持仓保存到服务器，无需下载">
+          <button class="footer-action-btn footer-save-btn" id="saveCloudBtn" title="立即把当前持仓同步到云端">
             💾 保存到云端
           </button>
           <span class="save-status" id="saveCloudStatus"></span>
         </div>
-        <button class="footer-action-btn footer-export-btn" id="exportPortfolioBtn" title="复制当前持仓数据为 JSON 文本（保存服务不可用时的兜底）">
+        <button class="footer-action-btn footer-export-btn" id="exportPortfolioBtn" title="复制当前持仓数据为 JSON 文本">
           📤 导出
         </button>
         <a class="footer-admin-link" href="admin.html">产业研究与公司筛选</a>

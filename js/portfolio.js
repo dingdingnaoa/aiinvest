@@ -1,16 +1,14 @@
 /**
  * portfolio.js — 投资组合模块
  * Apple 极简风格：横向卡片 + 水平占比条
- * v3: 登录门控——持仓数据由账号保险箱(Auth)解密提供,未登录不渲染任何持仓
+ * v5: 云端账号系统——持仓数据以云端数据库为权威源,
+ *     任何增删改先写本地缓存(离线可用)再自动同步云端;换设备登录数据不丢。
  */
 (function (global) {
   'use strict';
 
   const STORAGE_BASE = 'aiinvest_portfolio_positions';
   const USD_TO_HKD = 7.80;
-
-  // 兜底空仓位(仅在保险箱解密异常时使用,正常流程不可达;不含任何真实数据)
-  const FALLBACK_POSITIONS = [];
 
   const Portfolio = {
     positions: [],
@@ -36,6 +34,7 @@
       this.valuations = valuations;
       this.positions = [];
       this._userKey = null;
+      this._syncTimer = null;
       this._bindForm();
       this._bindVisibility();
       this._bindExport();
@@ -45,11 +44,11 @@
     },
 
     /**
-     * 登录成功后解锁持仓(Auth.current.data 为解密后的保险箱数据)
+     * 登录成功后解锁持仓(Auth.current.data 为云端返回的持仓数据)
      */
     unlockWith(data) {
       this._userKey = STORAGE_BASE + '_' + (Auth.current ? Auth.current.user : 'anon');
-      this._vaultPositions = (data && Array.isArray(data.positions)) ? data.positions : [];
+      this._cloudPositions = (data && Array.isArray(data.positions)) ? data.positions : [];
       this._vaultUpdatedAt = (data && data.updated_at) || '';
       this._loadPositions();
       this._renderAll();
@@ -63,29 +62,36 @@
     /** 退出登录:清空内存与定时器,渲染交回登录门 */
     lock() {
       if (this.refreshTimer) { clearInterval(this.refreshTimer); this.refreshTimer = null; }
+      if (this._syncTimer) { clearTimeout(this._syncTimer); this._syncTimer = null; }
       this.positions = [];
       this.livePrices = {};
       this._userKey = null;
-      this._vaultPositions = null;
+      this._cloudPositions = null;
     },
 
     _loadPositions() {
+      // 加载顺序:
+      // 1) 云端数据(权威)——任何设备登录都能取到自己的持仓
+      // 2) 本机 localStorage 缓存——仅当云端为空时作为旧数据自动迁移上云
+      let local = null;
       try {
-        // 加载顺序(登录版):
-        // 1) 浏览器 localStorage(per-user)—— 当前设备上的未同步修改(最高优先级)
-        // 2) 账号保险箱解密数据 —— 中央持久化持仓(基线)
         const raw = this._userKey ? localStorage.getItem(this._userKey) : null;
-        const loaded = raw ? JSON.parse(raw) : null;
-        if (Array.isArray(loaded) && loaded.length > 0) {
-          this.positions = loaded;
-          this._savePositions();
-          return;
-        }
-        this.positions = (this._vaultPositions || FALLBACK_POSITIONS).map(p => ({ ...p }));
+        local = raw ? JSON.parse(raw) : null;
+      } catch (e) { local = null; }
+
+      if (Array.isArray(this._cloudPositions) && this._cloudPositions.length > 0) {
+        this.positions = this._cloudPositions.map(p => ({ ...p }));
         this._savePositions();
-      } catch (e) {
-        this.positions = (this._vaultPositions || FALLBACK_POSITIONS).map(p => ({ ...p }));
+        return;
       }
+      // 云端为空(新账号/首次使用):若本机留有旧版本数据,自动迁移上云
+      if (Array.isArray(local) && local.length > 0) {
+        this.positions = local.map(p => ({ ...p }));
+        this._savePositions(); // 触发云端同步,完成迁移
+        return;
+      }
+      this.positions = [];
+      this._savePositions();
     },
 
     refresh() {
@@ -248,20 +254,45 @@
       this._renderSummaryOnly();
     },
 
-    /**
-     * 中央持仓数据来自账号保险箱(Auth 解密),不再从明文 portfolio.json 拉取。
-     * 本地与保险箱不一致时提示:本地修改尚未同步给管理员。
-     */
-    _showSyncNotice() {
-      const box = document.getElementById('syncNotice');
-      if (box) {
-        box.style.display = 'flex';
-        box.classList.add('show');
-      }
-    },
-
+    /* ============================================================
+     * 持仓保存与云端同步
+     * 1) localStorage 先写(离线可用、即时生效)
+     * 2) 云端 PUT 防抖 1.2s(连续增删改只发最后一次)
+     * ============================================================ */
     _savePositions() {
       try { if (this._userKey) localStorage.setItem(this._userKey, JSON.stringify(this.positions)); } catch (e) {}
+      this._syncToCloudDebounced();
+    },
+
+    _syncToCloudDebounced() {
+      if (!Auth.current) return;
+      if (this._syncTimer) clearTimeout(this._syncTimer);
+      this._syncTimer = setTimeout(() => { this._syncTimer = null; this._syncToCloud('auto'); }, 1200);
+    },
+
+    async _syncToCloud(mode) {
+      if (!Auth.current) return;
+      const statusEl = document.getElementById('saveCloudStatus');
+      const setStatus = (text, ok, cls) => {
+        if (statusEl) { statusEl.textContent = text; statusEl.className = 'save-status ' + (ok ? 'ok' : 'fail'); }
+        if (cls) { document.body.classList.remove('save-clouding', 'save-cloud-ok', 'save-cloud-fail'); document.body.classList.add(cls); }
+      };
+      const btn = document.getElementById('saveCloudBtn');
+      if (btn) btn.disabled = true;
+      setStatus(mode === 'auto' ? '☁️ 正在同步...' : '正在保存到云端…', true, 'save-clouding');
+      try {
+        // 仅更新 positions;trades 等其他字段保持不动
+        const trades = (Auth.current.data && Auth.current.data.trades) || [];
+        await Auth.syncHoldings({ positions: this.positions, trades: trades });
+        const t = new Date().toLocaleTimeString('zh-CN', { hour12: false });
+        setStatus(mode === 'auto' ? '☁️ 已自动同步 · ' + t : '✅ 已保存到云端 · ' + t, true, 'save-cloud-ok');
+      } catch (e) {
+        setStatus('⚠️ 云端同步失败(数据已存本机,可稍后点「保存到云端」重试)', false, 'save-cloud-fail');
+      } finally {
+        if (btn) btn.disabled = false;
+        // 同步 app 数据条上的持仓数
+        if (global.App && global.App._renderHoldingsCount) global.App._renderHoldingsCount();
+      }
     },
 
     _bindForm() {
@@ -283,7 +314,6 @@
      * 点击后将当前持仓序列化为 JSON 格式文本并复制到剪贴板，弹窗展示
      */
     _bindExport() {
-      // footer 主按钮 + 不一致提示条按钮
       ['exportPortfolioBtn', 'exportPortfolioBtn2'].forEach(id => {
         const btn = document.getElementById(id);
         if (btn) btn.addEventListener('click', () => this._exportPositions());
@@ -293,7 +323,7 @@
     _exportPositions() {
       const payload = {
         updated_at: new Date().toISOString().slice(0, 10),
-        note: '用户当前持仓快照（粘贴到对话，我覆盖更新 data/portfolio.json）',
+        note: '用户当前持仓快照',
         holdings: this.positions.map(p => ({
           id: p.id, name: p.name, ticker: p.ticker,
           shares: p.shares ?? null, cost: p.cost ?? null, note: p.note || ''
@@ -310,65 +340,11 @@
     },
 
     /**
-     * 绑定「保存到云端」按钮：一键把持仓写入服务器（沙箱保存服务）
-     * 成功 → 数据落到 data/portfolio.json；失败 → 兜底导出复制
+     * 绑定「保存到云端」按钮:立即强制同步(自动同步之外的兜底)
      */
     _bindSaveCloud() {
       const btn = document.getElementById('saveCloudBtn');
-      if (btn) btn.addEventListener('click', () => this._saveToCloud());
-    },
-
-    async _saveToCloud() {
-      const statusEl = document.getElementById('saveCloudStatus');
-      const setStatus = (text, ok, cls) => {
-        if (statusEl) { statusEl.textContent = text; statusEl.className = 'save-status ' + (ok ? 'ok' : 'fail'); }
-        if (cls) { document.body.classList.remove('save-clouding', 'save-cloud-ok', 'save-cloud-fail'); document.body.classList.add(cls); }
-      };
-      const btn = document.getElementById('saveCloudBtn');
-      if (btn) { btn.disabled = true; }
-
-      // 先写本地 localStorage，保证即时生效（永不丢失）
-      this._savePositions();
-
-      const payload = JSON.stringify({
-        updated_at: new Date().toISOString(),
-        holdings: this.positions.map(p => ({
-          id: p.id, name: p.name, ticker: p.ticker,
-          shares: p.shares ?? null, cost: p.cost ?? null, note: p.note || '',
-          createdAt: p.createdAt || null, updatedAt: p.updatedAt || new Date().toISOString()
-        }))
-      });
-
-      // 候选保存端点：同源（http 部署时）+ 沙箱本地服务
-      const endpoints = [];
-      if (window.location.protocol === 'http:' || window.location.protocol === 'https:') {
-        endpoints.push(window.location.origin + '/api/save-portfolio');
-      }
-      endpoints.push('http://localhost:8080/api/save-portfolio');
-      endpoints.push('http://127.0.0.1:8080/api/save-portfolio');
-
-      setStatus('正在保存到服务器…', true, 'save-clouding');
-      for (const ep of endpoints) {
-        try {
-          const r = await fetch(ep, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: payload
-          });
-          if (!r.ok) continue;
-          const d = await r.json();
-          if (d.ok) {
-            setStatus(`✅ 已保存到服务器 · ${d.count} 家持仓 · ${String(d.updated_at).slice(5, 16)}`, true, 'save-cloud-ok');
-            if (btn) btn.disabled = false;
-            return;
-          }
-        } catch (e) { /* 尝试下一个端点 */ }
-      }
-
-      // 全部失败 → 兜底：导出复制
-      setStatus('⚠️ 未连接保存服务，已复制 JSON（贴回对话可入库）', false, 'save-cloud-fail');
-      if (btn) btn.disabled = false;
-      this._exportPositions();
+      if (btn) btn.addEventListener('click', () => this._syncToCloud('manual'));
     },
 
     _handleAddOrUpdate() {

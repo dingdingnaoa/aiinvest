@@ -1,6 +1,8 @@
 /**
  * app.js — 应用主控制器
- * v3: 登录门控——全球脉搏对所有人公开;研究报告与投资组合需登录(账号保险箱解密)
+ * v4: 云端账号系统——登录/注册走 /api 接口,持仓数据云端存储;
+ *     Cookie 会话 7 天有效,刷新页面自动恢复登录态。
+ *     全球脉搏对所有人公开;研究报告与投资组合需登录。
  */
 (function (global) {
   'use strict';
@@ -26,6 +28,8 @@
       try {
         await this.loadData();
         this.renderPublic();
+        // 会话恢复:Cookie 有效则自动登录(云端持仓随之就位)
+        if (window.Auth) await window.Auth.restoreSession();
         this.applyAuthState();
         AIInvest.Clock.setDataStatus('数据就绪');
         AIInvest.Clock.setLastUpdate(new Date().toISOString());
@@ -84,7 +88,7 @@
         const badge = document.getElementById('userBadge');
         if (badge) badge.textContent = '👤 ' + (Auth.current.display_name || Auth.current.user);
 
-        // 持仓(保险箱数据驱动)
+        // 持仓(云端数据驱动)
         if (this.state.valuations && this.state.valuations.length > 0) {
           AIInvest.Portfolio.init(this.state.valuations);
           AIInvest.Portfolio.unlockWith(Auth.current.data);
@@ -101,7 +105,7 @@
           const n = (Auth.current.data.positions || []).filter(p => p.shares > 0).length;
           sub.textContent = n + ' 家深度研究标的 · 数据快照 ' + (Auth.current.data.updated_at || '--');
         }
-        // 账号管理面板:仅主账号可见
+        // 用户管理面板:仅管理员可见
         if (AIInvest.AccountAdmin) AIInvest.AccountAdmin.applyVisibility(Auth.current.user);
       } else {
         // ---- 未登录 ----
@@ -109,12 +113,12 @@
         if (content) content.style.display = 'none';
         if (researchGate) researchGate.style.display = '';
         if (researchSection) researchSection.style.display = 'none';
-        // 隐藏 admin 面板
+        // 隐藏管理面板
         if (AIInvest.AccountAdmin) AIInvest.AccountAdmin.applyVisibility(null);
       }
     },
 
-    /** 登录表单/门控按钮 */
+    /** 登录/注册表单与门控按钮 */
     _bindLoginUI() {
       const form = document.getElementById('loginForm');
       const errBox = document.getElementById('loginError');
@@ -126,7 +130,8 @@
         setTimeout(() => { const u = document.getElementById('loginUser'); if (u) u.focus(); }, 100);
       });
 
-      if (form) form.addEventListener('submit', (e) => {
+      /* ---------- 登录 ---------- */
+      if (form) form.addEventListener('submit', async (e) => {
         e.preventDefault();
         const user = (document.getElementById('loginUser') || {}).value || '';
         const pass = (document.getElementById('loginPassword') || {}).value || '';
@@ -135,24 +140,60 @@
           if (errBox) { errBox.textContent = '请输入账号和密码'; errBox.style.display = 'block'; }
           return;
         }
-        if (btn) { btn.disabled = true; btn.textContent = '解密中...'; }
-        // PBKDF2 31 万次迭代,让 UI 先刷新
-        setTimeout(() => {
-          const r = window.Auth.login(user.trim(), pass);
+        if (btn) { btn.disabled = true; btn.textContent = '登录中...'; }
+        try {
+          await window.Auth.login(user.trim(), pass);
+          if (errBox) errBox.style.display = 'none';
+          const pw = document.getElementById('loginPassword'); if (pw) pw.value = '';
+          this.applyAuthState();
+        } catch (err) {
+          if (errBox) { errBox.textContent = err.message || '登录失败,请稍后再试'; errBox.style.display = 'block'; }
+        } finally {
           if (btn) { btn.disabled = false; btn.textContent = '登 录'; }
-          if (r.ok) {
-            if (errBox) errBox.style.display = 'none';
-            document.getElementById('loginPassword').value = '';
-            this.applyAuthState();
-          } else {
-            if (errBox) { errBox.textContent = r.error; errBox.style.display = 'block'; }
-          }
-        }, 30);
+        }
+      });
+
+      /* ---------- 注册(开放注册,注册成功即登录) ---------- */
+      const regForm = document.getElementById('registerForm');
+      const regErrBox = document.getElementById('registerError');
+      const regToggle = document.getElementById('registerToggle');
+
+      if (regToggle) regToggle.addEventListener('click', () => {
+        const showingRegister = regForm && regForm.style.display !== 'none';
+        if (regForm) regForm.style.display = showingRegister ? 'none' : '';
+        if (form) form.style.display = showingRegister ? '' : 'none';
+        if (regErrBox) regErrBox.style.display = 'none';
+        if (errBox) errBox.style.display = 'none';
+        regToggle.textContent = showingRegister ? '✨ 没有账号?点此注册' : '← 已有账号?返回登录';
+        if (!showingRegister) { const u = document.getElementById('registerUser'); if (u) u.focus(); }
+        else { const u = document.getElementById('loginUser'); if (u) u.focus(); }
+      });
+
+      if (regForm) regForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const username = (document.getElementById('registerUser') || {}).value || '';
+        const pass = (document.getElementById('registerPassword') || {}).value || '';
+        const display = (document.getElementById('registerDisplay') || {}).value || '';
+        const btn = document.getElementById('registerBtn');
+        if (!username.trim() || !pass) {
+          if (regErrBox) { regErrBox.textContent = '请输入账号和密码'; regErrBox.style.display = 'block'; }
+          return;
+        }
+        if (btn) { btn.disabled = true; btn.textContent = '注册中...'; }
+        try {
+          await window.Auth.register(username.trim(), pass, display.trim());
+          if (regErrBox) regErrBox.style.display = 'none';
+          this.applyAuthState();
+        } catch (err) {
+          if (regErrBox) { regErrBox.textContent = err.message || '注册失败,请稍后再试'; regErrBox.style.display = 'block'; }
+        } finally {
+          if (btn) { btn.disabled = false; btn.textContent = '注册并登录'; }
+        }
       });
     },
 
-    doLogout() {
-      if (window.Auth) window.Auth.logout();
+    async doLogout() {
+      if (window.Auth) await window.Auth.logout();
       if (AIInvest.Portfolio) AIInvest.Portfolio.lock();
       this.applyAuthState();
       // 回到全球脉搏页

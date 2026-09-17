@@ -14,3 +14,5 @@ gansiwande_deploy.zip
 screenshot*.png
 *.log
 /tmp/
+accounts.json
+portfolio.json
