@@ -35,11 +35,19 @@ const DENY_FILES = [
   '/_headers',
 ];
 
-/** 后缀级：站点本身不会以这些类型对外提供资源 */
+/** 文件级：精确匹配（比对前路径会小写化，这里预报一份小写副本） */
+const DENY_FILES_LC = DENY_FILES.map((x) => x.toLowerCase());
+
+/**
+ * 后缀级：站点本身不会以这些类型对外提供资源。
+ * 注意：**不要**把 .md / .txt / .json 放进来 ——
+ *   .json 是站点数据（data/*.json）
+ *   .md   是研报内容（data/reports/**.md，由前端 research.js 按需读取）
+ * 仓库内的 README.md 已在上面的 DENY_FILES 里精确命中。
+ */
 const DENY_EXTENSIONS = [
   '.py', '.sql', '.sh', '.toml',
-  '.md', '.yml', '.yaml', '.txt',
-  '.zip', '.log', '.bak',
+  '.yml', '.yaml', '.zip', '.log', '.bak',
 ];
 
 /**
@@ -83,7 +91,7 @@ export async function onRequest(context) {
 
     const blocked =
       DENY_PREFIXES.some((x) => p.startsWith(x)) ||
-      DENY_FILES.includes(p) ||
+      DENY_FILES_LC.includes(p) ||
       DENY_EXTENSIONS.some((x) => p.endsWith(x));
 
     if (blocked) {
