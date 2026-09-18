@@ -18,7 +18,7 @@ import sys
 from datetime import datetime, timezone, timedelta
 
 CST = timezone(timedelta(hours=8))
-DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'data')
+DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'dist', 'data')
 DRY_RUN = '--dry-run' in sys.argv
 
 def log(msg):

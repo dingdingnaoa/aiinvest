@@ -1,6 +1,6 @@
 name: market-pulse-snapshot
 
-# 定时刷新 data/market_pulse.json（真实数据源快照，供页面回退与历史序列累积）
+# 定时刷新 dist/data/market_pulse.json（真实数据源快照，供页面回退与历史序列累积）
 # 时间换算为 UTC（CST = UTC+8）：
 #   A股/港股盘中 09:00-17:00 CST → 01:00-09:00 UTC，周一至周五，每30分钟
 #   美股盘中 21:30-04:00 CST → 13:00-20:00 UTC（夏令时覆盖），周一至周五，每30分钟
@@ -32,7 +32,7 @@ jobs:
         run: |
           git config user.name "market-pulse-bot"
           git config user.email "market-pulse-bot@users.noreply.github.com"
-          git add data/market_pulse.json
+          git add dist/data/market_pulse.json
           if git diff --cached --quiet; then
             echo "no change"
           else

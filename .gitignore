@@ -1,8 +1,8 @@
 # ── 敏感/个人数据:绝不入库 ──
-data/portfolio.json
-data/accounts.json
-data/*.bak_*.json
-data/reports/
+dist/data/portfolio.json
+dist/data/accounts.json
+dist/data/*.bak_*.json
+dist/data/reports/
 
 # ── 本地构建产物与历史单文件 ──
 aiinvest_*.html
@@ -17,5 +17,8 @@ screenshot*.png
 accounts.json
 portfolio.json
 
-# ── Pages 构建产物 ──
-/dist/
+# ── dist/ 是站点发布目录,必须入库(Cloudflare Pages 直接发布它,不要排除) ──
+
+# ── Python 字节码 ──
+__pycache__/
+*.pyc

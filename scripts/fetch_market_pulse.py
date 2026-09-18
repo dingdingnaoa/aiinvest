@@ -3,7 +3,7 @@
 """
 fetch_market_pulse.py — GLOBAL MARKET PULSE 数据快照生成器
 =========================================================
-从真实公开数据源拉取跨市场行情，计算量化指标，输出 data/market_pulse.json。
+从真实公开数据源拉取跨市场行情，计算量化指标，输出 dist/data/market_pulse.json。
 由 GitHub Action 定时运行（见 .github/workflows/market-pulse.yml），也可本地手动运行。
 
 数据源（全部真实、公开、可审计）：
@@ -28,7 +28,7 @@ from datetime import datetime, timezone, timedelta
 UA = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36'}
 CST = timezone(timedelta(hours=8))
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-OUT = os.path.join(ROOT, 'data', 'market_pulse.json')
+OUT = os.path.join(ROOT, 'dist', 'data', 'market_pulse.json')
 
 # ──────────────────────────────────────────────
 # 标的定义

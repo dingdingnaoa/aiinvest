@@ -2,13 +2,14 @@ import json, re, datetime, os, base64
 
 # 仓库根 = 本脚本的上层目录(仓库化:不再依赖固定路径)
 base = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+site = f'{base}/dist'   # 站点发布目录：html / css / js / data 都在这里
 now = datetime.datetime.now().strftime('%Y%m%d_%H%M')
 main_name = f'aiinvest_{now}.html'
 admin_name = f'aiinvest_admin_{now}.html'
 
 # 账号保险箱(密文):从 accounts.json 提取公开可嵌入字段
 def load_vault_js():
-    path = f'{base}/data/accounts.json'
+    path = f'{site}/data/accounts.json'
     acc = json.load(open(path, encoding='utf-8'))
     pub = []
     for a in acc.get('accounts', []):
@@ -16,9 +17,9 @@ def load_vault_js():
     return 'window.__VAULT__ = ' + json.dumps({'accounts': pub}, ensure_ascii=False, separators=(',', ':')) + ';\n'
 
 def build(html_path, js_files, data_include, out_name, md_in_reports=True, link_replace=None, include_vault=False):
-    html = open(f'{base}/{html_path}', encoding='utf-8').read()
-    css = open(f'{base}/css/style.css', encoding='utf-8').read()
-    js_content = '\n'.join(open(f'{base}/js/{f}', encoding='utf-8').read() for f in js_files)
+    html = open(f'{site}/{html_path}', encoding='utf-8').read()
+    css = open(f'{site}/css/style.css', encoding='utf-8').read()
+    js_content = '\n'.join(open(f'{site}/js/{f}', encoding='utf-8').read() for f in js_files)
     if include_vault:
         js_content = load_vault_js() + js_content
 
@@ -29,12 +30,12 @@ def build(html_path, js_files, data_include, out_name, md_in_reports=True, link_
 
     # 3) 内联数据：按白名单选择 json(安全:portfolio.json 明文绝不入前台)
     data_map = {}
-    for f in sorted(os.listdir(f'{base}/data')):
+    for f in sorted(os.listdir(f'{site}/data')):
         if f.endswith('.json') and (f in data_include):
-            data_map[f'data/{f}'] = json.load(open(f'{base}/data/{f}', encoding='utf-8'))
+            data_map[f'data/{f}'] = json.load(open(f'{site}/data/{f}', encoding='utf-8'))
     # 内联研报 md（仅主站需要）
     if md_in_reports:
-        reports_root = f'{base}/data/reports'
+        reports_root = f'{site}/data/reports'
         if os.path.isdir(reports_root):
             for root, dirs, files in os.walk(reports_root):
                 for fn in sorted(files):

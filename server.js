@@ -9,9 +9,10 @@ const fs = require('fs');
 const path = require('path');
 
 const ROOT = __dirname;
+const SITE = path.join(ROOT, 'dist');   // 站点发布目录（与 Cloudflare Pages 的发布目录一致）
 const PORT = parseInt(process.env.PORT || '8080', 10);
 const LOG = '/tmp/portfolio_saves.log';
-const PORTFOLIO = path.join(ROOT, 'data', 'portfolio.json');
+const PORTFOLIO = path.join(SITE, 'data', 'portfolio.json');
 
 const MIME = {
   '.html': 'text/html; charset=utf-8',
@@ -78,10 +79,10 @@ const server = http.createServer((req, res) => {
     return;
   }
 
-  // 静态文件
+  // 静态文件（只服务 dist/，仓库内部文件永不对外）
   const rel = url === '/' ? 'index.html' : decodeURIComponent(url).replace(/^\/+/, '');
-  let filePath = path.join(ROOT, rel);
-  if (!filePath.startsWith(ROOT)) { res.writeHead(403); return res.end('forbidden'); }
+  let filePath = path.join(SITE, rel);
+  if (!filePath.startsWith(SITE)) { res.writeHead(403); return res.end('forbidden'); }
   fs.stat(filePath, (err, st) => {
     if (err || !st.isFile()) { res.writeHead(404); return res.end('not found: ' + url); }
     const ext = path.extname(filePath).toLowerCase();
@@ -90,4 +91,4 @@ const server = http.createServer((req, res) => {
   });
 });
 
-server.listen(PORT, () => log(`server listening on :${PORT} root=${ROOT}`));
+server.listen(PORT, () => log(`server listening on :${PORT} site=${SITE}`));
