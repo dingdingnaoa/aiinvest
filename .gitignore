@@ -16,3 +16,6 @@ screenshot*.png
 /tmp/
 accounts.json
 portfolio.json
+
+# ── Pages 构建产物 ──
+/dist/

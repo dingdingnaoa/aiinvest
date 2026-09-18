@@ -1,0 +1,26 @@
+-- ══════════════════════════════════════════════════════════════════════
+-- AI Invest 账号系统 — 种子数据（模板）
+--
+-- ⚠️ 本文件刻意不含任何真实凭据与持仓数据。
+--
+-- 原因：本仓库是 public，db/ 下的文件会被 GitHub、GitHub Pages、
+--       Cloudflare Pages 公开 Serving。真实数据一旦入库即等同于公开。
+--
+-- 真实的 admin 密码哈希与持仓数据，请从本地交付物 d1_setup.sql 取得，
+-- 并在 Cloudflare D1 Console 中手工执行一次即可：
+--     Workers & Pages → D1 → aiinvest-db → Console → 粘贴 d1_setup.sql → Run
+--
+-- 历史说明：真实种子数据曾于 2026-09-17 误入库（提交 c906d41），
+--           已于 2026-09-18 从全部 git 历史中清除。
+-- ══════════════════════════════════════════════════════════════════════
+
+-- 结构示例（占位符，请勿直接执行）：
+--
+-- INSERT INTO users (username, display_name, role, pwd_salt, pwd_hash)
+-- VALUES ('admin', '主账号', 'admin',
+--         '<32 位随机 hex 盐>',
+--         '<PBKDF2-SHA256 / 25000 次迭代 的 hex 哈希>');
+--
+-- INSERT INTO holdings (user_id, data)
+-- SELECT id, '<持仓 JSON:{"positions":[...],"trades":[...]}>'
+-- FROM users WHERE username = 'admin';
