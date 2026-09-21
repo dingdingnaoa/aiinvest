@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-09-22T02:23:23+08:00",
+ "updated_at": "2026-09-22T06:05:45+08:00",
  "indices": {
   "sh000001": {
    "name": "上证指数",
@@ -100,36 +100,36 @@
   "usDJI": {
    "name": "道琼斯",
    "market": "us",
-   "price": 52051.84,
+   "price": 52048.83,
    "chg_pct": 0.71,
-   "chg": 369.2,
+   "chg": 366.19,
    "high52": 54744.33,
    "low52": 45057.28,
-   "time": "2026-09-21 14:23:21",
+   "time": "2026-09-21 16:50:57",
    "chg5d": null,
    "vol20": null
   },
   "usIXIC": {
    "name": "纳斯达克",
    "market": "us",
-   "price": 27107.1,
-   "chg_pct": 2.2,
-   "chg": 584.55,
+   "price": 27122.09,
+   "chg_pct": 2.26,
+   "chg": 599.54,
    "high52": 27190.21,
    "low52": 20690.25,
-   "time": "2026-09-21 14:23:20",
+   "time": "2026-09-21 17:15:59",
    "chg5d": null,
    "vol20": null
   },
   "usINX": {
    "name": "标普500",
    "market": "us",
-   "price": 7767.44,
-   "chg_pct": 1.53,
-   "chg": 116.94,
+   "price": 7764.7,
+   "chg_pct": 1.49,
+   "chg": 114.2,
    "high52": 7816.7,
    "low52": 6316.91,
-   "time": "2026-09-21 14:23:20",
+   "time": "2026-09-21 16:51:02",
    "chg5d": null,
    "vol20": null
   }
@@ -267,50 +267,37 @@
  "commodities": {
   "GC": {
    "name": "COMEX黄金",
-   "price": 4386.04,
-   "chg_pct": -0.88,
-   "high": 4422.1,
-   "low": 4360.3,
-   "time": "2026-09-22 02:22:56"
+   "price": 4385.97,
+   "chg_pct": 0.05,
+   "high": 4386.5,
+   "low": 4382.0,
+   "time": "2026-09-22 06:05:00"
   },
   "CL": {
    "name": "WTI原油",
-   "price": 92.34,
-   "chg_pct": -3.89,
-   "high": 97.22,
-   "low": 91.19,
-   "time": "2026-09-22 02:23:01"
+   "price": 91.8,
+   "chg_pct": -0.62,
+   "high": 92.04,
+   "low": 91.79,
+   "time": "2026-09-22 06:05:01"
   },
   "SI": {
    "name": "COMEX白银",
-   "price": 66.5,
-   "chg_pct": -0.97,
-   "high": 67.56,
-   "low": 66.2,
-   "time": "2026-09-22 02:22:39"
-  },
-  "HG": {
-   "name": "COMEX铜",
-   "price": 6.773,
-   "chg_pct": 1.22,
-   "high": null,
-   "low": null,
-   "time": "2026-09-21T14:13:02.000-0400"
+   "price": 66.63,
+   "chg_pct": 0.32,
+   "high": 66.64,
+   "low": 66.52,
+   "time": "2026-09-22 06:04:53"
   }
  },
  "forex": {
   "USDCNY": null,
-  "DXY": {
-   "name": "美元指数(期货)",
-   "price": 100.14,
-   "chg_pct": 0.21,
-   "time": "2026-09-21T14:13:22.000-0400"
-  }
+  "DXY": null
  },
  "rates": {
   "us10y": {
-   "value": 4.969,
-   "time": "2026-09-21T14:22:08.000-0400"
+   "value": null,
+   "time": null
   },
   "cn10y": {
    "value": 1.6829,
@@ -324,13 +311,13 @@
    "value": 1.2629,
    "date": "2026-09-21"
   },
-  "spread_bp": 328.6,
+  "spread_bp": null,
   "us10y_5d_bp": -0.2
  },
  "vix": {
-  "value": 15.06,
-  "chg_pct": 1.69,
-  "time": "2026-09-21T14:23:31.000-0400"
+  "value": null,
+  "chg_pct": null,
+  "time": null
  },
  "valuation": {
   "csi300_pe": 13.5,
@@ -340,14 +327,13 @@
   "spx_ey_asof": "Sep 18"
  },
  "risk": {
-  "temp": 22.4,
+  "temp": 30.4,
   "components": {
-   "volatility": 13.3,
    "momentum": 15.2,
    "safehaven": 49.6
   },
-  "level": "低温平静",
-  "desc": "市场处于低波动区间，风险偏好较高"
+  "level": "温和",
+  "desc": "风险指标整体平稳"
  },
  "erp": {
   "cn": {
@@ -357,24 +343,13 @@
    "bond_yield": 1.6829,
    "erp": 5.72
   },
-  "us": {
-   "index": "标普500",
-   "earnings_yield": 3.84,
-   "bond_yield": 4.969,
-   "erp": -1.13
-  },
   "hk": null
  },
  "divergences": [
   {
    "name": "美股→A股联动",
    "level": 0,
-   "detail": "隔夜标普+1.53%，当日上证+0.97%，联动正常"
-  },
-  {
-   "name": "波动率正常",
-   "level": 0,
-   "detail": "VIX=15.1，处于正常波动区间"
+   "detail": "隔夜标普+1.49%，当日上证+0.97%，联动正常"
   }
  ],
  "history": {
@@ -543,7 +518,7 @@
    },
    {
     "d": "2026-09-22",
-    "v": 4386.04
+    "v": 4385.97
    }
   ],
   "wti": [
@@ -585,7 +560,7 @@
    },
    {
     "d": "2026-09-22",
-    "v": 92.34
+    "v": 91.8
    }
   ],
   "risk_temp": [
@@ -627,9 +602,11 @@
    },
    {
     "d": "2026-09-22",
-    "v": 22.4
+    "v": 30.4
    }
   ]
  },
- "errors": []
+ "errors": [
+  "cnbc: could not convert string to float: 'UNCH'"
+ ]
 }
