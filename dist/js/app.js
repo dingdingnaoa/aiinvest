@@ -190,6 +190,71 @@
           if (btn) { btn.disabled = false; btn.textContent = '注册并登录'; }
         }
       });
+
+      this._bindChangePasswordUI();
+    },
+
+    /** 修改密码弹窗(投资组合页头「修改密码」按钮唤起) */
+    _bindChangePasswordUI() {
+      const overlay = document.getElementById('pwdOverlay');
+      const openBtn = document.getElementById('changePwdBtn');
+      if (!overlay || !openBtn) return;
+
+      const form = document.getElementById('pwdForm');
+      const errBox = document.getElementById('pwdError');
+      const okBox = document.getElementById('pwdOk');
+      const cancelBtn = document.getElementById('pwdCancelBtn');
+      const submitBtn = document.getElementById('pwdSubmitBtn');
+      const curInput = document.getElementById('pwdCurrent');
+      const newInput = document.getElementById('pwdNew');
+      const confirmInput = document.getElementById('pwdConfirm');
+
+      const close = () => { overlay.style.display = 'none'; };
+      const showErr = (msg) => {
+        errBox.textContent = msg; errBox.style.display = 'block'; okBox.style.display = 'none';
+      };
+
+      openBtn.addEventListener('click', () => {
+        form.reset();
+        errBox.style.display = 'none';
+        okBox.style.display = 'none';
+        overlay.style.display = 'flex';
+        setTimeout(() => { if (curInput) curInput.focus(); }, 60);
+      });
+      cancelBtn.addEventListener('click', close);
+      overlay.addEventListener('click', (e) => { if (e.target === overlay) close(); });
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && overlay.style.display !== 'none') close();
+      });
+
+      form.addEventListener('submit', async (ev) => {
+        ev.preventDefault();
+        const cur = curInput.value;
+        const next = newInput.value;
+        const confirmValue = confirmInput.value;
+        errBox.style.display = 'none';
+        okBox.style.display = 'none';
+
+        if (!cur) return showErr('请输入当前密码');
+        if (next.length < 8) return showErr('新密码至少 8 位');
+        if (next !== confirmValue) return showErr('两次输入的新密码不一致');
+        if (next === cur) return showErr('新密码不能与当前密码相同');
+
+        submitBtn.disabled = true;
+        submitBtn.textContent = '提交中...';
+        try {
+          await window.Auth.changePassword(cur, next);
+          okBox.textContent = '✅ 密码已修改。该账号在其他设备的登录已退出,当前设备保持登录。';
+          okBox.style.display = 'block';
+          form.reset();
+          setTimeout(close, 2500);
+        } catch (err) {
+          showErr(err.message || '修改失败,请稍后再试');
+        } finally {
+          submitBtn.disabled = false;
+          submitBtn.textContent = '确认修改';
+        }
+      });
     },
 
     async doLogout() {

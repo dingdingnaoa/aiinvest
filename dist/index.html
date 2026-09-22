@@ -118,7 +118,10 @@
             <h2 class="section-title">投资组合 <span class="user-badge" id="userBadge">👤 --</span></h2>
             <p class="section-subtitle">持仓管理与估值跟踪 · <span id="portfolioSubCount">--</span></p>
           </div>
-          <button class="footer-action-btn" id="logoutBtn" title="退出登录">退出登录</button>
+          <div class="header-actions">
+            <button class="footer-action-btn" id="changePwdBtn" title="修改登录密码">修改密码</button>
+            <button class="footer-action-btn" id="logoutBtn" title="退出登录">退出登录</button>
+          </div>
         </div>
 
         <!-- 区域A: 持仓汇总 + 录入 -->
@@ -269,6 +272,25 @@
         投资有风险，决策需谨慎。数据来源包括公开市场信息和行业研究报告。
       </div>
     </footer>
+  </div>
+
+  <!-- 修改密码弹窗(登录后由「投资组合」页头的「修改密码」按钮唤起) -->
+  <div class="pwd-overlay" id="pwdOverlay" style="display:none;">
+    <div class="pwd-modal" role="dialog" aria-modal="true" aria-labelledby="pwdModalTitle">
+      <h3 class="card-title" id="pwdModalTitle">修改密码</h3>
+      <p class="pwd-modal-sub">修改成功后,该账号在其他已登录设备会被退出,当前设备保持登录。</p>
+      <form id="pwdForm" autocomplete="off">
+        <input type="password" id="pwdCurrent" class="search-input login-input" placeholder="当前密码" autocomplete="current-password">
+        <input type="password" id="pwdNew" class="search-input login-input" placeholder="新密码 (至少 8 位)" autocomplete="new-password">
+        <input type="password" id="pwdConfirm" class="search-input login-input" placeholder="确认新密码" autocomplete="new-password">
+        <div class="login-error" id="pwdError" style="display:none;"></div>
+        <div class="pwd-ok" id="pwdOk" style="display:none;"></div>
+        <div class="pwd-actions">
+          <button type="button" class="footer-action-btn" id="pwdCancelBtn">取消</button>
+          <button type="submit" class="btn-primary" id="pwdSubmitBtn">确认修改</button>
+        </div>
+      </form>
+    </div>
   </div>
 
   <!-- JavaScript Modules (order matters) -->

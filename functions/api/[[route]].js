@@ -9,6 +9,7 @@
  *   GET  /api/me         当前会话信息
  *   GET  /api/holdings   读自己的持仓
  *   PUT  /api/holdings   保存自己的持仓(≤128KB)
+ *   POST /api/password   修改密码(需登录;校验当前密码,成功后吊销其他设备会话)
  *   GET  /api/admin/users       (admin)用户列表
  *   DELETE /api/admin/users/:id (admin)删除用户
  *
@@ -16,6 +17,7 @@
  *   - 密码 PBKDF2-SHA256 25000 迭代(Workers 免费 CPU 限额内)
  *   - 会话 token 32B 随机,存 D1,7 天过期,httpOnly Cookie
  *   - 注册/登录限速(D1 计数)
+ *   - 修改密码双重限速(按 IP 10/时 + 按账号 5/时),防会话被用来暴力猜当前密码
  * ============================================================ */
 
 const COOKIE = 'aiinvest_session';
@@ -199,6 +201,45 @@ export async function onRequest(context) {
          ON CONFLICT(user_id) DO UPDATE SET data = excluded.data, updated_at = datetime('now')`
       ).bind(s.id, JSON.stringify(data)).run();
       return json({ ok: true });
+    }
+
+    /* ---------- 修改密码(需登录) ---------- */
+    if (route === 'password' && method === 'POST') {
+      const s = await getSession(env, request);
+      if (!s) return err('未登录', 401);
+
+      // 双重限速:按 IP(10/时) + 按账号(5/时)。
+      // 该接口会用当前密码做校验,不设防就等于给持有会话的人开了爆破口。
+      const ip = getIp(request);
+      if (await rateLimited(env, ip, 'password', 10, 60)) return err('操作过于频繁,请一小时后再试', 429);
+      if (await rateLimited(env, 'u' + s.id, 'password', 5, 60)) return err('操作过于频繁,请一小时后再试', 429);
+
+      const body = await request.json().catch(() => null);
+      const currentPassword = body?.currentPassword || '';
+      const newPassword = body?.newPassword || '';
+      if (!currentPassword) return err('请输入当前密码');
+      if (newPassword.length < 8) return err('新密码至少 8 位');
+      if (newPassword.length > 72) return err('新密码过长');
+
+      const u = await env.DB.prepare(`SELECT pwd_salt, pwd_hash FROM users WHERE id = ?`).bind(s.id).first();
+      if (!u) return err('账号不存在', 404);
+
+      const curHash = await hashPassword(currentPassword, u.pwd_salt);
+      if (curHash !== u.pwd_hash) return err('当前密码不正确', 403);
+
+      const sameAsOld = await hashPassword(newPassword, u.pwd_salt);
+      if (sameAsOld === u.pwd_hash) return err('新密码不能与当前密码相同');
+
+      const salt = randomHex(16);
+      const hash = await hashPassword(newPassword, salt);
+      await env.DB.prepare(`UPDATE users SET pwd_salt = ?, pwd_hash = ? WHERE id = ?`)
+        .bind(salt, hash, s.id).run();
+
+      // 吊销该账号在其他设备的会话;当前会话保留,避免改完密码自己被登出
+      await env.DB.prepare(`DELETE FROM sessions WHERE user_id = ? AND token != ?`)
+        .bind(s.id, s.token).run();
+
+      return json({ ok: true, message: '密码已更新,其他设备已退出登录' });
     }
 
     /* ---------- admin:用户列表 ---------- */

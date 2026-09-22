@@ -127,6 +127,15 @@
       return { ok: true };
     },
 
+    /** 修改密码:POST /api/password(需登录;成功后服务端会吊销该账号的其他设备会话) */
+    async changePassword(currentPassword, newPassword) {
+      await api('password', {
+        method: 'POST',
+        body: JSON.stringify({ currentPassword: currentPassword, newPassword: newPassword })
+      });
+      return { ok: true };
+    },
+
     /** 当前账号是否管理员 */
     isAdmin: function () {
       return !!(Auth.current && Auth.current.role === 'admin');
